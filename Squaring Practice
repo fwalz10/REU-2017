@@ -1,0 +1,264 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{framed}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{slashed}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{bigints}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{9in}
+\voffset-1.5truecm
+
+\def \beq{\begin{equation}}
+\def \eeq{\end{equation}}
+\def \bea{\begin{eqnarray}}
+\def \eea{\end{eqnarray}}
+\def \ba{\begin{array}}
+\def \ea{\end{array}}
+\def \beg{\begin{gather}}
+\def \eeg{\end{gather}}
+\def \bmat{\begin{matrix}}
+\def \emat{\end{matrix}}
+\def \bfra{\begin{framed}}
+\def \efra{\end{framed}}
+
+\def \({\left(}
+\def \){\right)}
+\def \[{\left[}
+\def \]{\right]}
+\def \<{\left\langle}
+\def \>{\right\rangle}
+\def \lp{\left|}
+\def \rp{\right|}
+\def \lb{\left\{}
+\def \rb{\right\}}
+\def \l.{\left.}
+\def \r.{\right.}
+
+\def \bma{\(\bmat}
+\def \ema{\emat\)}
+
+\def \Tr{{\rm Tr}}
+\def \N{\rm N}
+\def \hc{{\rm h.\ c.}}
+
+\def \ph{\phantom}
+\def \nn{\nonumber}
+\def \nl{\nn \\}
+
+\def \of{\frac{1}{4}}
+\def \oth{\frac{1}{3}}
+\def \hf{\frac{1}{2}}
+\def \oet{\frac{1}{8}}
+\def \s{\sqrt{2}}
+\def \st{\sqrt{3}}
+\def \sx{\sqrt{6}}
+
+\def \cB{{\cal B}}
+\def \cC{{\cal C}}
+\def \cZ{{\cal Z}}
+\def \cL{{\cal L}}
+\def \cH{{\cal H}}
+\def \cO{{\cal O}}
+\def \cM{{\cal M}}
+\def \cl{\ell}
+
+\def \oq{\overline{q}}
+\def \of{\overline{f}}
+\def \os{\overline{s}}
+\def \ob{\overline{b}}
+\def \ou{\overline{u}}
+\def \ov{\overline{v}}
+\def \oBs{\overline{B^0_s}}
+\def \otau{\overline{\tau}}
+\def \omu{\overline{\mu}}
+\def \onu{\overline{\nu}}
+\def \osi{\overline{\si}}
+\def \oell{\overline{\ell}}
+\def \oL{\overline{L}}
+\def \oQ{\overline{Q}}
+
+\def \al{\alpha}
+\def \be{\beta}
+\def \ga{\gamma}
+\def \Ga{\Gamma}
+\def \de{\delta}
+\def \ka{\kappa}
+\def \De{\Delta}
+\def \ep{\epsilon}
+\def \tha{\theta}
+\def \la{\lambda}
+\def \La{\Lambda}
+\def \si{\sigma}
+\def \Si{\Sigma}
+\def \Up{\Upsilon}
+\def \om{\omega}
+\def \1{1}%\mathbb{I}}
+
+\def \pa{\partial}
+
+\def \SM{{\rm SM}}
+\def \elm{{\rm em}}
+\def \NP{{\rm NP}}
+\def \expt{{\rm expt}}
+\def \eff{{\rm eff}}
+\def \elm{{\rm em}}
+\def \RFG{{\rm RFG}}
+\def \CFG{{\rm CFG}}
+\def \PT{{\rm PT}}
+\def \hi{{\rm hi}}
+\def \lo{{\rm lo}}
+
+\def \Re{{\rm Re}}
+\def \Im{{\rm Im}}
+
+\def \keV{{\rm keV}}
+\def \MeV{{\rm MeV}}
+\def \GeV{{\rm GeV}}
+
+\def \cH{{\cal H}}
+\def \cI{{\cal I}}
+
+\def \Rqp{R_{q'}}
+
+\def\bwt{\begin{widetext}}
+\def\ewt{\end{widetext}}
+
+\def\vev#1{\langle {#1} \rangle}
+\def\eq#1{eq.~(\ref{#1})}
+
+\def \vp{{\bf p}}
+\def \vq{{\bf q}}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+
+% Roman Section & Subsection numberings
+% -------------------------------------
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+\allowdisplaybreaks
+
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\begin{document}
+
+\begin{center}
+\underline{\textbf{\Large Practice with Spinors}}
+\end{center}
+
+\begin{enumerate}
+
+\item $(\overline{u}_1\ga^\mu u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu u_2)^\dag $ 
+
+Because $(\overline{u}_1\ga^\mu u_2)$ is a 1x1 matrix, the complex conjugate is the same as the Hermitian conjugate
+
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2^\dag (\ga^\mu)^\dag (\ga^0)^\dag (u_1) $ 
+
+ Note: $(\ga^0)^\dag~=~\ga^0$ and $(\ga^\mu)^\dag~=~ \ga^0\ga^\mu\ga^0$
+ 
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2)^\dag \ga^0\ga^\mu\ga^0 \ga^0 u_1 $ 
+ 
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2)^\dag \ga^0 \ga^\mu (1) u_1 $
+  
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ \overline{u}_2 \ga^\mu u_1 $ 
+ 
+ 
+\item $(\overline{u}_1\ga^\mu \ga^5 u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu \ga^5  u_2)^\dag $ 
+
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~u_2^\dag (\ga^5)^\dag (\ga^\mu)^\dag (\ga^0)^\dag  u_1 $ 
+ 
+ Note: $(\ga^5)^\dag = \ga^5$
+ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0\ga^\mu\ga^0 \ga^0 u_1$ 
+ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0 \ga^\mu (1) u_1$ 
+ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -u_2^\dag \ga^0 \ga^5 \ga^\mu u_1$ 
+ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -\overline{u}_2 \ga^5 \ga^\mu u_1$ 
+ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ \overline{u}_2 \ga^\mu \ga^5 u_1$ 
+ 
+\item $ (\overline{u}_1 u_2)^* ~=~ (u_1^\dag \ga^0 u_2)^\dag$ 
+
+$ (\overline{u}_1 u_2)^* ~=~ u_2^\dag (\ga^0)^\dag u_1$ 
+
+$ (\overline{u}_1 u_2)^* ~=~u_2^\dag \ga^0 u_1$ 
+  
+$ (\overline{u}_1 u_2)^* ~=~ \overline{u}_2 u_1$
+
+\item$ (\overline{u}_1 \ga^5 u_2)^* ~=~ (u_1^\dag \ga^0 \ga^5 u_2)^\dag$ 
+
+$(\overline{u}_1 \ga^5 u_2)^* ~=~ u_2^\dag (\ga^5)^\dag (\ga^0)^\dag u_1$
+
+$(\overline{u}_1 \ga^5 u_2)^* ~=~ u_2^\dag (-\ga^5) \ga^0 u_1$
+
+$(\overline{u}_1 \ga^5 u_2)^* ~=~ u_2^\dag \ga^0 \ga^5 u_1$
+
+$(\overline{u}_1 \ga^5 u_2)^* ~=~ \overline{u}_2 \ga^5 u_1$
+
+\item $(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~((u_1)^\dag \ga^0 \si^{\mu\nu} u_2)^\dag $
+
+$(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~(u_2)^\dag (\si^{\mu\nu})^\dag (\ga^0)^\dag u_1 $
+
+Note: $(\si^{\mu\nu})^\dag = (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}([\ga^\mu,\ga^\nu])^\dag$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}((\ga^\mu)^\dag(\ga^\nu)^\dag-(\ga^\nu)^\dag(\ga^\mu)^\dag)$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}(\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0-\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0)$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}(\ga^0\ga^\mu\ga^\nu\ga^0-\ga^0\ga^\nu \ga^\mu\ga^0)$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu)$
+
+$(\si^{\mu\nu})^\dag = \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu \ga^\mu)= \si^{\mu\nu}$
+
+Thus:
+$(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~(u_2)^\dag \si^{\mu\nu} \ga^0 u_1 $
+
+$(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~(u_2)^\dag \ga^0 \si^{\mu\nu} u_1 $
+
+$(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~\overline{u}_2) \si^{\mu\nu} u_1 $
+
+
+\begin{center}
+\underline{\textbf{\Large Absolute Values Squared}}
+\end{center}
+\item $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1 \ga^\mu u_2)(\overline{u}_1 \ga^\mu u_2 )^*$
+
+$\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1 \ga^\mu u_2)(\overline{u}_2 \ga^\mu u_1)$
+
+I know that both of the expressions in the parentheses are 1x1 matrices but I fail to see how it can be simplified anymore. 
+
+Or is this the way to proceed: 
+$\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ \mid\overline{u}_1\mid^2 \mid\ga^\mu\mid^2 \mid u_2 \mid^2$
+
+$\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^*\ga^\mu (\ga^\mu)^* (u_2)(u_2)^*$
+
+$\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^*\ga^\mu \ga^\mu (u_2)(u_2)^*$
+
+$\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^* (u_2)(u_2)^*$
+
+\end{enumerate}
+\end{document} 
