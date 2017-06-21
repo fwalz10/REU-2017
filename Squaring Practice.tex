@@ -163,48 +163,67 @@
 \underline{\textbf{\Large Practice with Spinors}}
 \end{center}
 
+The first thing to do is to make the writing a little more compact. Follow the first few lines to get a better handle on how to format the rest of your document. Once you have implemented some of these changes, delete the direction lines.
+
+\section{Algebra with Dirac $\ga$ matrices}
+
+In order to make your equations more compact use the equation or eqnarray environments. Look above the \textbackslash begin\{document\} 
+
 \begin{enumerate}
 
-\item $(\overline{u}_1\ga^\mu u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu u_2)^\dag $ 
+\item $(\overline{u}_1\ga^\mu u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu u_2)^\dag $
 
 Because $(\overline{u}_1\ga^\mu u_2)$ is a 1x1 matrix, the complex conjugate is the same as the Hermitian conjugate
 
- ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2^\dag (\ga^\mu)^\dag (\ga^0)^\dag (u_1) $ 
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2^\dag (\ga^\mu)^\dag (\ga^0)^\dag (u_1) $
 
  Note: $(\ga^0)^\dag~=~\ga^0$ and $(\ga^\mu)^\dag~=~ \ga^0\ga^\mu\ga^0$
- 
- ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2)^\dag \ga^0\ga^\mu\ga^0 \ga^0 u_1 $ 
- 
+
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2)^\dag \ga^0\ga^\mu\ga^0 \ga^0 u_1 $
+
  ($\overline{u}_1\ga^\mu u_2)^* ~=~ (u_2)^\dag \ga^0 \ga^\mu (1) u_1 $
-  
- ($\overline{u}_1\ga^\mu u_2)^* ~=~ \overline{u}_2 \ga^\mu u_1 $ 
- 
- 
-\item $(\overline{u}_1\ga^\mu \ga^5 u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu \ga^5  u_2)^\dag $ 
 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~u_2^\dag (\ga^5)^\dag (\ga^\mu)^\dag (\ga^0)^\dag  u_1 $ 
+ ($\overline{u}_1\ga^\mu u_2)^* ~=~ \overline{u}_2 \ga^\mu u_1 $
  
+\textbf{Let's change this item to look like the following: }
+
+$(\ou_1\ga^\mu u_2)$ is a $1\times1$ matrix. Therefore, its complex conjugate is the same as its Hermitian conjugate, i.e. if we call
+$L^\mu = (\ou_1\ga^\mu u_2)$, then $(L^\mu)^* = (L^\mu)^\dag$. We can then express this quantity as follows:
+% This is the first equation/set of equations
+\bea
+L^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \\
+\Rightarrow (L^\mu)^* &=& (L^\mu)^\dag ~,~~ \nl
+&=& (\ou_1\ga^\mu u_2)^\dag ~,~~ \nl
+&=& ((u_1)^\dag\ga^0\ga^\mu u_2)^\dag ~~~{\rm using}~(A\ldots Z)^\dag = Z^\dag\ldots A^\dag ~,~~ \nl
+&=& (u_2^\dag)(\ga^\mu)^\dag(\ga^0)^\dag(u_1) ~~~{\rm using}~\ldots
+\eea
+%
+
+\item $(\overline{u}_1\ga^\mu \ga^5 u_2)^* ~=~(u_1^\dag \ga^0 \ga^\mu \ga^5  u_2)^\dag $
+
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~u_2^\dag (\ga^5)^\dag (\ga^\mu)^\dag (\ga^0)^\dag  u_1 $
+
  Note: $(\ga^5)^\dag = \ga^5$
- 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0\ga^\mu\ga^0 \ga^0 u_1$ 
- 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0 \ga^\mu (1) u_1$ 
- 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -u_2^\dag \ga^0 \ga^5 \ga^\mu u_1$ 
- 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -\overline{u}_2 \ga^5 \ga^\mu u_1$ 
- 
- $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ \overline{u}_2 \ga^\mu \ga^5 u_1$ 
- 
-\item $ (\overline{u}_1 u_2)^* ~=~ (u_1^\dag \ga^0 u_2)^\dag$ 
 
-$ (\overline{u}_1 u_2)^* ~=~ u_2^\dag (\ga^0)^\dag u_1$ 
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0\ga^\mu\ga^0 \ga^0 u_1$
 
-$ (\overline{u}_1 u_2)^* ~=~u_2^\dag \ga^0 u_1$ 
-  
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ u_2^\dag \ga^5 \ga^0 \ga^\mu (1) u_1$
+
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -u_2^\dag \ga^0 \ga^5 \ga^\mu u_1$
+
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ -\overline{u}_2 \ga^5 \ga^\mu u_1$
+
+ $(\overline{u}_1 \ga^\mu \ga^5 u_2)^* ~=~ \overline{u}_2 \ga^\mu \ga^5 u_1$
+
+\item $ (\overline{u}_1 u_2)^* ~=~ (u_1^\dag \ga^0 u_2)^\dag$
+
+$ (\overline{u}_1 u_2)^* ~=~ u_2^\dag (\ga^0)^\dag u_1$
+
+$ (\overline{u}_1 u_2)^* ~=~u_2^\dag \ga^0 u_1$
+
 $ (\overline{u}_1 u_2)^* ~=~ \overline{u}_2 u_1$
 
-\item$ (\overline{u}_1 \ga^5 u_2)^* ~=~ (u_1^\dag \ga^0 \ga^5 u_2)^\dag$ 
+\item$ (\overline{u}_1 \ga^5 u_2)^* ~=~ (u_1^\dag \ga^0 \ga^5 u_2)^\dag$
 
 $(\overline{u}_1 \ga^5 u_2)^* ~=~ u_2^\dag (\ga^5)^\dag (\ga^0)^\dag u_1$
 
@@ -249,9 +268,9 @@ $(\overline{u}_1 \si^{\mu\nu} u_2)^* ~=~\overline{u}_2) \si^{\mu\nu} u_1 $
 
 $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1 \ga^\mu u_2)(\overline{u}_2 \ga^\mu u_1)$
 
-I know that both of the expressions in the parentheses are 1x1 matrices but I fail to see how it can be simplified anymore. 
+I know that both of the expressions in the parentheses are 1x1 matrices but I fail to see how it can be simplified anymore.
 
-Or is this the way to proceed: 
+Or is this the way to proceed:
 $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ \mid\overline{u}_1\mid^2 \mid\ga^\mu\mid^2 \mid u_2 \mid^2$
 
 $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^*\ga^\mu (\ga^\mu)^* (u_2)(u_2)^*$
@@ -261,4 +280,4 @@ $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^*\g
 $\mid \overline{u}_1 \ga^\mu u_2 \mid^2 ~=~ (\overline{u}_1)(\overline{u}_1)^* (u_2)(u_2)^*$
 
 \end{enumerate}
-\end{document} 
+\end{document}
