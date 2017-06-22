@@ -255,7 +255,18 @@ We let $B^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 &=& (u_2^\dag)(\ga^0)\si^{\mu\nu}(u_1)\nl
 &=& \ou_2 \si^{\mu\nu}(u_1) \nonumber
 \eea \nonumber
-
+An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ is not an independent quantity. Since $\ga^5 =i\ga^0\ga^1\ga^2\ga^3$ it follows that the product of $\si^{\mu\nu}$ and $\ga^5$ can be simplified to an expression with only 2 $\ga$ matrices which has been defined as a pusedoscalar.\nl 
+For example, let $\mu =0$ and $\nu=1$:
+\bea \nonumber
+\ou \si^{01} \ga^5 u &=& \ou \si^{01} (i\ga^0\ga^1\ga^2\ga^3) u \nl
+&=&  \ou ((\frac{i}{2})(\ga^0\ga^1 -\ga^1\ga^0)) (i\ga^0\ga^1\ga^2\ga^3) u \nl
+&=&  \ou (\frac{i}{2})[\ga^0\ga^1(i\ga^0\ga^1\ga^2\ga^3) -\ga^1\ga^0(i\ga^0\ga^1\ga^2\ga^3)] u \nl
+&=&  \ou (\frac{-1}{2})[\ga^0\ga^1\ga^0\ga^1\ga^2\ga^3 -\ga^1\ga^0\ga^0\ga^1\ga^2\ga^3)] u \nl
+&=& \ou (\frac{-1}{2})[-\ga^2\ga^3 -\ga^2\ga^3)] u\nl
+&=& \ou (\frac{-1}{2})[-2\ga^2\ga^3] u\nl
+&=& 2\ou \ga^2\ga^3 u\nl \nonumber
+\eea \nonumber
+This expression (because it contains two gamma matrices) is a puesdoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and indentity properties of the gamma matrices. 
 
 \section{Squaring Expressions}
 \item $\mid \ou_1 \ga^\mu u_2 \mid^2 ~=~ (\ou_1 \ga^\mu u_2)(\ou_1 \ga^\mu u_2 )^*$
