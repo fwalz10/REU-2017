@@ -186,6 +186,20 @@ L^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \nonumber \\ \nonumber
 &=& \ou_2\ga^\mu(u_1) \nonumber
 \eea \nonumber
 Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $
+To solve for $(L^\mu)^2$ we simply use $(L^{\mu\nu})^2 = Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$ \nl 
+Note: $Tr[\ga^\mu \ga^\nu]=0$, $Tr[\ga^\mu \ga^\nu \ga^\si \ga^\la]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$
+\bea \nonumber
+(L^{\mu\nu})^2 &=& Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \nl
+&=& Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\nl 
+&=& Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl 
+&=& Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl
+&=& Tr[\ga^\mu \slashed{p}_1 \ga^\nu\slashed{p}_2] + m[Tr(\ga^\mu \slashed{p}_1\ga^\nu) + Tr[\ga^\mu \ga^\nu \slashed{p}_2)] + m^2Tr[\ga^\mu \ga^\nu]\nl
+&=& Tr[\ga^\mu \slashed{p}_1 \ga^\nu\slashed{p}_2] + m[Tr(\ga^\mu \slashed{p}_1\ga^\nu) + Tr[\ga^\mu \ga^\nu \slashed{p}_2)] + m^2Tr[\ga^\mu \ga^\nu]\nl
+&=& Tr[\ga^\mu \slashed{p}_1 \ga^\nu\slashed{p}_2] + m^2Tr[\ga^\mu \ga^\nu]\nl
+&=& (p_1)_\la(p_2)_\si Tr[\ga^\mu \ga^\nu \ga^\si \ga^\la] 4m^2g^{\mu\nu}\nl
+&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) 4m^2g^{\mu\nu}\nl
+&=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] + 4m^2g^{\mu\nu}\nl \nonumber
+\eea \nonumber
 %
 \item $(\ou_1\ga^\mu \ga^5 u_2)^*$ is also a $1\times1$ Matrix so the same reasoning applies as above in 1. Note: $(\ga^5)^\dag = \ga^5$\nl
 We define: $R^\mu$ as $\ou_1\ga^\mu\ga^5 u_2$ thus:
