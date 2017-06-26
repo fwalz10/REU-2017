@@ -54,7 +54,7 @@
 \def \hc{{\rm h.\ c.}}
 
 \def \ph{\phantom}
-\def \nn{ }
+\def \nn{\nonumber}
 \def \nl{\nn \\}
 
 \def \of{\frac{1}{4}}
@@ -166,13 +166,13 @@
 
 \section{Algebra with Dirac $\ga$ matrices}
 
-\item Notation: $S= \ou u$\nl
-$P=\ou \ga^5 u$ \nl 
-$V^\mu = \ou \ga^\mu u$ \nl 
-$A^\mu = \ou \ga^\mu \ga^5 u $ \nl 
-$T^{\mu\nu} = \ou \si^{\mu\nu} u$
 
 \begin{enumerate}
+\item Notation: $S= \ou u$ \\
+$P=\ou \ga^5 u$ \\
+$V^\mu = \ou \ga^\mu u$ \\ 
+$A^\mu = \ou \ga^\mu \ga^5 u $ \\
+$T^{\mu\nu} = \ou \si^{\mu\nu} u$
 
 \item$(\ou_1\ga^\mu u_2)^*$ ~=~?
 
@@ -182,12 +182,12 @@ $(\ou_1\ga^\mu u_2)$ is a $1\times1$ matrix. Therefore, its complex conjugate is
 $L^\mu = (\ou_1\ga^\mu u_2)$, then $(L^\mu)^* = (L^\mu)^\dag$. We can then express this quantity as follows:
 % This is the first equation/set of equations
 \bea
-L^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \\\nonumber
-\Rightarrow (L^\mu)^* &=& (L^\mu)^\dag ~,~~ \nl \nonumber
-&=& (\ou_1\ga^\mu u_2)^\dag ~,~~ \nl \nonumber
-&=& ((u_1)^\dag\ga^0\ga^\mu u_2)^\dag ~~~{\rm using}~(A\ldots Z)^\dag = Z^\dag\ldots A^\dag ~,~~ \nl \nonumber
-&=& (u_2^\dag)(\ga^\mu)^\dag(\ga^0)^\dag(u_1)\nl \nonumber
-&=& (u_2^\dag)\ga^0\ga^\mu\ga^0\ga^0(u_1)\nl\nonumber
+L^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \\
+\Rightarrow (L^\mu)^* &=& (L^\mu)^\dag ~,~~ \nl 
+&=& (\ou_1\ga^\mu u_2)^\dag ~,~~ \nl 
+&=& ((u_1)^\dag\ga^0\ga^\mu u_2)^\dag ~~~{\rm using}~(A\ldots Z)^\dag = Z^\dag\ldots A^\dag ~,~~ \nl 
+&=& (u_2^\dag)(\ga^\mu)^\dag(\ga^0)^\dag(u_1)\nl 
+&=& (u_2^\dag)\ga^0\ga^\mu\ga^0\ga^0(u_1)\nl
 &=& (u_2^\dag)\ga^0\ga^\mu(u_1)\nl
 &=& \ou_2\ga^\mu(u_1) 
 \eea
@@ -195,15 +195,15 @@ Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $(L^\mu)^2$ w
 
 Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\si]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$, The trace of an odd number gamma matrix product is 0 
 \bea
-(L^{\mu\nu})^2 &=& Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\\nonumber
-&=& Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\nl\nonumber
-&=& Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl\nonumber
-&=& Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl\nonumber
-&=& Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m[Tr(\ga^\mu \slashed{p}_1\ga^\nu) + Tr(\ga^\mu \ga^\nu \slashed{p}_2)] + m^2Tr[\ga^\mu \ga^\nu]\nl\nonumber
-&=& Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m^2Tr[\ga^\mu \ga^\nu]\nl\nonumber
-&=& Tr[(p_1)_\la\ga^\la \ga^\mu (p_2)_\si\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl\nonumber
-&=& (p_1)_\la (p_2)_\si Tr[\ga^\la \ga^\mu\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl\nonumber
-&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) + 4m^2g^{\mu\nu}\nl\nonumber
+(L^{\mu\nu})^2 &=& Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\
+&=& Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1] \nl 
+&=& Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu] \nl  
+&=& Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu] \nl 
+&=& Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m[Tr(\ga^\mu \slashed{p}_1\ga^\nu) + Tr(\ga^\mu \ga^\nu \slashed{p}_2)] + m^2Tr[\ga^\mu \ga^\nu]\nl 
+&=& Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m^2Tr[\ga^\mu \ga^\nu] \nl 
+&=& Tr[(p_1)_\la\ga^\la \ga^\mu (p_2)_\si\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu} \nl 
+&=& (p_1)_\la (p_2)_\si Tr[\ga^\la \ga^\mu\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu} \nl 
+&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) + 4m^2g^{\mu\nu}\nl 
 &=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] + 4m^2g^{\mu\nu} \nl
 &=& 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 + m^2) + p_2^\mu p_1^\nu]
 \eea
@@ -212,54 +212,54 @@ Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\s
 We define: $R^\mu$ as $\ou_1\ga^\mu\ga^5 u_2$ thus:
 % This is the second equation/set of equations
 \bea
-\Rightarrow (R^\mu)^* &=& (R^\mu)^\dag \\\nonumber
-&=&(\ou_1\ga^\mu\ga^5 u_2)^\dag  \nl\nonumber
-&=& ((u_1)^\dag\ga^0\ga^\mu\ga^5 u_2)^\dag \nl\nonumber
-&=& (u_2^\dag)(\ga^5)^\dag(\ga^\mu)^\dag(\ga^0)^\dag(u_1)\nl\nonumber
-&=& (u_2^\dag)\ga^5\ga^0\ga^\mu\ga^0\ga^0 u_1\nl\nonumber
-&=& (u_2^\dag)\ga^5\ga^0\ga^\mu(1) u_1\nl\nonumber
-&=& -(u_2^\dag)\ga^0\ga^5\ga^\mu u_1\nl\nonumber
-&=& -\ou_2\ga^5\ga^\mu u_1 \nl
-&=& \ou_2\ga^\mu\ga^5 u_1
+\Rightarrow (R^\mu)^* &=& (R^\mu)^\dag \\ 
+&=&(\ou_1\ga^\mu\ga^5 u_2)^\dag  \nl 
+&=& ((u_1)^\dag\ga^0\ga^\mu\ga^5 u_2)^\dag \nl 
+&=& (u_2^\dag)(\ga^5)^\dag(\ga^\mu)^\dag(\ga^0)^\dag(u_1) \nl 
+&=& (u_2^\dag)\ga^5\ga^0\ga^\mu\ga^0\ga^0 u_1 \nl 
+&=& (u_2^\dag)\ga^5\ga^0\ga^\mu(1) u_1 \nl 
+&=& -(u_2^\dag)\ga^0\ga^5\ga^\mu u_1 \nl 
+&=& -\ou_2\ga^5\ga^\mu u_1 \nl 
+&=& \ou_2\ga^\mu\ga^5 u_1 
 \eea 
 %
 Therefore $(\ou_1\ga^\mu \ga^5 u_2)^*~=~\ou_2 \ga^\mu \ga^5 u_1$
 
 We also are able to calculate $(R^\mu)^2$ 
 \bea
-(R^{\mu\nu})^2 &=& Tr[\ou_1\ga^\mu \ga^5 u_2\ou_2 \ga^\nu \ga^5 u_1 \\\nonumber
-&=& Tr[\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 u_1]  \nl\nonumber
-&=&Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl\nonumber
-&=&Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl\nonumber
-&=& Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu\ga^5\ga^\nu \ga^5 +\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl \nonumber
-&=&Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl\nonumber
-&=& Tr[(p_1)_\la\ga^\la\ga^\mu\ga^5 (p_2)_\si\ga^\si\ga^\nu \ga^5] + m^2Tr[\ga^\mu\ga^5\ga^\nu \ga^5]\nl\nonumber
-&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^5 \ga^\si\ga^\nu \ga^5] - m^2Tr[\ga^\mu\ga^5\ga^5 \ga^\nu]\nl\nonumber
-&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^5\ga^5 \ga^\si\ga^\nu] - m^2Tr[\ga^\mu\ga^\nu]\nl\nonumber
-&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^\si\ga^\nu] - m^2(g^{\mu\nu})\nl\nonumber
-&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - 4m^2g^{\mu\nu}\nl\nonumber
+(R^{\mu\nu})^2 &=& Tr[\ou_1\ga^\mu \ga^5 u_2\ou_2 \ga^\nu \ga^5 u_1 \\ 
+&=& Tr[\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 u_1]  \nl 
+&=&Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl 
+&=&Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl 
+&=& Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu\ga^5\ga^\nu \ga^5 +\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl  
+&=&Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl 
+&=& Tr[(p_1)_\la\ga^\la\ga^\mu\ga^5 (p_2)_\si\ga^\si\ga^\nu \ga^5] + m^2Tr[\ga^\mu\ga^5\ga^\nu \ga^5]\nl 
+&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^5 \ga^\si\ga^\nu \ga^5] - m^2Tr[\ga^\mu\ga^5\ga^5 \ga^\nu]\nl 
+&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^5\ga^5 \ga^\si\ga^\nu] - m^2Tr[\ga^\mu\ga^\nu]\nl 
+&=& (p_1)_\la(p_2)_\si Tr[\ga^\la\ga^\mu\ga^\si\ga^\nu] - m^2(g^{\mu\nu})\nl 
+&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - 4m^2g^{\mu\nu}\nl 
 &=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] - 4m^2g^{\mu\nu} \nl
 &=& 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 - m^2) + p_2^\mu p_1^\nu]
-\eea
+\eea 
 
 \item $ (\ou_1 u_2)^* ~=~ ?$ \nl
 We let:$P ~=~ \ou_1 u_2$
 \bea
-\Rightarrow (P)^* &=& (P)^\dag ~,~~ \\\nonumber
-&=& (\ou_1 u_2)^\dag ~,~~ \nl\nonumber
-&=& ((u_1)^\dag\ga^0 u_2)^\dag \nl\nonumber
-&=& (u_2)^\dag(\ga^0)^\dag(u_1)\nl\nonumber
+\Rightarrow (P)^* &=& (P)^\dag ~,~~ \\ 
+&=& (\ou_1 u_2)^\dag ~,~~ \nl 
+&=& ((u_1)^\dag\ga^0 u_2)^\dag \nl 
+&=& (u_2)^\dag(\ga^0)^\dag(u_1)\nl 
 &=& (u_2)^\dag\ga^0(u_1)\nl
 &=& \ou_2(u_1)
 \eea
 Therefore$(\ou_1 u_2)^* ~=~ \ou_2 u_1$\nl 
 In order to find $(P)^2$ we simply do the following: 
 \bea
-(P)^2&=& Tr[\ou_1 u_2 \ou_2 u_1]  \\\nonumber
-&=& Tr[(\slashed{p}_1+m)(\slashed{p}_2+m)] \nl\nonumber
-&=& Tr[\slashed{p}_1\slashed{p}_2+m(\slashed{p}_1+\slashed{p}_2)+m^2]\nl\nonumber
-&=& Tr[\slashed{p}_1\slashed{p}_2]+Tr[m(\slashed{p}_1+\slashed{p}_2)]+Tr[m^2] \nl\nonumber
-&=& Tr[\slashed{p}_1\slashed{p}_2]+m(Tr[\slashed{p}_1]+Tr[\slashed{p}_2])+m^2Tr[1] \nl\nonumber
+(P)^2&=& Tr[\ou_1 u_2 \ou_2 u_1]  \\ 
+&=& Tr[(\slashed{p}_1+m)(\slashed{p}_2+m)] \nl 
+&=& Tr[\slashed{p}_1\slashed{p}_2+m(\slashed{p}_1+\slashed{p}_2)+m^2]\nl 
+&=& Tr[\slashed{p}_1\slashed{p}_2]+Tr[m(\slashed{p}_1+\slashed{p}_2)]+Tr[m^2] \nl 
+&=& Tr[\slashed{p}_1\slashed{p}_2]+m(Tr[\slashed{p}_1]+Tr[\slashed{p}_2])+m^2Tr[1] \nl 
 &=& Tr[\slashed{p}_1\slashed{p}_2]+4m^2 \nl
 &=& 4(p_1 \cdot p_2)+4m^2
 \eea
@@ -267,11 +267,11 @@ In order to find $(P)^2$ we simply do the following:
 \item By the same reasoning as shown above it can be shown that $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$ \nl
 If we let $T ~=~ \ou_1\ga^5 u_2$ then:
 \bea
-\Rightarrow (T)^* &=& (T)^\dag ~,~~ \\\nonumber
-&=& (\ou_1\ga^5 u_2)^\dag ~,~~ \nl\nonumber
-&=& ((u_1)^\dag\ga^0\ga^5 u_2)^\dag \nl\nonumber
-&=& (u_2)^\dag(\ga^5)^\dag (\ga^0)^\dag(u_1)\nl\nonumber
-&=& (u_2)^\dag(-\ga^5) \ga^0(u_1)\nl\nonumber
+\Rightarrow (T)^* &=& (T)^\dag ~,~~ \\ 
+&=& (\ou_1\ga^5 u_2)^\dag ~,~~ \nl 
+&=& ((u_1)^\dag\ga^0\ga^5 u_2)^\dag \nl 
+&=& (u_2)^\dag(\ga^5)^\dag (\ga^0)^\dag(u_1)\nl 
+&=& (u_2)^\dag(-\ga^5) \ga^0(u_1)\nl 
 &=& (u_2)^\dag \ga^0\ga^5(u_1)\nl
 &=& \ou_2\ga^5(u_1) 
 \eea 
@@ -279,39 +279,39 @@ Therefore  $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$
 
 In order to square $T$ we do the following: 
 \bea 
-T^2&=& Tr[\ou_1 \ga^5 u_2\ou_2 \ga^5 u_1] \\ \nonumber
-&=& Tr[u_1 \ou_1 \ga^5 \slashed{p}_2 \ga^5] \nl\nonumber
-&=& Tr[\slashed{p}_1 \ga^5 \slashed{p}_2 \ga^5] \nl\nonumber
-&=& Tr[(p_1)_\mu \ga^\mu \ga^5 (p_2)_\nu \ga^\nu \ga^5] \nl\nonumber
-&=& (p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^5\ga^\nu\ga^5] \nl\nonumber
-&=& -(p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^5\ga^5\ga\nu]\nl\nonumber
-&=& -(p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^\nu]\nl\nonumber
-&=& -(p_1)_\mu(p_2)_\nu (4g^{\mu\nu})\nl\nonumber
+T^2&=& Tr[\ou_1 \ga^5 u_2\ou_2 \ga^5 u_1] \\  
+&=& Tr[u_1 \ou_1 \ga^5 \slashed{p}_2 \ga^5] \nl 
+&=& Tr[\slashed{p}_1 \ga^5 \slashed{p}_2 \ga^5] \nl 
+&=& Tr[(p_1)_\mu \ga^\mu \ga^5 (p_2)_\nu \ga^\nu \ga^5] \nl 
+&=& (p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^5\ga^\nu\ga^5] \nl 
+&=& -(p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^5\ga^5\ga\nu]\nl 
+&=& -(p_1)_\mu(p_2)_\nu Tr[\ga^\mu\ga^\nu]\nl 
+&=& -(p_1)_\mu(p_2)_\nu (4g^{\mu\nu})\nl 
 &=& -4(p_1)(p_2) \nl
 \eea
 
 \item While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$ is more difficult to solve \nl
 The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
 \bea 
-(\si^{\mu\nu})^\dag &=& (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag \\\nonumber
-&=&(u_2)^\dag (\si^{\mu\nu})^\dag (\ga^0)^\dag u_1 \nl \nonumber
+(\si^{\mu\nu})^\dag &=& (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag \\ 
+&=&(u_2)^\dag (\si^{\mu\nu})^\dag (\ga^0)^\dag u_1 \nl  
 &=& \frac{i}{2}([\ga^\mu,\ga^\nu])^\dag\nl
-&=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag \nl\nonumber
-&=& \frac{i}{2}((\ga^\mu)^\dag(\ga^\nu)^\dag-(\ga^\nu)^\dag(\ga^\mu)^\dag) \nl\nonumber
-&=& \frac{i}{2}(\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0-\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0)\nl\nonumber
-&=& \frac{i}{2}(\ga^0\ga^\mu\ga^\nu\ga^0-\ga^0\ga^\nu \ga^\mu\ga^0)\nl\nonumber
-&=& \frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \nl\nonumber
+&=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag \nl 
+&=& \frac{i}{2}((\ga^\mu)^\dag(\ga^\nu)^\dag-(\ga^\nu)^\dag(\ga^\mu)^\dag) \nl 
+&=& \frac{i}{2}(\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0-\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0)\nl 
+&=& \frac{i}{2}(\ga^0\ga^\mu\ga^\nu\ga^0-\ga^0\ga^\nu \ga^\mu\ga^0)\nl 
+&=& \frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \nl 
 &=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu \ga^\mu)\nl
 &=& \si^{\mu\nu}
 \eea 
 After showing $(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is true it is trivial to show $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$ \nl
 We let $B^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 \bea
-\Rightarrow (B^{\mu\nu})^* &=& (B^{\mu\nu})^\dag ~,~~ \\\nonumber
-&=& (\ou_1 \si^{\mu\nu} u_2)^\dag ~,~~ \nl\nonumber
-&=& ((u_1)^\dag \ga^0 \si^{\mu\nu} u_2)^\dag \nl\nonumber
-&=& (u_2^\dag)(\si^{\mu\nu})^\dag (\ga^0)^\dag(u_1)\nl\nonumber
-&=& (u_2^\dag)\si^{\mu\nu}\ga^0(u_1)\nl\nonumber
+\Rightarrow (B^{\mu\nu})^* &=& (B^{\mu\nu})^\dag ~,~~ \\ 
+&=& (\ou_1 \si^{\mu\nu} u_2)^\dag ~,~~ \nl 
+&=& ((u_1)^\dag \ga^0 \si^{\mu\nu} u_2)^\dag \nl 
+&=& (u_2^\dag)(\si^{\mu\nu})^\dag (\ga^0)^\dag(u_1)\nl 
+&=& (u_2^\dag)\si^{\mu\nu}\ga^0(u_1)\nl 
 &=& (u_2^\dag)(\ga^0)\si^{\mu\nu}(u_1)\nl
 &=& \ou_2 \si^{\mu\nu}(u_1)
 \eea 
@@ -319,11 +319,11 @@ We let $B^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ is not an independent quantity. Since $\ga^5 =i\ga^0\ga^1\ga^2\ga^3$ it follows that the product of $\si^{\mu\nu}$ and $\ga^5$ can be simplified to an expression with only 2 $\ga$ matrices which has been defined as a pusedoscalar.\nl
 For example, let $\mu =0$ and $\nu=1$:
 \bea 
-\ou \si^{01} \ga^5 u &=& \ou \si^{01} (i\ga^0\ga^1\ga^2\ga^3) u \\\nonumber
-&=&  \ou ((\frac{i}{2})(\ga^0\ga^1 -\ga^1\ga^0)) (i\ga^0\ga^1\ga^2\ga^3) u \nl\nonumber
-&=&  \ou (\frac{i}{2})[\ga^0\ga^1(i\ga^0\ga^1\ga^2\ga^3) -\ga^1\ga^0(i\ga^0\ga^1\ga^2\ga^3)] u \nl\nonumber
-&=&  \ou (\frac{-1}{2})[\ga^0\ga^1\ga^0\ga^1\ga^2\ga^3 -\ga^1\ga^0\ga^0\ga^1\ga^2\ga^3)] u \nl\nonumber
-&=& \ou (\frac{-1}{2})[-\ga^2\ga^3 -\ga^2\ga^3)] u\nl\nonumber
+\ou \si^{01} \ga^5 u &=& \ou \si^{01} (i\ga^0\ga^1\ga^2\ga^3) u \\ 
+&=&  \ou ((\frac{i}{2})(\ga^0\ga^1 -\ga^1\ga^0)) (i\ga^0\ga^1\ga^2\ga^3) u \nl 
+&=&  \ou (\frac{i}{2})[\ga^0\ga^1(i\ga^0\ga^1\ga^2\ga^3) -\ga^1\ga^0(i\ga^0\ga^1\ga^2\ga^3)] u \nl 
+&=&  \ou (\frac{-1}{2})[\ga^0\ga^1\ga^0\ga^1\ga^2\ga^3 -\ga^1\ga^0\ga^0\ga^1\ga^2\ga^3)] u \nl 
+&=& \ou (\frac{-1}{2})[-\ga^2\ga^3 -\ga^2\ga^3)] u\nl 
 &=& \ou (\frac{-1}{2})[-2\ga^2\ga^3] u\nl
 &=& 2\ou \ga^2\ga^3 u 
 \eea 
@@ -331,8 +331,8 @@ This expression (because it contains two gamma matrices) is a puesdoscalar. Any 
 
 In order to find the value of $(B^{\mu\nu})^2$ one needs to do the following: 
 \bea 
-(B^{\mu\nu\si\la})^2 &=& Tr[\ou_1 \si^{\mu\nu} u_2\ou_2 \si^{\si\la}u_1]\\\nonumber
-&=& Tr[\ou_1 \si^{\mu\nu}\slashed{p}_2 \si^{\si\la} u_1]\nl\nonumber
+(B^{\mu\nu\si\la})^2 &=& Tr[\ou_1 \si^{\mu\nu} u_2\ou_2 \si^{\si\la}u_1]\\ 
+&=& Tr[\ou_1 \si^{\mu\nu}\slashed{p}_2 \si^{\si\la} u_1]\nl 
 &=& Tr[\slashed{p}_1\si^{\mu\nu}\slashed{p}_2 \si^{\si\la}]\nl
 &=& Tr[p_\ka \ga^\ka \si^{\mu\nu}p_\ga \ga^\ga \si^{\si\la}]\nl 
 &=& p_\ka p_\ga Tr[\ga^\ka \si^{\mu\nu}\ga^\ga \si^{\si\la}]\nl
