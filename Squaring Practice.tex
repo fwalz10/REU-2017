@@ -210,7 +210,7 @@ Why is $|V^\mu|^2 ~\ne~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga_\mu u_1]$? \\
 Why is $|V^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$? \\ \\
 
 You start with one index $\mu$. When you square why do you get two indices and not a sum over two of the same index? \\
-When you square you have two indices because you must increase the number of components. The number of components when you square should go as $n^2$ not simply $n$. When you have one index, you restrict the number of components, because you have 4 components, and not 16.
+When you square you have two indices because you must increase the number of components. The number of components when you square should go as $n^2$ not simply $n$. When you have one index, you restrict the number of components, because you have 4 components and not 16.
 
 \bigskip
 
@@ -310,27 +310,27 @@ In order to square $P$ we do the following:
 &=& 4(p_1)(p_2)
 \eea}
 
-\item {\cre While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$ is more difficult to solve. The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
+\item  While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\nu\mu} u_1$ is more difficult to solve. The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
 \bea
 (\si^{\mu\nu})^\dag &=& (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag \\
 &=& \frac{i}{2}([\ga^\mu,\ga^\nu])^\dag\\
 &=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag \\
 &=& \frac{i}{2}((\ga^\nu)^\dag(\ga^\mu)^\dag-(\ga^\mu)^\dag(\ga^\nu)^\dag) \\
 &=& \frac{i}{2}(\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0-\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0)\\
-&=& \frac{i}{2}(\ga^0\ga^\mu\ga^\nu\ga^0-\ga^0\ga^\nu \ga^\mu\ga^0)\\
-&=& \frac{i}{2}((-1)^2\ga^\nu\ga^\mu-(-1)^2\ga^\mu \ga^\nu) \\
-&=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu \ga^\mu)\\
-&=& \si^{\mu\nu}
+&=& \frac{i}{2}(\ga^0\ga^\nu\ga^\mu\ga^0-\ga^0\ga^\mu \ga^\nu\ga^0)\\
+&=& \frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \\
+&=& \frac{i}{2}(\ga^\nu\ga^\mu-\ga^\mu \ga^\nu)\\
+&=& \si^{\nu\mu}
 \eea
-After showing $(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is true it is trivial to show $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$.
+After showing $(\si^{\mu\nu})^\dag =\si^{\nu\mu}$ is true it is trivial to show $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\nu\mu} u_1$.\\
 We let $T^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 \bea
 (T^{\mu\nu})^* &=& (T^{\mu\nu})^\dag ~,~~ \\
 &=& (\ou_1 \si^{\mu\nu} u_2)^\dag \\
 &=& ((u_1)^\dag \ga^0 \si^{\mu\nu} u_2)^\dag \\
 &=& (u_2^\dag)(\si^{\mu\nu})^\dag (\ga^0)^\dag(u_1)\\
-&=& (u_2^\dag)\si^{\mu\nu}\ga^0(u_1)\\
-&=& (u_2^\dag)(\ga^0)\si^{\mu\nu}(u_1)\\
+&=& (u_2^\dag)\si^{\nu\mu}\ga^0(u_1)\\
+&=& (u_2^\dag)(\ga^0)\si^{\nu\mu}(u_1)\\
 &=& \ou_2 \si^{\mu\nu}(u_1)
 \eea
 
@@ -343,9 +343,9 @@ An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ i
 &=&  \ou (\frac{-1}{2})[\ga^0\ga^1\ga^0\ga^1\ga^2\ga^3 -\ga^1\ga^0\ga^0\ga^1\ga^2\ga^3)] u \\
 &=& \ou (\frac{-1}{2})[-\ga^2\ga^3 -\ga^2\ga^3)] u\\
 &=& \ou (\frac{-1}{2})[-2\ga^2\ga^3] u\\
-&=& 2\ou \ga^2\ga^3 u
+&=& \ou \ga^2\ga^3 u
 \eea
-This expression (because it contains two gamma matrices) is a pseudoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and identity properties of the gamma matrices.}
+This expression (because it contains two gamma matrices) is a pseudoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and identity properties of the gamma matrices.
 
 In order to find the value of $|B^{\mu\nu}|^2$ one needs to do the following:
 {\cre
@@ -358,7 +358,7 @@ In order to find the value of $|B^{\mu\nu}|^2$ one needs to do the following:
 &=& -\frac{1}{2} p_\ka p_\ga \Tr[\ga^\ka (\ga^\mu \ga^\nu - \ga^\nu \ga^\mu) \ga^\ga (\ga^\si \ga^\la - \ga^\la \ga^\si)]\\
 &=& -\frac{1}{2} p_\ka p_\ga \Tr[2\ga^\ka \ga^\mu \ga^\nu \ga^\ga \ga^\si \ga^\la  - 2\ga^\ka \ga^\nu \ga^\mu \ga^\ga \ga^\si \ga^\la]\\
 &=& -\frac{1}{2} p_\ka p_\ga \Tr[4\ga^\ka \ga^\mu \ga^\nu \ga^\ga \ga^\si \ga^\la]\\
-&=& -2p_\ka p_\ga \Tr[\ga^\ka \ga^\ga]~{\rm Using~ a~ similar~ identity~ as~ shown~ in~ eq.~ 23}\\
+&=& -2p_\ka p_\ga \Tr[\ga^\ka \ga^\ga]~{\rm Using~ a~ similar~ identity~ as~ shown~ in~ eq.~ 91}\\
 &=& -8p_\ka p_\ga g^{\ka\ga}
 \eea
 }
