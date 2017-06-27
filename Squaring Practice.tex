@@ -178,6 +178,11 @@ Notation:
 \item $T^{\mu\nu} = \ou \si^{\mu\nu} u$
 \end{enumerate}
 \bigskip
+
+{\cre Please follow the above naming convention in the rest of the notes. Make appropriate modifications.}
+
+{\cre Anything marked in red has a mistake in it. Please work on it and fix it.}
+
 \begin{enumerate}
 
 \item$(\ou_1\ga^\mu u_2)^*$ ~=~?
@@ -200,26 +205,17 @@ L^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \nl
 Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $|L^\mu|^2$ we simply use $|L^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$.
 
 
-\subsubsection*{Question: Do not erase! Answer it.}
-{\cgr $L^\mu ~=~ \ou_1\ga^\mu u_2$ clearly has one Lorentz index $\mu$. But, $|L^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$ can be written as some other quantity ${\cal L}^{\mu\nu}$, i.e. it has two Lorentz indices $\mu$ and $\nu$. Why?}\\
-The reason is because you cannot have two of the same indices written together in the same line, if so they cannot be contracted due to index notation rules.\\
-{\cre But what's wrong with $\Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga_\mu u_1]$? Why increase the number of indices and not decrease it?}\\
-
-If you have a term such as $\ou_1 \ga^\mu u_2 \ou_2 \ga_\mu u_1$ you need to state explicitly that the indices are not summed because that is the convention with an expression such as $\ga^\mu \ga_\mu$. \\
-
-{\cre That is not correct. $\ga^\mu\ga_\mu = \ga^\mu \ga^\nu g_{\mu\nu} = \ga^0 \ga^0 - \ga^1\ga^1 - \ga^2\ga^2 - \ga^3\ga^3$. This is just an expression. The question is why is the left-hand side not the same as the right-hand side?}
-
-Also with the upper and lowering of matrices that implies a change of basis since you cannot arbitrarily raise/lower an index.
-{\cre Nothing wrong with raising/lowering indices: see above.}
-
-{\cre
+\underline{Question:} \\
 Why is $|L^\mu|^2 ~\ne~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga_\mu u_1]$? \\
-Why is $|L^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$?
+Why is $|L^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$? \\ \\
 
-You start with one index $\mu$. When you square why do you get two indices and not a sum over two of the same index?}\\
-When you square you have two indices because you must increase the number of components. The number of components when you square should go as $n^2$ not simply $n$. When you have one index, you restrict the number of components, because you have 4 components, and not 16.\\ 
+You start with one index $\mu$. When you square why do you get two indices and not a sum over two of the same index? \\
+When you square you have two indices because you must increase the number of components. The number of components when you square should go as $n^2$ not simply $n$. When you have one index, you restrict the number of components, because you have 4 components, and not 16.
+
 \bigskip
+
 Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\si]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$, The trace over the product of an odd number of gamma matrices is zero.
+
 \bea
 |L^{\mu}|^2 &=& \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \nl
 &=& \Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\nl
@@ -231,7 +227,7 @@ Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\s
 &=& (p_1)_\la (p_2)_\si \Tr[\ga^\la \ga^\mu\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl
 &=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) + 4m^2g^{\mu\nu}\nl
 &=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] + 4m^2g^{\mu\nu} \nl
-&=& 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 + m^2) + p_2^\mu p_1^\nu]
+&=& {\cre 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 + m^2) + p_2^\mu p_1^\nu]}
 \eea
 
 \item $(\ou_1\ga^\mu \ga^5 u_2)^*$ is also a $1\times1$ Matrix so the same reasoning applies as above in 1. Note: $(\ga^5)^\dag = \ga^5$
@@ -265,7 +261,7 @@ We also are able to calculate $|R^\mu|^2$
 &=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^\si\ga^\nu] - m^2(g^{\mu\nu})\nl
 &=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - 4m^2g^{\mu\nu}\nl
 &=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] - 4m^2g^{\mu\nu} \nl
-&=& 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 - m^2) + p_2^\mu p_1^\nu]
+&=& {\cre 4[p_1^\mu p_2^\nu - 4g^{\mu\nu}(p_1 \cdot p_2 - m^2) + p_2^\mu p_1^\nu]}
 \eea
 
 \item $ (\ou_1 u_2)^* ~=~ ?$
@@ -290,7 +286,7 @@ In order to find $|P|^2$ we simply do the following:
 &=& 4(p_1 \cdot p_2)+4m^2
 \eea
 
-\item By the same reasoning as shown above it can be shown that $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$ \\
+\item {\cre By the same reasoning as shown above it can be shown that $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$ \\
 If we let $T ~=~ \ou_1\ga^5 u_2$ then:
 \bea
 \Rightarrow (T)^* &=& (T)^\dag  \\\
@@ -313,10 +309,10 @@ In order to square $T$ we do the following:
 &=& -(p_1)_\mu(p_2)_\nu \Tr[\ga^\mu\ga^5\ga^5\ga\nu]\nl
 &=& -(p_1)_\mu(p_2)_\nu \Tr[\ga^\mu\ga^\nu]\nl
 &=& -(p_1)_\mu(p_2)_\nu (4g^{\mu\nu})\nl
-&=& -4(p_1)(p_2) \nl
-\eea
+&=& -4(p_1)(p_2)
+\eea}
 
-\item While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$ is more difficult to solve. The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
+\item {\cre While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\mu\nu} u_1$ is more difficult to solve. The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
 \bea
 (\si^{\mu\nu})^\dag &=& (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag \\
 &=&(u_2)^\dag (\si^{\mu\nu})^\dag (\ga^0)^\dag u_1 \nl
@@ -341,6 +337,7 @@ We let $B^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 &=& \ou_2 \si^{\mu\nu}(u_1)
 \eea
 
+
 An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ is not an independent quantity. Since $\ga^5 =i\ga^0\ga^1\ga^2\ga^3$ it follows that the product of $\si^{\mu\nu}$ and $\ga^5$ can be simplified to an expression with only 2 $\ga$ matrices which has been defined as a pseudoscalar. For example, let $\mu =0$ and $\nu=1$:
 \bea
 \ou \si^{01} \ga^5 u &=& \ou \si^{01} (i\ga^0\ga^1\ga^2\ga^3) u \\
@@ -351,9 +348,10 @@ An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ i
 &=& \ou (\frac{-1}{2})[-2\ga^2\ga^3] u\nl
 &=& 2\ou \ga^2\ga^3 u
 \eea
-This expression (because it contains two gamma matrices) is a pseudoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and identity properties of the gamma matrices.
+This expression (because it contains two gamma matrices) is a pseudoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and identity properties of the gamma matrices.}
 
 In order to find the value of $|B^{\mu\nu}|^2$ one needs to do the following:
+{\cre
 \bea
 |B^{\mu\nu}|^2 &=& \Tr[\ou_1 \si^{\mu\nu} u_2\ou_2 \si^{\si\la}u_1]\nl
 &=& \Tr[\ou_1 \si^{\mu\nu}\slashed{p}_2 \si^{\si\la} u_1]\nl
@@ -366,6 +364,6 @@ In order to find the value of $|B^{\mu\nu}|^2$ one needs to do the following:
 &=& -2p_\ka p_\ga \Tr[\ga^\ka \ga^\ga]~{\rm Using~ a~ similar~ identity~ as~ shown~ in~ eq.~ 23}\nl
 &=& -8p_\ka p_\ga g^{\ka\ga}
 \eea
-
+}
 \end{enumerate}
 \end{document}
