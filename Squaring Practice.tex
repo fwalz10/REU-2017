@@ -202,7 +202,7 @@ V^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \\
 &=& (u_2^\dag)\ga^0\ga^\mu(u_1)\\
 &=& \ou_2\ga^\mu(u_1)
 \eea
-Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $|L^\mu|^2$ we simply use $|V^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$.
+Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $|V^\mu|^2$ we simply use $|V^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$.
 
 
 \underline{Question:} \\
@@ -217,7 +217,7 @@ When you square you have two indices because you must increase the number of com
 Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\si]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$, The trace over the product of an odd number of gamma matrices is zero.
 
 \bea
-|L^{\mu}|^2 &=& \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\
+|V^{\mu}|^2 &=& \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\
 &=& \Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\\
 &=& \Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu]\\
 &=& \Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu]\\
@@ -253,6 +253,9 @@ We also are able to calculate $|A^\mu|^2$
 &=&\Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\\
 &=&\Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\\
 &=& \Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu\ga^5\ga^\nu \ga^5 +\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
+&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu(-\ga^5 \ga^5)\ga^\nu +\slashed{p}_2\ga^\mu(-\ga^5\ga^5) \ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
+&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 - m( \slashed{p}_1\ga^\mu\ga^\nu +\slashed{p}_2\ga^\mu\ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
+&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5] -mTr[ \slashed{p}_1\ga^\mu\ga^\nu]-mTr[ \slashed{p}_2\ga^\mu\ga^\nu]+ m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
 &=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
 &=& \Tr[(p_1)_\la\ga^\la\ga^\mu\ga^5 (p_2)_\si\ga^\si\ga^\nu \ga^5] + m^2\Tr[\ga^\mu\ga^5\ga^\nu \ga^5]\\
 &=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^5 \ga^\si\ga^\nu \ga^5] - m^2\Tr[\ga^\mu\ga^5\ga^5 \ga^\nu]\\
@@ -263,7 +266,7 @@ We also are able to calculate $|A^\mu|^2$
 \eea
 
 \item $ (\ou_1 u_2)^* ~=~ ?$
-We let:$S ~=~ \ou_1 u_2$
+We let $S ~=~ \ou_1 u_2$
 \bea
 (S)^* &=& (S)^\dag \\
 &=& (\ou_1 u_2)^\dag ~,~~ \\
@@ -299,68 +302,88 @@ Therefore  $(\ou_1 \ga^5 u_2)^* ~=~ -\ou_2 \ga^5 u_1$
 
 In order to square $P$ we do the following:
 \bea
-|T|^2&=& \Tr[\ou_1 \ga^5 u_2(-\ou_2 \ga^5 u_1)] \\
-&=& -\Tr[u_1 \ou_1 \ga^5 -\slashed{p}_2 \ga^5] \\
-&=& -\Tr[\slashed{p}_1 \ga^5 \slashed{p}_2 \ga^5] \\
-&=& -\Tr[(p_1)_\mu \ga^\mu \ga^5 (p_2)_\nu \ga^\nu \ga^5] \\
-&=& -(p_1)_\mu(p_2)_\nu \Tr[\ga^\mu\ga^5\ga^\nu\ga^5] \\
-&=& (p_1)_\mu(p_2)_\nu \Tr[\ga^\mu\ga^5\ga^5\ga\nu]\\
-&=& (p_1)_\mu(p_2)_\nu \Tr[\ga^\mu\ga^\nu]\\
-&=& (p_1)_\mu(p_2)_\nu (4g^{\mu\nu})\\
-&=& 4(p_1)(p_2)
-\eea}
+|P|^2&=& \Tr[\ou_1 \ga^5 u_2(-\ou_2 \ga^5 u_1)] \\
+&=& \Tr[u_1 \ou_1 \ga^5(-\slashed{p}_2 - m) \ga^5] \\
+&=& \Tr[(\slashed{p}_1+m) \ga^5 (-\slashed{p}_2-m) \ga^5] \\
+&=& \Tr[((p_1)_\mu \ga^\mu+m) \ga^5 ((-p_2)_\nu\ga^\nu-m)  \ga^5] \\
+&=& \Tr[((p_1)_\mu \ga^\mu\ga^5+m\ga^5) ((-p_2)_\nu\ga^\nu\ga^5-m\ga^5)] \\
+&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5+ m\ga^5(-p_2)_\nu\ga^\nu\ga^5 -m\ga^5(p_1)_\mu \ga^\mu\ga^5 - \ga^5\ga^5m^2)] \nl
+&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] + Tr[ m\ga^5(-\ga^5)(-p_2)_\nu\ga^\nu] - Tr[m\ga^5(-\ga^5)(p_1)_\mu \ga^\mu] - Tr[m^2] \nl
+&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] -Tr[ m(-p_2)_\nu\ga^\nu] + Tr[m(p_1)_\mu \ga^\mu] - 4m^2 \\
+&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] - 4m^2 \\
+&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5\ga^\nu\ga^5]- 4m^2 \\
+&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5(-\ga^5\ga^\nu)]- 4m^2\\
+&=& (p_1)_\mu(-p_2)_\nu (-\Tr[\ga^\mu\ga^\nu])- 4m^2\\
+&=& (p_1)_\mu(-p_2)_\nu (-4g^{\mu\nu})- 4m^2\\
+&=& 4(p_1)(p_2)- 4m^2
+\eea
 
 \item  While the above identities could be shown to be trivial, the identity: $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\nu\mu} u_1$ is more difficult to solve. The identity:$(\si^{\mu\nu})^\dag =\si^{\mu\nu}$ is needed
 \bea
 (\si^{\mu\nu})^\dag &=& (\frac{i}{2}[\ga^\mu,\ga^\nu])^\dag \\
-&=& \frac{i}{2}([\ga^\mu,\ga^\nu])^\dag\\
-&=& \frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag \\
-&=& \frac{i}{2}((\ga^\nu)^\dag(\ga^\mu)^\dag-(\ga^\mu)^\dag(\ga^\nu)^\dag) \\
-&=& \frac{i}{2}(\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0-\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0)\\
-&=& \frac{i}{2}(\ga^0\ga^\nu\ga^\mu\ga^0-\ga^0\ga^\mu \ga^\nu\ga^0)\\
-&=& \frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \\
-&=& \frac{i}{2}(\ga^\nu\ga^\mu-\ga^\mu \ga^\nu)\\
-&=& \si^{\nu\mu}
+&=& -\frac{i}{2}([\ga^\mu,\ga^\nu])^\dag\\
+&=& -\frac{i}{2}(\ga^\mu\ga^\nu-\ga^\nu\ga^\mu)^\dag \\
+&=& -\frac{i}{2}((\ga^\nu)^\dag(\ga^\mu)^\dag-(\ga^\mu)^\dag(\ga^\nu)^\dag) \\
+&=& -\frac{i}{2}(\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0-\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0)\\
+&=& -\frac{i}{2}(\ga^0\ga^\nu\ga^\mu\ga^0-\ga^0\ga^\mu \ga^\nu\ga^0)\\
+&=& -\frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \\
+&=& -\frac{i}{2}(\ga^\nu\ga^\mu-\ga^\mu \ga^\nu)\\
+&=& -\si^{\nu\mu}
 \eea
-After showing $(\si^{\mu\nu})^\dag =\si^{\nu\mu}$ is true it is trivial to show $(\ou_1 \si^{\mu\nu} u_2)^* ~=~\ou_2 \si^{\nu\mu} u_1$.\\
+After showing $(\si^{\mu\nu})^\dag =\si^{\nu\mu}$ is true it is trivial to show $(\ou_1 \si^{\mu\nu} u_2)^* ~=~ -\ou_2 \si^{\nu\mu} u_1$.\\
 We let $T^{\mu\nu} ~=~ \ou_1 \si^{\mu\nu} u_2$
 \bea
 (T^{\mu\nu})^* &=& (T^{\mu\nu})^\dag ~,~~ \\
 &=& (\ou_1 \si^{\mu\nu} u_2)^\dag \\
 &=& ((u_1)^\dag \ga^0 \si^{\mu\nu} u_2)^\dag \\
 &=& (u_2^\dag)(\si^{\mu\nu})^\dag (\ga^0)^\dag(u_1)\\
-&=& (u_2^\dag)\si^{\nu\mu}\ga^0(u_1)\\
-&=& (u_2^\dag)(\ga^0)\si^{\nu\mu}(u_1)\\
+&=& (u_2^\dag)(-\si^{\nu\mu})\ga^0(u_1)\\
+&=& (u_2^\dag)(-\ga^0)(-\si^{\nu\mu})(u_1)\\
 &=& \ou_2 \si^{\mu\nu}(u_1)
 \eea
 
-
-An interesting thing to note is that the expression $\ou \si^{\mu\nu} \ga^5 u$ is not an independent quantity. Since $\ga^5 =i\ga^0\ga^1\ga^2\ga^3$ it follows that the product of $\si^{\mu\nu}$ and $\ga^5$ can be simplified to an expression with only 2 $\ga$ matrices which has been defined as a pseudoscalar. For example, let $\mu =0$ and $\nu=1$:
+In order to find the value of $|T^{\mu\nu}|^2$ one needs to find the value of $Tr[\si^{\si\la}\si^{\mu\nu}]$\\
 \bea
-\ou \si^{01} \ga^5 u &=& \ou \si^{01} (i\ga^0\ga^1\ga^2\ga^3) u \\
-&=&  \ou ((\frac{i}{2})(\ga^0\ga^1 -\ga^1\ga^0)) (i\ga^0\ga^1\ga^2\ga^3) u \\
-&=&  \ou (\frac{i}{2})[\ga^0\ga^1(i\ga^0\ga^1\ga^2\ga^3) -\ga^1\ga^0(i\ga^0\ga^1\ga^2\ga^3)] u \\
-&=&  \ou (\frac{-1}{2})[\ga^0\ga^1\ga^0\ga^1\ga^2\ga^3 -\ga^1\ga^0\ga^0\ga^1\ga^2\ga^3)] u \\
-&=& \ou (\frac{-1}{2})[-\ga^2\ga^3 -\ga^2\ga^3)] u\\
-&=& \ou (\frac{-1}{2})[-2\ga^2\ga^3] u\\
-&=& \ou \ga^2\ga^3 u
+Tr[\si^{\si\la}\si^{\mu\nu}]&=& Tr[\frac{i}{2}(\ga^\si\ga^\la - \ga^\la\ga^\si)\frac{i}{2}(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
+&=& Tr[\frac{i}{2}(\ga^\si\ga^\la - \ga^\la\ga^\si)\frac{i}{2}(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
+&=& -\frac{1}{4}Tr[(\ga^\si\ga^\la - \ga^\la\ga^\si)(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
+&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu -\ga^\si\ga^\la\ga^\nu\ga^\mu- \ga^\la\ga^\si\ga^\mu\ga^\nu + \ga^\la\ga^\si\ga^\nu\ga^\mu]\\
+&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu -\ga^\si\ga^\la(-\ga^\mu\ga^\nu)- (-\ga^\si\ga^\la)\ga^\mu\ga^\nu + (-\ga^\si\ga^\la)(-\ga^\mu\ga^\nu)]\nl
+&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu +\ga^\si\ga^\la\ga^\mu\ga^\nu+\ga^\si\ga^\la\ga^\mu\ga^\nu +\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
+&=& -\frac{1}{4}Tr[4\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
+&=& -Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
+&=& Tr[\ga^\mu\ga^\nu\ga^\la\ga^\si]\\
+&=& 4(g^{\mu\nu}g^{\la\si}- g^{\mu\la}g^{\nu\si}+g^{\mu\si}g^{\nu\la})\\
 \eea
-This expression (because it contains two gamma matrices) is a pseudoscalar. Any values of $\mu$ and $\nu$ can be shown to be similar to this because of the communal and identity properties of the gamma matrices.
 
-In order to find the value of $|B^{\mu\nu}|^2$ one needs to do the following:
-{\cre
+In order to find the value of $|T^{\mu\nu}|^2$ one needs to do the following:
 \bea
-|B^{\mu\nu}|^2 &=& \Tr[\ou_1 \si^{\mu\nu} u_2\ou_2 \si^{\si\la}u_1]\\
-&=& \Tr[\ou_1 \si^{\mu\nu}\slashed{p}_2 \si^{\si\la} u_1]\\
-&=& \Tr[\slashed{p}_1\si^{\mu\nu}\slashed{p}_2 \si^{\si\la}]\\
-&=& \Tr[p_\ka \ga^\ka \si^{\mu\nu}p_\ga \ga^\ga \si^{\si\la}]\\
-&=& p_\ka p_\ga \Tr[\ga^\ka \si^{\mu\nu}\ga^\ga \si^{\si\la}]\\
-&=& -\frac{1}{2} p_\ka p_\ga \Tr[\ga^\ka (\ga^\mu \ga^\nu - \ga^\nu \ga^\mu) \ga^\ga (\ga^\si \ga^\la - \ga^\la \ga^\si)]\\
-&=& -\frac{1}{2} p_\ka p_\ga \Tr[2\ga^\ka \ga^\mu \ga^\nu \ga^\ga \ga^\si \ga^\la  - 2\ga^\ka \ga^\nu \ga^\mu \ga^\ga \ga^\si \ga^\la]\\
-&=& -\frac{1}{2} p_\ka p_\ga \Tr[4\ga^\ka \ga^\mu \ga^\nu \ga^\ga \ga^\si \ga^\la]\\
-&=& -2p_\ka p_\ga \Tr[\ga^\ka \ga^\ga]~{\rm Using~ a~ similar~ identity~ as~ shown~ in~ eq.~ 91}\\
-&=& -8p_\ka p_\ga g^{\ka\ga}
+|T^{\mu\nu}|^2 &=& \Tr[\ou_1 \si^{\mu\nu} u_2\ou_2 \si^{\si\la}u_1]\\
+&=& \Tr[\ou_1 \si^{\mu\nu}(\slashed{p}_2+m) \si^{\si\la} u_1]\\
+&=& \Tr[(\slashed{p}_1+m)\si^{\mu\nu}(\slashed{p}_2+m) \si^{\si\la}]\\
+&=& \Tr[((p_1)_\ka \ga^\ka +m)\si^{\mu\nu}((p_2)_\ga \ga^\ga+m) \si^{\si\la}]\\
+&=& \Tr[((p_1)_\ka  \ga^\ka\si^{\mu\nu} +m\si^{\mu\nu})((p_2)_\ga \ga^\ga\si^{\si\la}+m\si^{\si\la})]\\
+&=& \Tr[((p_1)_\ka \ga^\ka\si^{\mu\nu}(p_2)_\ga \ga^\ga\si^{\si\la} + (p_1)_\ka \ga^\ka\si^{\mu\nu}m\si^{\si\la} +(p_2)_\ga \ga^\ga\si^{\si\la}m\si^{\mu\nu}+m\si^{\si\la}m\si^{\mu\nu})]\\
+&=& \Tr[((p_1)_\ka  \ga^\ka\si^{\mu\nu}(p_2)_\ga \ga^\ga\si^{\si\la}] +Tr[(p_1)_\ka \ga^\ka\si^{\mu\nu}m\si^{\si\la} + (p_2)_\ga \ga^\ga\si^{\si\la}m\si^{\mu\nu}]+Tr[m\si^{\si\la}m\si^{\mu\nu}]\nl
+&=& \Tr[((p_1)_\ka \ga^\ka\si^{\mu\nu}(p_2)_\ga \ga^\ga\si^{\si\la}] +Tr[m\si^{\si\la}m\si^{\mu\nu}]\\
+&=& \Tr[((p_1)_\ka  \ga^\ka\si^{\mu\nu}(p_2)_\ga \ga^\ga \si^{\si\la}] +m^2Tr[\si^{\si\la}\si^{\mu\nu}]{\rm~Let~ B~=m^2Tr[\si^{\si\la}\si^{\mu\nu}]}\nl
+&=& \Tr[((p_1)_\ka  \ga^\ka\si^{\mu\nu}(p_2)_\ga \ga^\ga \si^{\si\la}] +B\nl
+&=& (p_1)_\ka (p_2)_\ga \Tr[\ga^\ka \si^{\mu\nu}\ga^\ga \si^{\si\la}]+B\nl
+&=& (p_1)_\ka (p_2)_\ga \Tr[\ga^\ka (\frac{i}{2}((\ga^\mu \ga^\nu - \ga^\nu\ga^\mu)\ga^\ga(\frac{i}{2}(\ga^\si \ga^\la - \ga^\la \ga^\si))]+B\\
+&=& -\frac{1}{4} (p_1)_\ka (p_2)_\ga\Tr[\ga^\ka (\ga^\mu \ga^\nu - \ga^\nu \ga^\mu) \ga^\ga (\ga^\si \ga^\la - \ga^\la \ga^\si)]+B{\rm~(Let~ A~=-\frac{1}{4} (p_1)_\ka (p_2)_\ga)}\nl
+&=& (A)\Tr[(\ga^\ka \ga^\mu \ga^\nu -\ga^\ka \ga^\nu \ga^\mu) (\ga^\ga\ga^\si \ga^\la - \ga^\ga\ga^\la \ga^\si)]+B \nl
+&=& (A)\Tr[(\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\si \ga^\la -\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\la \ga^\si -  \ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si \ga^\la + \ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\la \ga^\si)]+B\nl
+&=& (A)\Tr[(\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\si \ga^\la -\ga^\ka \ga^\mu \ga^\nu\ga^\ga(-\ga^\si \ga^\la) - \ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si \ga^\la + \ga^\ka \ga^\nu \ga^\mu\ga^\ga(-\ga^\si \ga^\la))]+B\nl
+&=& (A)\Tr[(\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\si \ga^\la +\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\si \ga^\la - \ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si \ga^\la - \ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si \ga^\la))]+B\nl
+&=& (A)\Tr[2\ga^\ka \ga^\mu \ga^\nu\ga^\ga\ga^\si\ga^\la- 2\ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si\ga^\la]+B\\
+&=& (A)\Tr[2\ga^\ka (-\ga^\nu \ga^\mu)\ga^\ga\ga^\si\ga^\la- 2\ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si\ga^\la]+B\\
+&=& (A)\Tr[-2\ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si\ga^\la- 2\ga^\ka \ga^\nu \ga^\mu\ga^\ga\ga^\si\ga^\la]+B\\
+&=& (A) \Tr[-4\ga^\ka \ga^\nu \ga^\mu \ga^\ga \ga^\si \ga^\la]+B\\
+&=& -\frac{1}{4} (p_1)_\ka (p_2)_\ga \Tr[-4\ga^\ka \ga^\mu \ga^\nu \ga^\ga \ga^\si \ga^\la]+B\\
+&=& (p_1)_\ka (p_2)_\ga\Tr[\ga^\ka \ga^\ga]+B~{\rm (Using~ a~ similar~ identity~ as~ shown~ in~ eq.~ 91)}\\
+&=& 4(p_1)_\ka (p_2)_\ga g^{\ka\ga}+B\\
+&=& 4p_1p_2 + m^2Tr[\si^{\si\la}\si^{\mu\nu}]\\
+&=& 4p_1p_2 + m^24(g^{\mu\nu}g^{\la\si}- g^{\mu\la}g^{\nu\si}+g^{\mu\si}g^{\nu\la})
 \eea
-}
 \end{enumerate}
 \end{document}
