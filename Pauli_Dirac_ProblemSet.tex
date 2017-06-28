@@ -1,0 +1,280 @@
+% Fun with gamma matrices
+% May 05, 2016
+
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{framed}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{slashed}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{bigints}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{9in}
+\voffset-1.5truecm
+
+\def \beq{\begin{equation}}
+\def \eeq{\end{equation}}
+\def \bea{\begin{eqnarray}}
+\def \eea{\end{eqnarray}}
+\def \ba{\begin{array}}
+\def \ea{\end{array}}
+\def \beg{\begin{gather}}
+\def \eeg{\end{gather}}
+\def \bmat{\begin{matrix}}
+\def \emat{\end{matrix}}
+\def \bfra{\begin{framed}}
+\def \efra{\end{framed}}
+
+\def \({\left(}
+\def \){\right)}
+\def \[{\left[}
+\def \]{\right]}
+\def \<{\left\langle}
+\def \>{\right\rangle}
+\def \lp{\left|}
+\def \rp{\right|}
+\def \lb{\left\{}
+\def \rb{\right\}}
+\def \l.{\left.}
+\def \r.{\right.}
+
+\def \bma{\(\bmat}
+\def \ema{\emat\)}
+
+\def \Tr{{\rm Tr}}
+\def \N{\rm N}
+\def \hc{{\rm h.\ c.}}
+
+\def \ph{\phantom}
+\def \nn{\nonumber}
+\def \nl{\nn \\}
+
+\def \of{\frac{1}{4}}
+\def \oth{\frac{1}{3}}
+\def \hf{\frac{1}{2}}
+\def \oet{\frac{1}{8}}
+\def \s{\sqrt{2}}
+\def \st{\sqrt{3}}
+\def \sx{\sqrt{6}}
+
+\def \cB{{\cal B}}
+\def \cC{{\cal C}}
+\def \cZ{{\cal Z}}
+\def \cL{{\cal L}}
+\def \cH{{\cal H}}
+\def \cO{{\cal O}}
+\def \cM{{\cal M}}
+\def \cl{\ell}
+
+\def \oq{\overline{q}}
+\def \of{\overline{f}}
+\def \os{\overline{s}}
+\def \ob{\overline{b}}
+\def \ou{\overline{u}}
+\def \ov{\overline{v}}
+\def \oBs{\overline{B^0_s}}
+\def \otau{\overline{\tau}}
+\def \omu{\overline{\mu}}
+\def \onu{\overline{\nu}}
+\def \osi{\overline{\si}}
+\def \oell{\overline{\ell}}
+\def \oL{\overline{L}}
+\def \oQ{\overline{Q}}
+
+\def \al{\alpha}
+\def \be{\beta}
+\def \ga{\gamma}
+\def \Ga{\Gamma}
+\def \de{\delta}
+\def \ka{\kappa}
+\def \De{\Delta}
+\def \ep{\epsilon}
+\def \tha{\theta}
+\def \la{\lambda}
+\def \La{\Lambda}
+\def \si{\sigma}
+\def \Si{\Sigma}
+\def \Up{\Upsilon}
+\def \om{\omega}
+\def \1{1}%\mathbb{I}}
+
+\def \pa{\partial}
+
+\def \SM{{\rm SM}}
+\def \elm{{\rm em}}
+\def \NP{{\rm NP}}
+\def \expt{{\rm expt}}
+\def \eff{{\rm eff}}
+\def \elm{{\rm em}}
+\def \RFG{{\rm RFG}}
+\def \CFG{{\rm CFG}}
+\def \PT{{\rm PT}}
+\def \hi{{\rm hi}}
+\def \lo{{\rm lo}}
+
+\def \Re{{\rm Re}}
+\def \Im{{\rm Im}}
+
+\def \keV{{\rm keV}}
+\def \MeV{{\rm MeV}}
+\def \GeV{{\rm GeV}}
+
+\def \cH{{\cal H}}
+\def \cI{{\cal I}}
+
+\def \Rqp{R_{q'}}
+
+\def\bwt{\begin{widetext}}
+\def\ewt{\end{widetext}}
+
+\def\vev#1{\langle {#1} \rangle}
+\def\eq#1{eq.~(\ref{#1})}
+
+\def \vp{{\bf p}}
+\def \vq{{\bf q}}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+
+% Roman Section & Subsection numberings
+% -------------------------------------
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+\allowdisplaybreaks
+
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\begin{document}
+
+\begin{center}
+\underline{\textbf{\Large Pauli ($\si$) and Dirac ($\gamma$) matrices}}
+\end{center}
+
+\begin{enumerate}
+
+\item {\bf Pauli matrices}: Consider the following 2$\times$2 matrices:
+\bea
+\si_1 ~=~ \bma 0 & 1 \\ 1 & 0 \ema ~,~~ \si_2 ~=~ \bma 0 & -i \\ i & 0 \ema ~,~~
+\si_3 ~=~ \bma 1 & 0 \\ 0 & -1 \ema ~.~~
+\eea
+\begin{enumerate}
+  \item [a.] Show that these matrices are both Hermitian, and Unitary.
+  \item [b.] Show that $\si^2_i = \1$ for any $i = 1, 2, 3$ where $\1$ represents the
+  2$\times$2 identity matrix. (Note that in general $\1$ will represent the
+  corresponding N$\times$N identity matrix where N is the dimension of the representation
+  that fits the situation.)
+  \item [c.] Establish the commutation relationship: $[\si_i, \si_j] ~=~ 2 i
+  \ep_{ijk}\si_k$.
+  \item [d.] Establish the anticommutation relationship: $\{\si_i,\si_j\} ~=~ 2\de
+  _{ij}$.
+  \item [e.] Show that $\si_i\si_j = \de_{ij} + i \ep_{ijk}\si_k$.
+  \item [f.] Find the determinant and the trace of each Pauli matrix.
+  \item [g.] What is the trace of $\si_i\si_j$? (Hint: use the cyclic property of
+  matrix traces: $\Tr[AB] = \Tr[BA]$, $\Tr[AB...YZ] = \Tr[ZAB...Y]$, etc., where $A,
+  B, ...$ are matrices.)
+  \item [f.] What is the trace of $\si_i\si_j\si_k$? Do you notice a patern?
+\end{enumerate}
+The symbols $\de_{ij}$ and $\ep_{ijk}$ are very useful. $\de_{ij}$ is known as
+the Kronecker delta. If $i$ and $j$ are equal then the delta is 1, or otherwise
+it is 0, i.e. $\de_{12} ~=~ 0$, but $\de_{11} ~=~ 1$. The Levi-Civita symbol
+($\ep_{ijk}$) is even more interesting. It is non-zero only if all three indices
+($i, j, k$) are unequal, and it is $+1(-1)$ when $i, j, k$ is an even(odd) permutation
+of $1, 2, 3$, i.e. $\ep_{223} ~=~ 0, \ep_{123} ~=~ 1, \ep_{213} ~=~ -1$.
+
+\item {\bf More fun with Pauli matrices}: The three Pauli matrices together with the
+2$\times$2 identity matrix $\1$ form a basis for all 2$\times$2 matrices. In this
+problem we want to show this. There are two steps:
+\begin{enumerate}
+  \item [a.] Show that the four matrices ($\1$ and $\si_i$ for $i = 1, 2, 3$) are linearly
+  independent. (Hint: You have worked the math out in problem 1. Here you simply have to
+  identify the relevant steps.)
+  \item [b.] Consider the most general 2$\times$2 matrix:
+   \bea
+    M ~=~ \bma a & b \\ c & d \ema ~,~~
+   \eea
+  where $a, b, c, d$ are in general four different complex numbers. Show, by explicit
+  construction, that the matrix $M$ can be expressed as a unique linear superposition
+  of the 4 matrices.
+  (Hint: Write $M = A~\1 + B_i\cdot\si_i$ and solve for the four coefficients)
+
+\end{enumerate}
+
+\item {\bf Dirac $\ga$ matrices}: The equation of motion for a fermion, also known as the
+Dirac equation, is:
+\bea
+(i\ga^\mu\pa_\mu - m)\psi &=& 0 ~.
+\eea
+In four spacetime dimensions (Minkowski spacetime), it turns out that each component
+of the four vector represented by $\ga^\mu$ has to be (at least) a 4$\times$4 matrix.
+It is possible to have different representations of these matrices, but for now we will
+consider the following representation (known as the Chiral or Weyl basis):
+%
+\bea
+\ga^0 ~=~ \bma 0 & 1 \\ 1 & 0 \ema ~,~~ \ga^i ~=~ \bma 0 & \si^i \\ -\si^i & 0 \ema ~.~~
+\eea
+%
+A shorthand notation for the four matrices is:
+%
+\bea
+\ga^\mu ~=~ \bma 0 & \si^\mu \\ \osi^\mu & 0 \ema ~,~~~~ \si^\mu \equiv (1 , \si^i) ~,~~
+\osi^\mu \equiv (1, -\si^i) ~.~~
+\eea
+%
+(Note that in the above notation $0$ and $1$ represent 2$\times$2 matrices.)
+With the above notation in mind show the following properties of $\ga$ matrices:
+\begin{enumerate}
+ \item [a.] What is $(\ga^\mu)^2$? (Work it out for each value that $\mu$ can take.)
+ \item [b.] Show that $(\ga^\mu)^\dag ~=~ \ga^0\ga^\mu\ga^0$.
+ \item [c.] Show that $\{\ga^\mu,\ga^\nu\} ~=~ 2g^{\mu\nu}$.
+ \item [d.] Define a new object $\si^{\mu\nu} ~\equiv~ \dfrac{i}{2}[\ga^\mu,\ga^\nu]$.
+ Show that $\ga^\mu\ga^\nu ~=~ g^{\mu\nu} + i\si^{\nu\mu}$
+ \item [e.] Define another new object $\ga^5 ~=~ i\ga^0\ga^1\ga^2\ga^3$. Express this
+ as a simple 4$\times$4 matrix.
+ \item [f.] Find the properties of $\ga^5$ : What is $(\ga^5)^2, \{\ga^\mu,\ga^5\}$,
+ and $(\ga^5)^\dag$?
+ \item [g.] What is the determinant and the trace of each of the five matrices ($\ga^\mu$
+ and $\ga^5$)?
+ \item [h.] What is the trace of $\ga^\mu\ga^\nu$? (Hint: Remember the cyclic property of
+ matrix traces.)
+ \item [i.] Consider the operators $P_L ~=~ (1 - \ga^5)/2~,~~ P_R ~=~ (1 + \ga^5)/2$. Find
+ their properties. (Find $P_L^2, P_R^2, P_LP_R$. Do you notice anything interesting? Do
+ these (anti)commute with the four gamma matrices? Find the (anti)commutation relationships.)
+ \item [j.*] What is the trace of $\ga^\mu\ga^\nu\ga^5$?
+ \item [k.*] What is the trace of $\ga^\mu\ga^\nu\ga^\la$?
+ \item [l.*] What is the trace of $\ga^\mu\ga^\nu\ga^\la\ga^\si$?
+\end{enumerate}
+* These problems need more advanced work. Work on these for extra credit!
+\end{enumerate}
+
+The answer for (3l.) is as follows:
+
+We will assume the following relationships: $\Tr[ABCD] ~=~ \Tr[DABC]~,~\{\ga^\mu,\ga^\nu\}~=~2 g^{\mu\nu}$ and
+$\Tr\[\ga^\mu\ga^\nu\]~=~ 4 g^{\mu\nu}$. We then get:
+%
+\bea
+\Tr\[\ga^\mu\ga^\nu\ga^\la\ga^\si\] &=& \Tr\[(2 g^{\mu\nu}-\ga^\nu\ga^\mu)\ga^\la\ga^\si\] ~,~~ \nl
+&=& 2 g^{\mu\nu}\Tr\[\ga^\la\ga^\si\] - \Tr\[\ga^\nu(2 g^{\mu\la} - \ga^\la\ga^\mu)\ga^\si\] ~,~~ \nl
+&=& 8 g^{\mu\nu}g^{\la\si} - 2g^{\mu\la}\Tr\[\ga^\nu\ga^\si\] + \Tr\[\ga^\nu\ga^\la(2 g^{\mu\si} - \ga^\si\ga^\mu)\] ~,~~ \nl
+&=& 8(g^{\mu\nu}g^{\la\si} - g^{\mu\la}g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - \Tr[\ga^\nu\ga^\la\ga^\si\ga^\mu] ~,~~ \nl
+&=& 8(g^{\mu\nu}g^{\la\si} - g^{\mu\la}g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - \Tr[\ga^\mu\ga^\nu\ga^\la\ga^\si] ~,~~ \\
+\Rightarrow \Tr\[\ga^\mu\ga^\nu\ga^\la\ga^\si\] &=& 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la}g^{\nu\si} + g^{\mu\si}g^{\nu\la})~.~~
+\eea
+%
+
+\end{document}
