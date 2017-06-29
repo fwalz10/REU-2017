@@ -253,7 +253,7 @@ We also are able to calculate $|A^\mu|^2$
 &=&\Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\\
 &=&\Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\\
 &=& \Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu\ga^5\ga^\nu \ga^5 +\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
-&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu(-\ga^5 \ga^5)\ga^\nu +\slashed{p}_2\ga^\mu(-\ga^5\ga^5) \ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
+&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu(-\ga^5 \ga^5)\ga^\nu +\slashed{p}_2\ga^\mu(-\ga^5\ga^5) \ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
 &=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 - m( \slashed{p}_1\ga^\mu\ga^\nu +\slashed{p}_2\ga^\mu\ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
 &=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5] -mTr[ \slashed{p}_1\ga^\mu\ga^\nu]-mTr[ \slashed{p}_2\ga^\mu\ga^\nu]+ m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
 &=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \\
@@ -326,7 +326,7 @@ In order to square $P$ we do the following:
 &=& -\frac{i}{2}((\ga^\nu)^\dag(\ga^\mu)^\dag-(\ga^\mu)^\dag(\ga^\nu)^\dag) \\
 &=& -\frac{i}{2}(\ga^0\ga^\nu\ga^0\ga^0\ga^\mu\ga^0-\ga^0\ga^\mu\ga^0\ga^0\ga^\nu\ga^0)\\
 &=& -\frac{i}{2}(\ga^0\ga^\nu\ga^\mu\ga^0-\ga^0\ga^\mu \ga^\nu\ga^0)\\
-&=& -\frac{i}{2}((-1)^2\ga^\mu\ga^\nu-(-1)^2\ga^\nu \ga^\mu) \\
+&=& -\frac{i}{2}((-1)^2\ga^\nu\ga^\mu-(-1)^2\ga^\mu \ga^\nu) \\
 &=& -\frac{i}{2}(\ga^\nu\ga^\mu-\ga^\mu \ga^\nu)\\
 &=& -\si^{\nu\mu}
 \eea
@@ -347,13 +347,30 @@ In order to find the value of $|T^{\mu\nu}|^2$ one needs to find the value of $T
 Tr[\si^{\si\la}\si^{\mu\nu}]&=& Tr[\frac{i}{2}(\ga^\si\ga^\la - \ga^\la\ga^\si)\frac{i}{2}(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
 &=& Tr[\frac{i}{2}(\ga^\si\ga^\la - \ga^\la\ga^\si)\frac{i}{2}(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
 &=& -\frac{1}{4}Tr[(\ga^\si\ga^\la - \ga^\la\ga^\si)(\ga^\mu\ga^\nu - \ga^\nu\ga^\mu)]\\
-&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu -\ga^\si\ga^\la\ga^\nu\ga^\mu- \ga^\la\ga^\si\ga^\mu\ga^\nu + \ga^\la\ga^\si\ga^\nu\ga^\mu]\\
-&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu -\ga^\si\ga^\la(-\ga^\mu\ga^\nu)- (-\ga^\si\ga^\la)\ga^\mu\ga^\nu + (-\ga^\si\ga^\la)(-\ga^\mu\ga^\nu)]\nl
-&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu +\ga^\si\ga^\la\ga^\mu\ga^\nu+\ga^\si\ga^\la\ga^\mu\ga^\nu +\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
-&=& -\frac{1}{4}Tr[4\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
-&=& -Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
-&=& Tr[\ga^\mu\ga^\nu\ga^\la\ga^\si]\\
-&=& 4(g^{\mu\nu}g^{\la\si}- g^{\mu\la}g^{\nu\si}+g^{\mu\si}g^{\nu\la})\\
+&=& -\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu]+\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\nu\ga^\mu]+\frac{1}{4}Tr[\ga^\la\ga^\si\ga^\mu\ga^\nu]-\frac{1}{4}Tr [\ga^\la\ga^\si\ga^\nu\ga^\mu]\nl
+\nonumber
+\eea \nonumber
+\nonumber
+Here we must label each of the traces individually: 
+\bea
+A &=&-\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\mu\ga^\nu]\\
+&=&-(g^{\si\la}g^{\mu\nu}-g^{\si\mu}g^{\la\nu}+g^{\si\nu}g^{\la\mu})
+\eea
+\bea
+B&=&+\frac{1}{4}Tr[\ga^\si\ga^\la\ga^\nu\ga^\mu]\\
+&=&+(g^{\si\la}g^{\nu\mu}-g^{\si\nu}g^{\la\mu}+g^{\si\mu}g^{\la\nu})
+\eea
+\bea
+C&=& \frac{1}{4}Tr[\ga^\la\ga^\si\ga^\mu\ga^\nu]\\
+&=& (g^{\la\si}g^{\mu\nu}-g^{\la\mu}g^{\si\nu}+g^{\la\nu}g^{\si\mu})
+\eea
+\bea 
+D&=& -\frac{1}{4}Tr [\ga^\la\ga^\si\ga^\nu\ga^\mu]\\
+&=& -(g^{\la\si}g^{\nu\mu}-g^{\la\nu}g^{\si\mu}+g^{\la\mu}g^{\si\nu})
+\eea
+\bea
+Tr[\si^{\si\la}\si^{\mu\nu}]&=& A + B+ +C+D\\
+&=& 2g^{\si\mu}g^{\la\nu} - 2 g^{\si\nu}g^{\la\mu} - 2 g^{\la\mu}g^{\si\nu} +  2g^{\la\nu}g^{\si\mu})
 \eea
 
 In order to find the value of $|T^{\mu\nu}|^2$ one needs to do the following:
