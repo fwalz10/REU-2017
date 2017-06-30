@@ -1,0 +1,220 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{framed}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{slashed}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{bigints}
+\usepackage{color}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{9in}
+\voffset-1.5truecm
+
+\def \beq{\begin{equation}}
+\def \eeq{\end{equation}}
+\def \bea{\begin{eqnarray}}
+\def \eea{\end{eqnarray}}
+\def \ba{\begin{array}}
+\def \ea{\end{array}}
+\def \beg{\begin{gather}}
+\def \eeg{\end{gather}}
+\def \bmat{\begin{matrix}}
+\def \emat{\end{matrix}}
+\def \bfra{\begin{framed}}
+\def \efra{\end{framed}}
+
+\def \({\left(}
+\def \){\right)}
+\def \[{\left[}
+\def \]{\right]}
+\def \<{\left\langle}
+\def \>{\right\rangle}
+\def \lp{\left|}
+\def \rp{\right|}
+\def \lb{\left\{}
+\def \rb{\right\}}
+\def \l.{\left.}
+\def \r.{\right.}
+
+\def \bma{\(\bmat}
+\def \ema{\emat\)}
+
+\def \Tr{{\rm Tr}}
+\def \N{\rm N}
+\def \hc{{\rm h.\ c.}}
+
+\def \ph{\phantom}
+\def \nn{\nonumber}
+\def \nl{\nn \\}
+
+\def \of{\frac{1}{4}}
+\def \oth{\frac{1}{3}}
+\def \hf{\frac{1}{2}}
+\def \oet{\frac{1}{8}}
+\def \s{\sqrt{2}}
+\def \st{\sqrt{3}}
+\def \sx{\sqrt{6}}
+
+\def \cB{{\cal B}}
+\def \cC{{\cal C}}
+\def \cZ{{\cal Z}}
+\def \cL{{\cal L}}
+\def \cH{{\cal H}}
+\def \cO{{\cal O}}
+\def \cM{{\cal M}}
+\def \cl{\ell}
+
+\def \oq{\overline{q}}
+\def \of{\overline{f}}
+\def \os{\overline{s}}
+\def \ob{\overline{b}}
+\def \ou{\overline{u}}
+\def \ov{\overline{v}}
+\def \oBs{\overline{B^0_s}}
+\def \otau{\overline{\tau}}
+\def \omu{\overline{\mu}}
+\def \onu{\overline{\nu}}
+\def \osi{\overline{\si}}
+\def \oell{\overline{\ell}}
+\def \oL{\overline{L}}
+\def \oQ{\overline{Q}}
+
+\def \al{\alpha}
+\def \be{\beta}
+\def \ga{\gamma}
+\def \Ga{\Gamma}
+\def \de{\delta}
+\def \ka{\kappa}
+\def \De{\Delta}
+\def \ep{\epsilon}
+\def \tha{\theta}
+\def \la{\lambda}
+\def \La{\Lambda}
+\def \si{\sigma}
+\def \Si{\Sigma}
+\def \Up{\Upsilon}
+\def \om{\omega}
+\def \1{1}%\mathbb{I}}
+
+\def \pa{\partial}
+
+\def \SM{{\rm SM}}
+\def \elm{{\rm em}}
+\def \NP{{\rm NP}}
+\def \expt{{\rm expt}}
+\def \eff{{\rm eff}}
+\def \elm{{\rm em}}
+\def \RFG{{\rm RFG}}
+\def \CFG{{\rm CFG}}
+\def \PT{{\rm PT}}
+\def \hi{{\rm hi}}
+\def \lo{{\rm lo}}
+
+\def \Re{{\rm Re}}
+\def \Im{{\rm Im}}
+
+\def \keV{{\rm keV}}
+\def \MeV{{\rm MeV}}
+\def \GeV{{\rm GeV}}
+
+\def \cH{{\cal H}}
+\def \cI{{\cal I}}
+
+\def \Rqp{R_{q'}}
+
+\def\bwt{\begin{widetext}}
+\def\ewt{\end{widetext}}
+
+\def\vev#1{\langle {#1} \rangle}
+\def\eq#1{eq.~(\ref{#1})}
+
+\def \vp{{\bf p}}
+\def \vq{{\bf q}}
+
+\def \cre{\color{red}}
+\def \cgr{\color{green}}
+
+\usepackage{graphicx} %package to manage images
+\graphicspath{ {images/} }
+
+\usepackage[rightcaption]{sidecap}
+
+\usepackage{wrapfig}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+
+% Roman Section & Subsection numberings
+% -------------------------------------
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+% Start of document
+% -----------------
+\pagestyle{plain}
+\allowdisplaybreaks
+
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\begin{document}
+
+\begin{center}
+\underline{\textbf{\Large Branching Ratios}}
+\end{center}
+
+\section{The branching Ratio of a Pion}
+In order to calculate the Branching ratio of a charged pion, one must be familiar with the Feynman Rules of calculating amplitudes and the trace identities. \\
+\\
+We must start with recognizing that the pion decay is a charged, weak, interaction which arises from the fact that a pion is made of quarks, and the decay is mediated by a massive W boson. \\
+\\
+A diagram of the decay may been seen below: 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.35]{pion2}
+\caption{Pion Decay}
+\end{figure}
+
+\scalebox{.6}{Picture courtesy of Qora.com}\\ 
+\\
+Where the up and ani-down quark are the pion and the muon and muon neutrino are on the right. However, the muon and the muon neutrino could be the electron and electron neutrino.  \\
+\\
+The formula given to describe the branching ratio of the decay is given by: 
+\bea 
+\Ga &=& \frac{S|\textbf{p}|}{8\pi\hbar m_1^2c} |\mathcal{M}|^2
+\eea 
+Where $|\textbf{p}|$ is the outgoing momentum, $S$ is the product of statistical factors (in our case it will be equal to 1), and $\mathcal{M}$ is the Feynman amplitude. In our notation, we will use the Natural Units so our expression becomes: 
+\bea 
+\Ga &=& \frac{S|\textbf{p}|}{8\pi m_1^2} |\mathcal{M}|^2
+\eea 
+The next step is to determine the Feynman Amplitude which can be done in a few steps 
+In the charged weak lepton decays, we have different notation for the vertices and propagators. 
+\begin{enumerate}
+    \item For each vertex add a factor of $\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5))$ where $g_w= \sqrt{4\pi\al_w}$
+    \item For each propagator we add a factor of $\frac{-ig_{\mu\nu}-\frac{q_\mu q_\nu}{m^2}}{q^2-m^2}$ where m is the mass of the boson. In our case, $m_w \gg\ q$ so the expression simplifies to $\frac{ig_{\mu\nu}}{m_w^2}$
+\end{enumerate}
+From these rules and Figure 1 we are able to calculate the value of $\mathcal{M}$ 
+\bea
+-i\mathcal{M}&=&[\ou(3)(\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5))v_2] [ \frac{ig_{\mu\nu}}{m_w^2} ][\frac{-ig_w}{2\sqrt{2}}F^\mu]
+\eea
+We have a factor of -i with the $\mathcal{M}$ so that we obtain the real part of the expression and $F^\mu$ is the form factor of the coupling of the pion to the $W$ boson. $F^\mu$ has the form of $f_\pi p^\mu$ 
+\bea
+-i\mathcal{M}&=&\frac{-ig_w^2}{8 m_w^2}[\ou(3)(\ga_\mu(1-\ga^5))v_2]F^\mu\\
+\mathcal{M}&=&\frac{g_w^2}{8 m_w^2}[\ou(3)(\ga_\mu(1-\ga^5))v_2]F^\mu
+\eea
+In order to square the amplitude we do the following: 
+\bea
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8 m_w^2}f_\pi)^2Tr[(\ou(3)(\ga_\mu(1-\ga^5))v_2)p^\mu(\ov(3)(\ga_\nu(1-\ga^5))u_2)]p^\nu
+\eea
+\end{document}
