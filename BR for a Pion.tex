@@ -190,7 +190,7 @@ A diagram of the decay may been seen below:
 \\
 Where the up and ani-down quark are the pion and the muon and muon neutrino are on the right. However, the muon and the muon neutrino could be the electron and electron neutrino.  \\
 \\
-The formula given to describe the branching ratio of the decay is given by: 
+The formula given to describe the branching ratio of the decay is given by\cite{Griffiths}: 
 \bea 
 \Ga &=& \frac{S|\textbf{p}|}{8\pi\hbar m_1^2c} |\mathcal{M}|^2
 \eea 
@@ -206,15 +206,50 @@ In the charged weak lepton decays, we have different notation for the vertices a
 \end{enumerate}
 From these rules and Figure 1 we are able to calculate the value of $\mathcal{M}$ 
 \bea
--i\mathcal{M}&=&[\ou(3)(\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5))v_2] [ \frac{ig_{\mu\nu}}{m_w^2} ][\frac{-ig_w}{2\sqrt{2}}F^\mu]
+-i\mathcal{M}&=&[\ou(3)(\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5))v(2)] [ \frac{ig_{\mu\nu}}{m_w^2} ][\frac{-ig_w}{2\sqrt{2}}F^\mu]
 \eea
 We have a factor of -i with the $\mathcal{M}$ so that we obtain the real part of the expression and $F^\mu$ is the form factor of the coupling of the pion to the $W$ boson. $F^\mu$ has the form of $f_\pi p^\mu$ 
 \bea
--i\mathcal{M}&=&\frac{-ig_w^2}{8 m_w^2}[\ou(3)(\ga_\mu(1-\ga^5))v_2]F^\mu\\
-\mathcal{M}&=&\frac{g_w^2}{8 m_w^2}[\ou(3)(\ga_\mu(1-\ga^5))v_2]F^\mu
+-i\mathcal{M}&=&\frac{-ig_w^2}{8 m_w^2}[\ou(3)(\ga^\mu(1-\ga^5))v(2)]F^\mu\\
+\mathcal{M}&=&\frac{g_w^2}{8 m_w^2}[\ou(3)(\ga^\mu(1-\ga^5))v(2)]F^\mu
 \eea
 In order to square the amplitude we do the following: 
 \bea
-\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8 m_w^2}f_\pi)^2Tr[(\ou(3)(\ga_\mu(1-\ga^5))v_2)p^\mu(\ov(3)(\ga_\nu(1-\ga^5))u_2)]p^\nu
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8 m_w^2}f_\pi)^2Tr[(\ou(3)(\ga^\mu(1-\ga^5))v(2)p_\mu(\ov(2)(\ga^\nu(1-\ga^5)u(3))]p_\nu\\
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8 m_w^2}f_\pi)^2p_\mu p_\nu Tr[(u(3)\ou(3)(\ga^\mu(1-\ga^5))v(2) \ov(2)(\ga^\nu(1-\ga^5))]\\
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8 m_w^2}f_\pi)^2p_\mu p_\nu Tr[((\slashed{p}_3 + m_l)(\ga^\mu(1-\ga^5)) \slashed{p}_2(\ga^\nu(1-\ga^5))]\\
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8m_w^2}f_\pi)^2p_\mu p_\nu (2Tr[\slashed{p}_3\ga^\mu\slashed{p}_2\ga^\nu] -2Tr[\slashed{p}_3\ga^\mu\slashed{p}_2\ga^\nu\ga^5])\\
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8m_w^2}f_\pi)^2p_\mu p_\nu (8[p_3^\mu p_2^\nu + p_2^\mu p_3^\nu -(p_3 \cdot p_2)g^{\mu\nu}]+8i\epsilon^{\mu\la\nu\si}p_{3\la}p_{2\si}
 \eea
+Summing over the spins gives us: 
+\bea 
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8m_w^2}f_\pi)^2 [2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)] 
+\eea 
+Since $p=p_2 + p_3$, we can simplify the equation further 
+\bea 
+\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{2m_w^2}f_\pi)^2 [m_l^2(m_\pi^2-m_l^2)] 
+\eea 
+In this way we are able to calculate the branching ratio of a pion, since we know have the Feyneman Amplitude we simply return to equation (2)
+\bea 
+\Ga &=& \frac{f_\pi^2}{\pi m_\pi^3}(\frac{g_w}{4m_w})^4 m_l^2(m_\pi^2-m_l^2)^2
+\eea 
+If we would like to calculate the ratio of the $\pi^- \rightarrow e^- + \onu_e$ and  $\pi^- \rightarrow \mu^- + \onu_\mu$ we simply do the following\cite{Agashe:2014kda}: 
+\bea 
+\frac{\Ga_e}{\Ga_\mu} &=& \frac{m_e^2(m_\pi^2-m_e^2)^2}{m_\mu^2(m_\pi^2-m_\mu^2)^2}\\
+\frac{\Ga_e}{\Ga_\mu} &=& \frac{(.511^2(139.57^2-.511^2)^2}{105.66^2(139.57^2-105.66^2)^2}\\
+\frac{\Ga_e}{\Ga_\mu} &=& 0.000128
+\eea 
+\begin{thebibliography}{9}
+\bibitem{Griffiths} 
+Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH Verlag
+
+%\cite{Agashe:2014kda}
+\bibitem{Agashe:2014kda} 
+  K.~A.~Olive {\it et al.} [Particle Data Group],
+  %``Review of Particle Physics,''
+  Chin.\ Phys.\ C {\bf 38}, 090001 (2014).
+  doi:10.1088/1674-1137/38/9/090001
+  %%CITATION = doi:10.1088/1674-1137/38/9/090001;%%
+  %6385 citations counted in INSPIRE as of 03 Jul 2017
+\end{thebibliography}
 \end{document}
