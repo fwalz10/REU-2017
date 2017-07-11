@@ -477,31 +477,90 @@ Summing over the spins gives us:
 \bea 
 \langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{8m_w^2}f_\pi)^2 [2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)] 
 \eea 
-Since $p=p_2 + p_3$, we can simplify the equation further 
+Since $p=p_2 + p_3$, we can simplify the equation further\\
+For simplicity and consistency we will use the following notation: $p_1 = p_\pi , p_2=p_l, p_3=p_{\nu_l}$\\ 
+We begin with showing the value of the 4-momentum squared: 
 \bea 
-\langle|\mathcal{M}^2|\rangle&=&(\frac{g_w^2}{2m_w^2}f_\pi)^2 [m_l^2(m_\pi^2-m_l^2)] 
+p_1 &=& (E, \vec{p}_1) \\
+(p_1)^2 &=& p_\mu p_\nu g_{\mu\nu}\\ 
+(p_1)^2 &=& p_1p_1(1) + p_2p_2(-1) + ...\\ 
+(p_1)^2 &=& E^2 - (\vec{p}_1)^2\\ 
+(p_1)^2 &=& m_1^2\\
+\eea 
+This can be also shown to be true for the other 4-Momenta thus:\\
+$(p_1)^2 =(p_\pi)^2 = m_1^2 , (p_2)^2 = (p_l)^2 = m_l^2 , (p_3)^2= (p_{\nu_l})^2 = (m_{\nu_l})^2 = 0$
+Using this we can further simplify Equation 121
+\bea 
+p_1 &=& p_2 + p_3\\ 
+(p_1)^2 &=& (p_2 + p_3)(p_2 + p_3)\\
+(p_1)^2 &=& (p_2)^2 + (p_3)^2 +2(p_2 \cdot p_3)\\
+(p_1)^2 -(p_2)^2 &=& 2(p_2 \cdot p_3)\\
+\frac{1}{2}[(m_\pi)^2 -(m_l)^2] &=& (p_2 \cdot p_3)
+\eea 
+\bea 
+p_1 &=& p_2 + p_3\\ 
+(p_2)^2 &=& (p_1 - p_3)(p_1 - p_3)\\
+(p_2)^2 &=& (p_1)^2 + (p_3)^2 -2(p_1 \cdot p_3)\\
+(p_2)^2 -(p_1)^2 &=& -2(p_1 \cdot p_3)\\
+\frac{1}{2}[(m_\pi)^2 -(m_l)^2] &=& (p_1 \cdot p_3)
+\eea 
+\bea 
+p_1 &=& p_2 + p_3\\ 
+(p_3)^2 &=& (p_1 - p_2)(p_1 - p_2)\\
+(p_3)^2 &=& (p_1)^2 + (p_2)^2 -2(p_1 \cdot p_2)\\
+-(p_1)^2 -(p_2)^2 &=& -2(p_1 \cdot p_2)\\
+\frac{1}{2}[(m_\pi)^2 +(m_l)^2] &=& (p_1 \cdot p_2)
+\eea 
+Returning to Equation 121 we now have:~(With $(\frac{g_w^2}{8m_w^2}f_\pi)^2 = C) $ 
+\bea 
+\langle|\mathcal{M}^2|\rangle&=&C[2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)]\\
+\langle|\mathcal{M}^2|\rangle&=&C[\frac{1}{2}[(m_\pi)^2 +(m_l)^2][(m_\pi)^2 -(m_l)^2] -(m_\pi)^2(\frac{1}{2}((m_\pi)^2 -(m_l)^2)]\\
+\langle|\mathcal{M}^2|\rangle&=&C[[\frac{1}{2}[(m_\pi)^4 -(m_l)^4 )]- [\frac{1}{2}((m_\pi)^4 +(m_\pi)^2(m_l)^2)]\\
+\langle|\mathcal{M}^2|\rangle&=&C[\frac{1}{2}(m_\pi)^4 - \frac{1}{2}(m_l)^4 - \frac{1}{2}(m_\pi)^4 + \frac{1}{2}(m_\pi)^2(m_l)^2]\\
+\langle|\mathcal{M}^2|\rangle&=&C[-\frac{1}{2}(m_l)^4 + \frac{1}{2}(m_\pi)^2(m_l)^2]\\
+\langle|\mathcal{M}^2|\rangle&=&C[- \frac{1}{2}(m_l)^4 + \frac{1}{2}(m_\pi)^2(m_l)^2)]\\
+\langle|\mathcal{M}^2|\rangle&=&C[\frac{1}{2}(m_\pi)^2(m_l)^2- \frac{1}{2}(m_l)^4]\\
+\langle|\mathcal{M}^2|\rangle&=&C[\frac{1}{2}(m_l)^2((m_\pi)^2- (m_l)^2)]\\
 \eea 
 In this way we are able to calculate the branching ratio of a pion, since we know have the Feyneman Amplitude we simply return to equation (112)
 \bea 
-\Ga &=& \frac{f_\pi^2}{\pi m_\pi^3}(\frac{g_w}{4m_w})^4 m_l^2(m_\pi^2-m_l^2)^2
+\Ga &=& \frac{S|\textbf{p}|}{8\pi m_1^2} |\mathcal{M}|^2\\
+\Ga &=& \frac{S|\textbf{p}|}{8\pi m_\pi^2}(\frac{g_w^2}{8m_w^2}f_\pi)^2[\frac{1}{2}(m_l)^2((m_\pi)^2 -(m_l)^2)]
+\eea 
+We can remove S because in this case S=1\\
+We then need to find the value of$|\textbf{p}|$\\
+\bea
+|\textbf{p}| &=& \frac{\sqrt{(m_1^2+m_2^2+m_3^2)(m_1^2-m_2^2-m_3^2)(m_1^2+m_2^2-m_3^2)(m_1^2-m_2^2+m_3^2)}}{2m_1}\\
+|\textbf{p}| &=& \frac{\sqrt{m_1^4+m_2^4 + m_3^4 -2m_1^2m_2^2 - 2m_1^2m_3^2 - 2m_2^2m_3^2}}{2m_1}
+\eea
+(Because the neutrino is massless)
+\bea 
+|\textbf{p}| &=& \frac{\sqrt{m_1^4+m_2^4-m_1^2m_2^2}}{2m_1}\\
+|\textbf{p}| &=& \frac{\sqrt{(m_1^2-m_2^2)^2}}{2m_1}\\
+\eea 
+For our case $m_1=m_\pi and m_2=m_l$
+\bea
+|\textbf{p}| &=& \frac{\sqrt{(m_\pi^2-m_l^2)^2}}{2m_\pi}\\
+|\textbf{p}| &=& \frac{(m_\pi^2-m_l^2)}{2m_\pi}\\
+\eea
+Combining with Equation 153: 
+\bea 
+\Ga &=& \frac{|\textbf{p}|}{8\pi m_1^2}(\frac{g_w^2}{8m_w^2}f_\pi)^2[\frac{1}{2}(m_l)^2((m_\pi)^2 -(m_l)^2)]\\
+\Ga &=& \frac{\frac{(m_\pi^2-m_l^2)}{2m_\pi}}{8\pi m_\pi^2}(\frac{g_w^2}{8m_w^2}f_\pi)^2[\frac{1}{2}(m_l)^2((m_\pi)^2 -(m_l)^2)]\\
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2\frac{1}{m_\pi^3}m_l^2(m_\pi^2-m_l^2)^2
 \eea 
 Expanding on this idea, we are able to graph $\frac{\Ga_l}{\Ga_\pi}$ by:\nl 
 \bea
-\Ga_l &=& \frac{f_\pi^2}{\pi m_\pi^3}(\frac{g_w}{4m_w})^4 m_l^2(m_\pi^2-m_l^2)^2 \\
-\frac{\Ga_l}{\Ga_\pi} &=&  \frac{\frac{f_\pi^2}{\pi m_\pi^3}(\frac{g_w}{4m_w})^4 m_l^2(m_\pi^2-m_l^2)^2}{m_\pi}
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2\frac{1}{m_\pi^3}m_l^2(m_\pi^2-m_l^2)^2\\
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2\frac{1}{m_\pi^3}m_l^2m_\pi^4(1-\frac{m_l^2}{m_\pi^2})\\
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2m_l^2m_\pi(1-\frac{m_l^2}{m_\pi^2})\\
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2m_\pi^3\frac{m_l^2}{m_\pi^2}(1-\frac{m_l^2}{m_\pi^2})\\
+\Ga &=& \frac{1}{16\pi}(\frac{g_w^2f_\pi}{8m_w^2})^2m_\pi^3(\frac{m_l}{m_\pi})^2(1-(\frac{m_l}{m_\pi})^2)\\
 \eea
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
 The graph of the equation is:
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.65]{brpion3}
+\includegraphics[scale=.65]{brpion4}
 \caption{$\frac{\Ga_l}{\Ga_\pi}$}
 \end{figure}
 \\ 
