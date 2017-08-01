@@ -160,11 +160,42 @@
 \setlength{\belowcaptionskip}{0pt}
 
 \begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{The $R_K$ and $R_{D^{(*)}}$ Puzzles}
+        
+        \vspace{0.5cm}
+        \large
+        
+        \vspace{1.5cm}
+        
+        \textbf{Francis Walz\footnote{frankwalz10@gmail.com}\\ Towson University}
+        
+        \vfill
+        
+        \vspace{0.8cm}
+        
+        \Large
+        2017 Summer REU\\
+        Wayne State University\\
+        Department of Physics and Astronomy\\
+        8/10/17
+        
+    \end{center}
+\end{titlepage}
 \tableofcontents
-
-\section{Introduction}
-This paper is a description of what I accomplished in the 2017 Summer REU at Wayne State University. I needed to learn and become comfortable with many different mathematical techniques included at the end of the paper. The appendix gives a summary of the research I did in that regard, which enables me to complete the rest of my work over the summer. Section 2 of the paper describes the work done in regards to the decay of a pion. I completed this analysis of the pion decay in order to become familiar with the $B_s$ decay, which was the focus of my project. Section 3 and 4 was the heart of my REU project at Wayne State. I focused on the Wilson Coefficients in the expression for the branching ratio of the $B_s$ decays. I constructed plots to describe the behavior of the $Br(B_s \rightarrow \mu^+\mu^-)$ as the Wilson Coefficients change and provided fits to the data. I would like to thank Dr. Bhubanjyoti Bhattacharya for guiding me through this REU and also the Physics Department at Wayen State university for providing me with this opportunity.     
 \newpage
+\section{Introduction}
+The standard model of particle physics has been an excellent way to predict decays and different types of processes that occur at the subatomic level. However, recent experimental findings have challenged the notion that the standard model is the best way to predict what we see in the real world and in experiments. The certain decays of the $B$ meson could give us some hints into the new physics present beyond the standard model. The $R_K$ and $R_{D^(*)}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ decay is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration differs from the standard model prediction by $2.6\si$ \cite{Bhattacharya:2016mcc} The next puzzle is the $R_{D^(*)}$ puzzle which is defined as $\mathcal{B}(\bar{B} \rightarrow D^{(*)}\tau^- \onu_{\tau}/ \mathcal{B}(\bar{B} \rightarrow D^{(*)}l^- \onu_{l}$ where $(l= \mu$ or $e)$ this ratio has been measured by the LHCb  Collaboration, BaBar, and Belle. The ratio $R_D$ differs from the standard model by $1.7\si$ and the $R_{D^(*)}$ differs by $3.1\si$. It must be mentioned that both of these puzzles require non-lepton universality, however this paper will not seek to explore this requirement. We will focus on analyzing the possible NP contributions to the Wilson Coefficients arising from the effective Hamiltonian of the $b \rightarrow s\mu^+\mu^-$ transition. The complete Hamiltonian is as follows:\cite{Bhattacharya:2016mcc}. 
+\begin{center}
+\bea
+H = -\frac{\alpha G_f}{\sqrt{2}\pi} V_{tb}V^*_{ts}\sum_{a= 9,10}^{}(C_aO_a + C'_aO'_a)
+\eea
+\end{center}
+This paper will take the Hamiltonian and use the Wilson Coefficients found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide ot the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different NP Wilson Coefficients for varying obserables. Finally in section 4 plots of the Branching ratio based upon the Wilson Coefficients will be shown and fits to the data will be provided. We conclude the paper in section 5. 
 \section{The branching Ratio of a Pion}
 In order to calculate the Branching ratio of a charged pion, one must be familiar with the Feynman Rules of calculating amplitudes and the trace identities. \\
 \\
@@ -404,6 +435,8 @@ $Br(C_A)=2.45199\times10^{-9} x^2$\\
 $Br(C_9)=2.40283\times10^{-9} x^2$\\
 \section{Conclusion}
 As one can see, the work done with the Wilson Coefficients gives new suggestions to the possibility of new physics. In the future, I would like to continue to explore these possibilities. Some work that was not included in this paper is working to use a chi squared minimization technique to help limit and constrain the coefficients. The chi squared technique would use the observables that have been calculated experimentally. Although I was not able to accomplish this during the summer, I hope to continue working on this is the future and produce significant results.
+\section{Acknowledgements}
+I would like to thank the Department of Physics and Astronomy at Wayne State University for this opportunity to conduct this research. I would also like to thank Dr.Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
 \newpage
 \begin{thebibliography}{9}
 \bibitem{Griffiths} 
@@ -429,6 +462,14 @@ Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH 
   %\cite{Dighe:2012df}
  \bibitem{flavio}
     David Straub, Peter Stangl, ChristophNiehoff, Ece Gurler, wzeren, Jacky Kumar, … Frederik Beaujean. (2017, June 29). flav-io/flavio v0.22.1. Zenodo. http://doi.org/10.5281/zenodo.821015
+%\cite{Bhattacharya:2016mcc}
+\bibitem{Bhattacharya:2016mcc} 
+  B.~Bhattacharya, A.~Datta, J.~P.~Guévin, D.~London and R.~Watanabe,
+  %``Simultaneous Explanation of the $R_K$ and $R_{D^{(*)}}$ Puzzles: a Model Analysis,''
+  JHEP {\bf 1701}, 015 (2017)
+  doi:10.1007/JHEP01(2017)015
+  [arXiv:1609.09078 [hep-ph]].
+  %%CITATION = doi:10.1007/JHEP01(2017)015;%%
 \end{thebibliography}
 \newpage
 \section{Appendix}
