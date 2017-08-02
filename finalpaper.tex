@@ -13,6 +13,7 @@
 \usepackage{setspace}
 \usepackage{bigints}
 \usepackage{color}
+\usepackage{siunitx}
 
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
@@ -172,7 +173,7 @@
         
         \vspace{1.5cm}
         
-        \textbf{Francis Walz\footnote{frankwalz10@gmail.com}\\ Towson University}
+        Francis Walz\footnote{frankwalz10@gmail.com}\\ Towson University
         
         \vfill
         
@@ -189,27 +190,51 @@
 \tableofcontents
 \newpage
 \section{Introduction}
-The standard model of particle physics has been an excellent way to predict decays and different types of processes that occur at the subatomic level. However, recent experimental findings have challenged the notion that the standard model is the best way to predict what we see in the real world and in experiments. The certain decays of the $B$ meson could give us some hints into the new physics present beyond the standard model. The $R_K$ and $R_{D^(*)}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ decay is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration differs from the standard model prediction by $2.6\si$ \cite{Bhattacharya:2016mcc} The next puzzle is the $R_{D^(*)}$ puzzle which is defined as $\mathcal{B}(\bar{B} \rightarrow D^{(*)}\tau^- \onu_{\tau}/ \mathcal{B}(\bar{B} \rightarrow D^{(*)}l^- \onu_{l}$ where $(l= \mu$ or $e)$ this ratio has been measured by the LHCb  Collaboration, BaBar, and Belle. The ratio $R_D$ differs from the standard model by $1.7\si$ and the $R_{D^(*)}$ differs by $3.1\si$. It must be mentioned that both of these puzzles require non-lepton universality, however this paper will not seek to explore this requirement. We will focus on analyzing the possible NP contributions to the Wilson Coefficients arising from the effective Hamiltonian of the $b \rightarrow s\mu^+\mu^-$ transition. The complete Hamiltonian is as follows:\cite{Bhattacharya:2016mcc}. 
+The standard model of particle physics has been an excellent model to describe decay rates and different types of processes that occur at the subatomic level. However, recent experimental findings have challenged the notion that the standard model is the only model to predict what we see in the real world and in experiments. Included in the standard model are particles called quarks, which have $\frac{1}{2}$ spin and either a $\frac{2}{3}$ or $-\frac{1}{3}$ charge. These quarks make up what we know as matter due to their interaction with the Higgs. 
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{Quarks} \\
+ \hline
+ Type & Mass & Charge & Spin\\
+ \hline
+ $u$ & $2.2 ^{+0.6}_{\num{-0.4}}$ MeV & $\frac{2}{3}$ & $\frac{1}{2}$\\ [1ex]
+ $d$ &  $4.7 ^{+0.5}_{\num{-0.4}}$ MeV & $-\frac{1}{3}$   & $\frac{1}{2}$\\ [1ex]
+ $s$ &$96 ^{+8}_{\num{-4}}$ MeV & $-\frac{1}{3}$ & $\frac{1}{2}$\\[1ex]
+ $c$ & $1.28 \pm 0.03$ GeV &$\frac{2}{3}$ & $\frac{1}{2}$\\[1ex]
+ $b$ & $4.18 ^{+0.04}_{\num{-0.03}}$ GeV  &$-\frac{1}{3}$ & $\frac{1}{2}$\\[1ex]
+ $t$ & $173.1 \pm 0.6$ GeV &$\frac{2}{3}$ & $\frac{1}{2}$\\[1ex]
+ \hline 
+\end{tabular}
+\caption{Table of Quarks in the SM \cite{Agashe:2014kda}}
+\label{table:1}
+\end{table}\\
+However, the question remains, why are there differences to the masses of quarks? To date, the SM has not been able to explain this phenomenon. Thus, by exploring the properties and characteristics of quarks, we may be able to probe into the possibility of new physics. The way in which we can know about the possibility new physics is to piece together scattering processes after collisions. Since a particle always decays to a lighter particle, due to the lighter particle being more stable than the heavier ones, we can look at the processes that include the heaviest quarks to see if there are additional physics beyond the SM. A excellent candidate of these tests would be the $B$ meson. A $B$ meson is made of two different quarks but always includes the $b$ quark. In this paper we will look at both the $B^+$ and $B_s$ mesons which are $b\bar{u}$ and $s\bar{b}$ respectively. \cite{Griffiths} (The bar above the quark indicates the anti quark, which is the same as the quark in all ways except having the opposite charge) The certain decays of the $B$ meson could give us some hints into the new physics present beyond the standard model because a possible new quark must decay into a $b$ quark. The realization of this fact lead to the creation of ``$B$ factories". These ``$B$ factories" focus on creating $B$ mesons and analyzing their decays. Two of these factories are BaBar and Belle, which provides some of the data included in this article. The $R_K$ and $R_{D^{(*)}}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ ratio is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration is \cite{Aaij:2014ora}
+\begin{center}
+$R^{expt}_{K} = 0.745 _{\num{-0.074}}^{+0.090}$ (stat) $\pm 0.036$ (syst)
+\end{center}
+Which differs from the SM prediction of $R^{expt}_{K} = 1 \pm 0.01$ differs from the standard model prediction by $2.6\si$. \cite{Bordone:2016gaq} The next puzzle is the $R_{D^{(*)}}$ ratio which is defined as $\mathcal{B}(\bar{B} \rightarrow D^{(*)}\tau^- \onu_{\tau}/ \mathcal{B}(\bar{B} \rightarrow D^{(*)}l^- \onu_{l}$ where $(l= \mu$ or $e)$ this ratio has been measured by the LHCb  Collaboration, BaBar, and Belle. The experimental values of $R_D$ and $R_{D^*}$The ratios are as follows \cite{Lees:2013uzd, Huschle:2015rga, Aaij:2015yra} :
+\begin{center}
+$R_D= 1.29 \pm 0.17$ , $R_{D^*} = 1.28 \pm 0.09$
+\end{center}$R_D$ differs from the standard model by $1.7\si$ and the $R_{D^*}$ differs by $3.1\si$. We will focus on analyzing the possible NP contributions to the Wilson Coefficients arising from the effective Hamiltonian of the $b \rightarrow s\mu^+\mu^-$ transition. The complete Hamiltonian is as follows:\cite{Bhattacharya:2016mcc}. 
 \begin{center}
 \bea
 H = -\frac{\alpha G_f}{\sqrt{2}\pi} V_{tb}V^*_{ts}\sum_{a= 9,10}^{}(C_aO_a + C'_aO'_a)
 \eea
 \end{center}
-This paper will take the Hamiltonian and use the Wilson Coefficients found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide ot the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different NP Wilson Coefficients for varying obserables. Finally in section 4 plots of the Branching ratio based upon the Wilson Coefficients will be shown and fits to the data will be provided. We conclude the paper in section 5. 
-\section{The branching Ratio of a Pion}
-In order to calculate the Branching ratio of a charged pion, one must be familiar with the Feynman Rules of calculating amplitudes and the trace identities. \\
+This article will take the Hamiltonian and use the Wilson Coefficients found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide to the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different NP Wilson Coefficients for varying observable. Finally in section 4 plots of the Branching ratio based upon the Wilson Coefficients will be shown and fits to the data will be provided. We conclude the article in section 5. 
+\section{The branching Ratio of a Charged Pion decay}
+In order to calculate the Branching ratio of a charged pion, we will use the Feynman Rules of calculating amplitudes and the trace identities. \\
 \\
-We must start with recognizing that the pion decay is a charged, weak, interaction which arises from the fact that a pion is made of quarks, and the decay is mediated by a massive W boson. \\
+We start by with recognizing that the pion decay is a charged cuurent interaction which arises from the fact that a pion is made of quarks, and the decay is mediated by a massive W boson. \\
 \\
-A diagram of the decay may been seen below: 
+A diagram of the decay may be seen below: 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.35]{pion2}
-\caption{Pion Decay}
+\includegraphics[scale=.75]{piondecay}
+\caption{Pion Decay (where $\ell$ is $\mu$ or $e$)}
 \end{figure}
-
-\scalebox{.6}{Picture courtesy of Qora.com}\\ 
-\\
 Where the up and ani-down quark are the pion and the muon and muon neutrino are on the right. However, the muon and the muon neutrino could be the electron and electron neutrino.  \\
 \\
 The formula given to describe the branching ratio of the decay is given by\cite{Griffiths}: 
@@ -302,18 +327,29 @@ In order to find $\frac{\Ga_{l}}{\Ga_\pi}$ we need to divide the above expressio
 \bea
 \frac{\Ga_l}{\Ga_\pi}&=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\bigg(\frac{\tau_\pi}{\hbar}\bigg)\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg(1-\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg)^2
 \eea 
+\newpage
 The graph of the equation (with $m_l = m_e$) is:
+\\
 \begin{figure}[h]
 \centering
 \includegraphics[scale=.90]{brpion1}
 \caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the plots of $\frac{m_e}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow e^{-} + \nu_e)$}
 \end{figure}
-\\
 \begin{figure}[h]
 \centering
 \includegraphics[scale=.85]{brpionmu1}
 \caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the plots of $\frac{m_\mu}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
 \end{figure}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
 \\
 \\
 \\
@@ -349,6 +385,12 @@ The decay rate is as follows:
 \end{center}
 Where $\zeta \equiv (\frac{g_{NP}^2}{\Lambda^2})(\frac{\sqrt{2}}{4G_F})(\frac{4\pi}{\alpha_{em}})$\\
 \\
+The Feynman Diagram of the decay can be seen below: 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.85]{B_sdecay}
+\caption{Graph of $B_s \rightarrow \mu^+ + \mu^-$}
+\end{figure}
 Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio} and using the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df} thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simply our calculations.We will solve each coefficient by the upper and lower limits of the branching ratio then take the average by setting the expression with the unknown coefficient equal to the branching ratio, the upper limit of the branching ratio, and its lower limit. \\
 \\
 The values for the Branching ratio of $B_s\rightarrow \mu^+\mu^- $ decay is equal to $2.4_{-0.7}^{+0.9} \times 10^{-9}$ \cite{Agashe:2014kda}
@@ -436,12 +478,11 @@ $Br(C_9)=2.40283\times10^{-9} x^2$\\
 \section{Conclusion}
 As one can see, the work done with the Wilson Coefficients gives new suggestions to the possibility of new physics. In the future, I would like to continue to explore these possibilities. Some work that was not included in this paper is working to use a chi squared minimization technique to help limit and constrain the coefficients. The chi squared technique would use the observables that have been calculated experimentally. Although I was not able to accomplish this during the summer, I hope to continue working on this is the future and produce significant results.
 \section{Acknowledgements}
-I would like to thank the Department of Physics and Astronomy at Wayne State University for this opportunity to conduct this research. I would also like to thank Dr.Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
+I would like to thank the Department of Physics and Astronomy at Wayne State University for this opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853 I would also like to thank Dr.Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
 \newpage
 \begin{thebibliography}{9}
 \bibitem{Griffiths} 
 Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH Verlag
-
 %\cite{Agashe:2014kda}
 \bibitem{Agashe:2014kda} 
   K.~A.~Olive {\it et al.} [Particle Data Group],
@@ -470,6 +511,54 @@ Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH 
   doi:10.1007/JHEP01(2017)015
   [arXiv:1609.09078 [hep-ph]].
   %%CITATION = doi:10.1007/JHEP01(2017)015;%%
+%\cite{Aaij:2014ora}
+\bibitem{Aaij:2014ora} 
+  R.~Aaij {\it et al.} [LHCb Collaboration],
+  %``Test of lepton universality using $B^{+}\rightarrow K^{+}\ell^{+}\ell^{-}$ decays,''
+  Phys.\ Rev.\ Lett.\  {\bf 113}, 151601 (2014)
+  doi:10.1103/PhysRevLett.113.151601
+  [arXiv:1406.6482 [hep-ex]].
+  %%CITATION = doi:10.1103/PhysRevLett.113.151601;%%
+  %416 citations counted in INSPIRE as of 02 Aug 2017
+  %\cite{Bordone:2016gaq}
+\bibitem{Bordone:2016gaq} 
+  M.~Bordone, G.~Isidori and A.~Pattori,
+  %``On the Standard Model predictions for $R_K$ and $R_{K^*}$,''
+  Eur.\ Phys.\ J.\ C {\bf 76}, no. 8, 440 (2016)
+  doi:10.1140/epjc/s10052-016-4274-7
+  [arXiv:1605.07633 [hep-ph]].
+  %%CITATION = doi:10.1140/epjc/s10052-016-4274-7;%%
+  %70 citations counted in INSPIRE as of 02 Aug 2017
+  %\cite{Lees:2013uzd}
+\bibitem{Lees:2013uzd} 
+  J.~P.~Lees {\it et al.} [BaBar Collaboration],
+  %``Measurement of an Excess of $\bar{B} \to D^{(*)}\tau^- \bar{\nu}_\tau$ Decays and Implications for Charged Higgs Bosons,''
+  Phys.\ Rev.\ D {\bf 88}, no. 7, 072012 (2013)
+  doi:10.1103/PhysRevD.88.072012
+  [arXiv:1303.0571 [hep-ex]].
+  %%CITATION = doi:10.1103/PhysRevD.88.072012;%%
+  %250 citations counted in INSPIRE as of 02 Aug 2017
+  %\cite{Huschle:2015rga}
+\bibitem{Huschle:2015rga} 
+  M.~Huschle {\it et al.} [Belle Collaboration],
+  %``Measurement of the branching ratio of $\bar{B} \to D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)} \ell^- \bar{\nu}_\ell$ decays with hadronic tagging at Belle,''
+  Phys.\ Rev.\ D {\bf 92}, no. 7, 072014 (2015)
+  doi:10.1103/PhysRevD.92.072014
+  [arXiv:1507.03233 [hep-ex]].
+  %%CITATION = doi:10.1103/PhysRevD.92.072014;%%
+  %214 citations counted in INSPIRE as of 02 Aug 2017
+  %\cite{Aaij:2015yra}
+\bibitem{Aaij:2015yra} 
+  R.~Aaij {\it et al.} [LHCb Collaboration],
+  %``Measurement of the ratio of branching fractions $\mathcal{B}(\bar{B}^0 \to D^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{B}^0 \to D^{*+}\mu^{-}\bar{\nu}_{\mu})$,''
+  Phys.\ Rev.\ Lett.\  {\bf 115}, no. 11, 111803 (2015)
+  Erratum: [Phys.\ Rev.\ Lett.\  {\bf 115}, no. 15, 159901 (2015)]
+  doi:10.1103/PhysRevLett.115.159901, 10.1103/PhysRevLett.115.111803
+  [arXiv:1506.08614 [hep-ex]].
+  %%CITATION = doi:10.1103/PhysRevLett.115.159901, 10.1103/PhysRevLett.115.111803;%%
+  %255 citations counted in INSPIRE as of 02 Aug 2017
+  \bibitem{quarks}
+  MissMJ on Wikipedia Commons. Standard model of elementary particles, 2006. [Online;   accessed August 2, 2017].
 \end{thebibliography}
 \newpage
 \section{Appendix}
