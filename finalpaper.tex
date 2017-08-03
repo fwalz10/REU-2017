@@ -175,7 +175,13 @@
         
         Francis Walz\footnote{frankwalz10@gmail.com}\\ Towson University
         
+        \vspace{2.5cm}
+        \textbf{Abstract}\\
+        \normalsize
+        The $R_K$ and $R_{D^{(*)}}$ are two $B$ meson decay puzzles that seems to provide substantial evidence of New Physics(NP) beyond the Standard Model (SM). Recent experimental results from the BaBar, Belle, and LHCb collaborations demonstrate intriguing results compared to SM predictions. The loops present in certain $B$ meson decays are sensitive to the possibility of NP. This article seeks to constrain and analyze the Wilson Coefficients that are present in the branching ratio of such decays. We hope to provide a substantial analysis and demonstrate a indication of new research to come.  
         \vfill
+        
+        
         
         \vspace{0.8cm}
         
@@ -190,27 +196,72 @@
 \tableofcontents
 \newpage
 \section{Introduction}
-The standard model of particle physics has been an excellent model to describe decay rates and different types of processes that occur at the subatomic level. However, recent experimental findings have challenged the notion that the standard model is the only model to predict what we see in the real world and in experiments. Included in the standard model are particles called quarks, which have $\frac{1}{2}$ spin and either a $\frac{2}{3}$ or $-\frac{1}{3}$ charge. These quarks make up what we know as matter due to their interaction with the Higgs. 
+The Standard Model (SM) of particle physics works extremely well when calculating decay rates of subatomic particle and explaining different types of physical phenomena that occur at the subatomic level. Included in the SM are lists of rules that govern interactions and different predicted conserved quantities that have aligned well with the observed experimental results. The spectrum of the SM includes 3 types of particles: gauge bosons, leptons, and quarks. The gauge bosons are particles with spin 1 who are mediators of the different forces. For instance, the W and Z boson mediate the weak force, which is the force responsible for radioactive decay. These particles are ``virtual" particles and cannot be observed directly in experiments. Below is a table summarizing these types of particles. 
 \begin{table}[h!]
 \centering
-\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+\begin{tabular}{ |p{2cm}||p{5cm}|p{1.5cm}|p{3cm}|  }
  \hline
- \multicolumn{4}{|c|}{Quarks} \\
+ \multicolumn{4}{|c|}{Gauge Bosons} \\
  \hline
- Type & Mass & Charge & Spin\\
+ Boson & Mass & Charge & Force\\
  \hline
- $u$ & $2.2 ^{+0.6}_{\num{-0.4}}$ MeV & $\frac{2}{3}$ & $\frac{1}{2}$\\ [1ex]
- $d$ &  $4.7 ^{+0.5}_{\num{-0.4}}$ MeV & $-\frac{1}{3}$   & $\frac{1}{2}$\\ [1ex]
- $s$ &$96 ^{+8}_{\num{-4}}$ MeV & $-\frac{1}{3}$ & $\frac{1}{2}$\\[1ex]
- $c$ & $1.28 \pm 0.03$ GeV &$\frac{2}{3}$ & $\frac{1}{2}$\\[1ex]
- $b$ & $4.18 ^{+0.04}_{\num{-0.03}}$ GeV  &$-\frac{1}{3}$ & $\frac{1}{2}$\\[1ex]
- $t$ & $173.1 \pm 0.6$ GeV &$\frac{2}{3}$ & $\frac{1}{2}$\\[1ex]
+ $\ga$ & $0$ MeV & $0$ & Electromagnetic\\ [1ex]
+ $Z$ &  $91.1876\pm 0.00214$ GeV & $0$ & Weak\\ [1ex]
+ $W^{\pm 1}$ &$80.385 \pm 0.01596$ GeV & $\pm 1$ & Weak\\[1ex]
+ Gluon & $0$ MeV &$0$ & Strong \\[1ex]
+ \hline 
+\end{tabular}
+\caption{Table of Gauge Bosons in the SM \cite{Agashe:2014kda}}
+\label{table:1}
+\end{table}\\
+In addition to the gauge bosons the SM contains other particles known as fermions. Fermions have half-integer spin and are comprised of quarks and leptons. Leptons  come in six flavors, electron, muon, and tau and their corresponding neutrino which has does not have charge or mass. Each fermion has an antiparticles which are denoted with a bar over the top of the fermion letter, and is same in all ways to the particle except in charge. The charge of an antiparticle is opposite of the charge of the associated particle.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |p{1cm}||p{4cm}|p{1.5cm}| }
+ \hline
+ \multicolumn{3}{|c|}{Leptons} \\
+ \hline
+ Type & Mass & Charge\\
+ \hline
+ $e$ & $0.51099$ MeV & $-1$ \\ [1ex]
+ $\mu$ &  $105.6583745(24)$ MeV & $-1$ \\ [1ex]
+ $\tau$ &$1776.86\pm 0.12$ MeV & $-1$ \\[1ex]
+ \hline 
+\end{tabular}
+\caption{Table of Leptons in the SM \cite{Agashe:2014kda}}
+\label{table:1}
+\end{table}\\
+The other types of fermions are quarks. The quarks differ from the lepton because quarks participate in the strong force (force that hold the nucleus of an atom together) while leptons do not. Quarks also have either a $\frac{2}{3}$ or $-\frac{1}{3}$ charge and can be seen below.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |p{1cm}||p{4cm}|p{1.5cm}| }
+ \hline
+ \multicolumn{3}{|c|}{Quarks} \\
+ \hline
+ Type & Mass & Charge \\
+ \hline
+ $u$ & $2.2 ^{+0.6}_{\num{-0.4}}$ MeV & $\frac{2}{3}$ \\ [1ex]
+ $d$ &  $4.7 ^{+0.5}_{\num{-0.4}}$ MeV & $-\frac{1}{3}$ \\ [1ex]
+ $s$ &$96 ^{+8}_{\num{-4}}$ MeV & $-\frac{1}{3}$ \\[1ex]
+ $c$ & $1.28 \pm 0.03$ GeV &$\frac{2}{3}$ \\[1ex]
+ $b$ & $4.18 ^{+0.04}_{\num{-0.03}}$ GeV  &$-\frac{1}{3}$ \\[1ex]
+ $t$ & $173.1 \pm 0.6$ GeV &$\frac{2}{3}$ \\[1ex]
  \hline 
 \end{tabular}
 \caption{Table of Quarks in the SM \cite{Agashe:2014kda}}
 \label{table:1}
-\end{table}\\
-However, the question remains, why are there differences to the masses of quarks? To date, the SM has not been able to explain this phenomenon. Thus, by exploring the properties and characteristics of quarks, we may be able to probe into the possibility of new physics. The way in which we can know about the possibility new physics is to piece together scattering processes after collisions. Since a particle always decays to a lighter particle, due to the lighter particle being more stable than the heavier ones, we can look at the processes that include the heaviest quarks to see if there are additional physics beyond the SM. A excellent candidate of these tests would be the $B$ meson. A $B$ meson is made of two different quarks but always includes the $b$ quark. In this paper we will look at both the $B^+$ and $B_s$ mesons which are $b\bar{u}$ and $s\bar{b}$ respectively. \cite{Griffiths} (The bar above the quark indicates the anti quark, which is the same as the quark in all ways except having the opposite charge) The certain decays of the $B$ meson could give us some hints into the new physics present beyond the standard model because a possible new quark must decay into a $b$ quark. The realization of this fact lead to the creation of ``$B$ factories". These ``$B$ factories" focus on creating $B$ mesons and analyzing their decays. Two of these factories are BaBar and Belle, which provides some of the data included in this article. The $R_K$ and $R_{D^{(*)}}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ ratio is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration is \cite{Aaij:2014ora}
+\end{table}\\ 
+\\
+\\
+\\
+\\
+\\
+\\
+The Higgs is another particle that was the last particle deiscovered in the SM. It has no spin or charge and is known as a scalar boson. and However, recent experimental findings have challenged the notion that the standard model is the only model to predict what we see in the real world and in experiments.There are several questions that the SM doesn't answer for instance, the SM has not been able to answer why quarks have different masses. Thus, by exploring the properties and characteristics of quarks, we may be able to probe into the possibility of New Physics (NP).\\
+\\
+\indent Collaborations such as BaBar and Belle are currently probing the limits of the SM. These collaborations, along with the LHCb have collision energies at orders of 10 TeV thus the expectation is that they will soon have new results available. In order to probe the possibility of NP our goal is to study scattering processes after collisions. Since a particle always decays to a lighter particle, we can look at the processes that include the heaviest quarks to see if there are additional physics beyond the SM. An excellent candidate of these tests would be the $B$ meson. A $B$ meson is made of the b quark and another quark. In this paper we will look at both the $B^+$ and $B_s$ mesons which are $\bar{b}u$ and $\bar{b}s$ respectively. \cite{Griffiths} The certain decays of the  $B$ meson could give us some hints into new physics (NP) present beyond the standard model. $B$ mesons have loops, which are sensitive to NP. Therefore B mesons are relevant to the ongoing study of NP.\\
+\\
+\indent The $R_K$ and $R_{D^{(*)}}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ ratio is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration is \cite{Aaij:2014ora}
 \begin{center}
 $R^{expt}_{K} = 0.745 _{\num{-0.074}}^{+0.090}$ (stat) $\pm 0.036$ (syst)
 \end{center}
@@ -223,7 +274,7 @@ $R_D= 1.29 \pm 0.17$ , $R_{D^*} = 1.28 \pm 0.09$
 H = -\frac{\alpha G_f}{\sqrt{2}\pi} V_{tb}V^*_{ts}\sum_{a= 9,10}^{}(C_aO_a + C'_aO'_a)
 \eea
 \end{center}
-This article will take the Hamiltonian and use the Wilson Coefficients found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide to the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different NP Wilson Coefficients for varying observable. Finally in section 4 plots of the Branching ratio based upon the Wilson Coefficients will be shown and fits to the data will be provided. We conclude the article in section 5. 
+This article will take the Hamiltonian and use the Wilson Coefficients (WC) found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide to the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different WC for varying observable. Finally in section 4 plots of the Branching ratio based upon the WC will be shown and fits to the data will be provided. We conclude the article in section 5.
 \section{The branching Ratio of a Charged Pion decay}
 In order to calculate the Branching ratio of a charged pion, we will use the Feynman Rules of calculating amplitudes and the trace identities. \\
 \\
@@ -232,10 +283,10 @@ We start by with recognizing that the pion decay is a charged cuurent interactio
 A diagram of the decay may be seen below: 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.75]{piondecay}
+\includegraphics[scale=.55]{piondecay}
 \caption{Pion Decay (where $\ell$ is $\mu$ or $e$)}
-\end{figure}
-Where the up and ani-down quark are the pion and the muon and muon neutrino are on the right. However, the muon and the muon neutrino could be the electron and electron neutrino.  \\
+\end{figure}\\
+Where the up and ani-down quark are the pion and the lepton and corresponding lepton neutrino are on the right.  \\
 \\
 The formula given to describe the branching ratio of the decay is given by\cite{Griffiths}: 
 \bea 
@@ -268,7 +319,7 @@ Summing over the spins gives us:
 \bea 
 \langle|\mathcal{M}^2|\rangle&=&8\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2 [2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)] 
 \eea 
-Since $p=p_2 + p_3$, we can simplify the equation further\\
+Since $p = p_2 + p_3$, we can simplify the equation further\\
 For simplicity and consistency we will use the following notation: $p_1 = p_\pi , p_2=p_l, p_3=p_{\nu_l}$\\ 
 We begin with showing the value of the 4-momentum squared: 
 \bea 
@@ -299,7 +350,6 @@ We can remove S because in this case S=1\\
 We then need to find the value of $|\textbf{p}|$\\
 \bea
 |\textbf{p}| &=& \frac{\sqrt{(m_1+m_2+m_3)(m_1-m_2-m_3)(m_1+m_2-m_3)(m_1-m_2+m_3)}}{2m_1}\\
-|\textbf{p}| &=& \frac{\sqrt{m_1^4+m_2^4 + m_3^4 -2m_1^2m_2^2 - 2m_1^2m_3^2 - 2m_2^2m_3^2}}{2m_1}\nl
 |\textbf{p}| &=& \frac{\sqrt{m_1^4+m_2^4-m_1^2m_2^2}}{2m_1}
 \eea
 (Because the neutrino is massless)
@@ -327,35 +377,18 @@ In order to find $\frac{\Ga_{l}}{\Ga_\pi}$ we need to divide the above expressio
 \bea
 \frac{\Ga_l}{\Ga_\pi}&=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\bigg(\frac{\tau_\pi}{\hbar}\bigg)\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg(1-\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg)^2
 \eea 
-\newpage
 The graph of the equation (with $m_l = m_e$) is:
 \\
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.90]{brpion1}
+\includegraphics[scale=.65]{brpion1}
 \caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the plots of $\frac{m_e}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow e^{-} + \nu_e)$}
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.85]{brpionmu1}
+\includegraphics[scale=.75]{brpionmu1}
 \caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the plots of $\frac{m_\mu}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
 \end{figure}
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
 \\
 Using the values from PDG \cite{Agashe:2014kda} we can do calculations with the branching ratios. \\
 \begin{center}
@@ -380,7 +413,8 @@ Following the procedure outlined above and comparing to \cite{Dighe:2012df} we a
 The decay rate is as follows:
 \begin{center}
 \bea
-\mathcal{B}(B_s\rightarrow \mu^+\mu^-) = \frac{G_F^2 \al_{em}^2 m_{B_s}^5 f_{B_s}^2 \tau_{B_s}}{64\pi^3}\sqrt{1-\frac{4m_\mu^2}{m_{B_s}^2}}\times \nl \bigg\{\bigg(1-\frac{4m_\mu^2}{m_{B_s}^2}\bigg)\bigg|\zeta\frac{C_S-C_S^{'}}{m_b+m_s}\bigg|^2+\bigg|\zeta\frac{C_P-C_P^{'}}{m_b+m_s}+\frac{2m_\mu}{m_{B_s}^2}[|V_{tb} V_{ts}^*|C_{10}+\zeta (C_A-C_A^{'})]\bigg|^2\bigg\}
+\mathcal{B}(B_s\rightarrow \mu^+\mu^-) &=& \frac{G_F^2 \al_{em}^2 m_{B_s}^5 f_{B_s}^2 \tau_{B_s}}{64\pi^3}\sqrt{1-\frac{4m_\mu^2}{m_{B_s}^2}} \lb\(1-\frac{4m_\mu^2}{m_{B_s}^2}\) \right. \nl 
+&& \bigg|\zeta\frac{C_S-C_S^{'}}{m_b+m_s}\bigg|^2+\bigg|\zeta\frac{C_P-C_P^{'}}{m_b+m_s}+\frac{2m_\mu}{m_{B_s}^2}[|V_{tb} V_{ts}^*|C_{10}+\zeta (C_A-C_A^{'})]\bigg|^2\bigg\}
 \eea
 \end{center}
 Where $\zeta \equiv (\frac{g_{NP}^2}{\Lambda^2})(\frac{\sqrt{2}}{4G_F})(\frac{4\pi}{\alpha_{em}})$\\
@@ -388,8 +422,8 @@ Where $\zeta \equiv (\frac{g_{NP}^2}{\Lambda^2})(\frac{\sqrt{2}}{4G_F})(\frac{4\
 The Feynman Diagram of the decay can be seen below: 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.85]{B_sdecay}
-\caption{Graph of $B_s \rightarrow \mu^+ + \mu^-$}
+\includegraphics[scale=.9]{B_sdecay}
+\caption{Graph of $B_s \rightarrow \mu^+ \mu^-$}
 \end{figure}
 Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio} and using the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df} thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simply our calculations.We will solve each coefficient by the upper and lower limits of the branching ratio then take the average by setting the expression with the unknown coefficient equal to the branching ratio, the upper limit of the branching ratio, and its lower limit. \\
 \\
