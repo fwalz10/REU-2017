@@ -157,47 +157,35 @@
 \pagestyle{plain}
 \allowdisplaybreaks
 
-\setlength{\abovecaptionskip}{0pt}
-\setlength{\belowcaptionskip}{0pt}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{5pt}
 
 \begin{document}
-\begin{titlepage}
     \begin{center}
         \vspace*{1cm}
         
         \Huge
-        \textbf{The $R_K$ and $R_{D^{(*)}}$ Puzzles}
+        \textbf{The $R_K$ Puzzle and Analysis}
         
-        \vspace{0.5cm}
-        \large
+        \vskip 20pt
         
-        \vspace{1.5cm}
+        \large{Francis Walz}\footnote{frankwalz10@gmail.com; REU blah}\\ Department of Physics, Astronomy, and Geosciences, \\ Towson University, Towson, MD 21252, USA \\
+          and \\
+        Department of Physics and Astronomy, \\ Wayne State University, Detroit, MI 48201, USA
         
-        Francis Walz\footnote{frankwalz10@gmail.com}\\ Towson University
-        
-        \vspace{2.5cm}
-        \textbf{Abstract}\\
-        \normalsize
-        The $R_K$ and $R_{D^{(*)}}$ are two $B$ meson decay puzzles that seems to provide substantial evidence of New Physics(NP) beyond the Standard Model (SM). Recent experimental results from the BaBar, Belle, and LHCb collaborations demonstrate intriguing results compared to SM predictions. The loops present in certain $B$ meson decays are sensitive to the possibility of NP. This article seeks to constrain and analyze the Wilson Coefficients that are present in the branching ratio of such decays. We hope to provide a substantial analysis and demonstrate a indication of new research to come.  
+        \begin{abstract}
+        The $R_K$ is a $B$ meson ratio puzzle that seems to provide substantial evidence of New Physics(NP) beyond the Standard Model (SM). Recent experimental results from the BaBar, Belle, and LHCb collaborations demonstrate intriguing results compared to SM predictions. The loops present in certain $B$ meson decays are sensitive to the possibility of NP. This article seeks to constrain and analyze the Wilson Coefficients that are present in the branching ratio of such decays. We hope to provide a substantial analysis and demonstrate a indication of new research to come.  
+        \end{abstract}
         \vfill
-        
-        
-        
-        \vspace{0.8cm}
-        
-        \Large
-        2017 Summer REU\\
-        Wayne State University\\
-        Department of Physics and Astronomy\\
-        8/10/17
-        
     \end{center}
-\end{titlepage}
+    
 \tableofcontents
-\newpage
+
 \section{Introduction}
-The Standard Model (SM) of particle physics works extremely well when calculating decay rates of subatomic particle and explaining different types of physical phenomena that occur at the subatomic level. Included in the SM are lists of rules that govern interactions and different predicted conserved quantities that have aligned well with the observed experimental results. The spectrum of the SM includes 3 types of particles: gauge bosons, leptons, and quarks. The gauge bosons are particles with spin 1 who are mediators of the different forces. For instance, the W and Z boson mediate the weak force, which is the force responsible for radioactive decay. These particles are ``virtual" particles and cannot be observed directly in experiments. Below is a table summarizing these types of particles. 
-\begin{table}[h!]
+
+The Standard Model (SM) of particle physics works extremely well when calculating decay rates of subatomic particle and explaining different types of physical phenomena that occur at the subatomic level. Included in the SM are lists of rules that govern interactions and different conserved quantities that have aligned well with the observed experimental results. The SM spectrum includes 4 types of particles: gauge bosons, quarks, leptons, and the Higgs boson. The gauge bosons are particles with spin 1 that mediate the different forces. For instance, the W and Z bosons mediate the weak force. In Table \ref{table:1} we summarize the physical properties of this type of particles. 
+%
+\begin{table}[htbp!]
 \centering
 \begin{tabular}{ |p{2cm}||p{5cm}|p{1.5cm}|p{3cm}|  }
  \hline
@@ -213,9 +201,10 @@ The Standard Model (SM) of particle physics works extremely well when calculatin
 \end{tabular}
 \caption{Table of Gauge Bosons in the SM \cite{Agashe:2014kda}}
 \label{table:1}
-\end{table}\\
-In addition to the gauge bosons the SM contains other particles known as fermions. Fermions have half-integer spin and are comprised of quarks and leptons. Leptons  come in six flavors, electron, muon, and tau and their corresponding neutrino which has does not have charge or mass. Each fermion has an antiparticles which are denoted with a bar over the top of the fermion letter, and is same in all ways to the particle except in charge. The charge of an antiparticle is opposite of the charge of the associated particle.
-\begin{table}[h!]
+\end{table}
+
+In addition to the gauge bosons, the SM contains other particles known as fermions. Fermions have half-integer spin and are comprised of quarks and leptons. There are 3 types of leptons (electron, muon and tau), each with its corresponding neutrino. Each fermion ($f$) has an antiparticle ($\bar f$), which has the same mass but opposite charge. These leptons can be seen in Table \ref{table:2}.
+\begin{table}[htbp!]
 \centering
 \begin{tabular}{ |p{1cm}||p{4cm}|p{1.5cm}| }
  \hline
@@ -229,10 +218,11 @@ In addition to the gauge bosons the SM contains other particles known as fermion
  \hline 
 \end{tabular}
 \caption{Table of Leptons in the SM \cite{Agashe:2014kda}}
-\label{table:1}
-\end{table}\\
-The other types of fermions are quarks. The quarks differ from the lepton because quarks participate in the strong force (force that hold the nucleus of an atom together) while leptons do not. Quarks also have either a $\frac{2}{3}$ or $-\frac{1}{3}$ charge and can be seen below.
-\begin{table}[h!]
+\label{table:2}
+\end{table}
+
+The other types of fermions are quarks. Quarks differ from leptons because quarks participate in the strong force, while leptons do not. Quarks also have either a $\frac{2}{3}$ or $-\frac{1}{3}$ charge and can be seen below in Table \ref{table:3}. Finally, there is the recently discovered Higgs boson, a spinless scalar particle responsible for generating gauge boson and fermion masses in the SM.
+\begin{table}[htbp!]
 \centering
 \begin{tabular}{ |p{1cm}||p{4cm}|p{1.5cm}| }
  \hline
@@ -249,79 +239,71 @@ The other types of fermions are quarks. The quarks differ from the lepton becaus
  \hline 
 \end{tabular}
 \caption{Table of Quarks in the SM \cite{Agashe:2014kda}}
-\label{table:1}
-\end{table}\\ 
-\\
-\\
-\\
-\\
-\\
-\\
-The Higgs is another particle that was the last particle deiscovered in the SM. It has no spin or charge and is known as a scalar boson. and However, recent experimental findings have challenged the notion that the standard model is the only model to predict what we see in the real world and in experiments.There are several questions that the SM doesn't answer for instance, the SM has not been able to answer why quarks have different masses. Thus, by exploring the properties and characteristics of quarks, we may be able to probe into the possibility of New Physics (NP).\\
-\\
-\indent Collaborations such as BaBar and Belle are currently probing the limits of the SM. These collaborations, along with the LHCb have collision energies at orders of 10 TeV thus the expectation is that they will soon have new results available. In order to probe the possibility of NP our goal is to study scattering processes after collisions. Since a particle always decays to a lighter particle, we can look at the processes that include the heaviest quarks to see if there are additional physics beyond the SM. An excellent candidate of these tests would be the $B$ meson. A $B$ meson is made of the b quark and another quark. In this paper we will look at both the $B^+$ and $B_s$ mesons which are $\bar{b}u$ and $\bar{b}s$ respectively. \cite{Griffiths} The certain decays of the  $B$ meson could give us some hints into new physics (NP) present beyond the standard model. $B$ mesons have loops, which are sensitive to NP. Therefore B mesons are relevant to the ongoing study of NP.\\
-\\
-\indent The $R_K$ and $R_{D^{(*)}}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ ratio is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration is \cite{Aaij:2014ora}
+\label{table:3}
+\end{table}
+
+In spite of its remarkable success in explaining subatomic phenomena, recently it has been shown that there is need for physics beyond the SM in order to explain experimental observations made by BaBar, Belle and LHCb collaborations, while studying decays of $B$ mesons. In this article, we will study decays of the $B^+$ ($\bar{b}u$) and $B_s$ ($\bar{b}s$) mesons. We will focus on a few interesting channels that have received quite a bit of attention in the literature.
+
+
+
+By exploring the properties and characteristics of quarks and leptons, our goal is to understand the properties of such new physics (NP).
+
+
+The $R_K$ and $R_{D^{(*)}}$ are two ratios of these $B$ meson decays that show some puzzling experimental results. The $R_K$ ratio is defined as $\mathcal{B}(B^+\rightarrow K^+\mu^+\mu^-)/ \mathcal{B}(B^+\rightarrow K^+e^+e^-)$ The experimental value found by the LHCb Collaboration is \cite{Aaij:2014ora}
 \begin{center}
 $R^{expt}_{K} = 0.745 _{\num{-0.074}}^{+0.090}$ (stat) $\pm 0.036$ (syst)
 \end{center}
 Which differs from the SM prediction of $R^{expt}_{K} = 1 \pm 0.01$ differs from the standard model prediction by $2.6\si$. \cite{Bordone:2016gaq} The next puzzle is the $R_{D^{(*)}}$ ratio which is defined as $\mathcal{B}(\bar{B} \rightarrow D^{(*)}\tau^- \onu_{\tau}/ \mathcal{B}(\bar{B} \rightarrow D^{(*)}l^- \onu_{l}$ where $(l= \mu$ or $e)$ this ratio has been measured by the LHCb  Collaboration, BaBar, and Belle. The experimental values of $R_D$ and $R_{D^*}$The ratios are as follows \cite{Lees:2013uzd, Huschle:2015rga, Aaij:2015yra} :
 \begin{center}
 $R_D= 1.29 \pm 0.17$ , $R_{D^*} = 1.28 \pm 0.09$
-\end{center}$R_D$ differs from the standard model by $1.7\si$ and the $R_{D^*}$ differs by $3.1\si$. We will focus on analyzing the possible NP contributions to the Wilson Coefficients arising from the effective Hamiltonian of the $b \rightarrow s\mu^+\mu^-$ transition. The complete Hamiltonian is as follows:\cite{Bhattacharya:2016mcc}. 
+\end{center}$R_D$ differs from the standard model by $1.7\si$ and the $R_{D^*}$ differs by $3.1\si$. We will focus on analyzing the possible NP contributions to the Wilson Coefficients (WC) arising from the effective Hamiltonian of the $b \rightarrow s\mu^+\mu^-$ transition. The complete Hamiltonian is as follows:\cite{Bhattacharya:2016mcc}. 
 \begin{center}
 \bea
 H = -\frac{\alpha G_f}{\sqrt{2}\pi} V_{tb}V^*_{ts}\sum_{a= 9,10}^{}(C_aO_a + C'_aO'_a)
 \eea
 \end{center}
-This article will take the Hamiltonian and use the Wilson Coefficients (WC) found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide to the format of the rest of the paper. In section 3 the Wilson coefficients from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different WC for varying observable. Finally in section 4 plots of the Branching ratio based upon the WC will be shown and fits to the data will be provided. We conclude the article in section 5.
+This article will take the Hamiltonian and use the WC found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay to constrain the effects of NP parameters. The paper begins by first exploring and computing different observable and particulars of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expression for branching ratios and decays. It will also serve the reader as a guide to the format of the rest of the paper. In section 3 the WC from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay will be extracted and constrained with the experimental numbers. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different WC for varying observable. Finally in section 4 plots of the Branching ratio based upon the WC will be shown and fits to the data will be provided. We conclude the article in section 5.
 \section{The branching Ratio of a Charged Pion decay}
-In order to calculate the Branching ratio of a charged pion, we will use the Feynman Rules of calculating amplitudes and the trace identities. \\
-\\
-We start by with recognizing that the pion decay is a charged cuurent interaction which arises from the fact that a pion is made of quarks, and the decay is mediated by a massive W boson. \\
-\\
-A diagram of the decay may be seen below: 
+In order to calculate the Branching ratio of a charged pion, we will use the Feynman Rules of calculating amplitudes and the trace identities.We start by with recognizing that the pion decay is a charged current interaction which arises from the fact that a pion is made of quarks, and the decay is mediated by a massive W boson. A diagram of the decay may be seen in Figure \ref{fig:piondecay}}: 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.55]{piondecay}
+\includegraphics[scale=.60]{piondecay}
 \caption{Pion Decay (where $\ell$ is $\mu$ or $e$)}
+\label{fig:piondecay}
 \end{figure}\\
 Where the up and ani-down quark are the pion and the lepton and corresponding lepton neutrino are on the right.  \\
 \\
-The formula given to describe the branching ratio of the decay is given by\cite{Griffiths}: 
+The formula given to describe the branching ratio of this decay is given by\cite{Griffiths}: 
 \bea 
 \Ga &=& \frac{S|\textbf{p}|}{8\pi\hbar m_1^2c} |\mathcal{M}|^2
 \eea 
-Where $|\textbf{p}|$ is the outgoing momentum, $S$ is the product of statistical factors (in our case it will be equal to 1), and $\mathcal{M}$ is the Feynman amplitude. In our notation, we will use the Natural Units so our expression becomes: 
+Where $|\textbf{p}|$ is the outgoing momentum, $S$ is the product of statistical factors (in our case it will be equal to 1), $m_1$ is the mass of the pion, and $\mathcal{M}$ is the Feynman amplitude. In our notation, we will use the Natural Units so our expression becomes: 
 \bea 
 \Ga &=& \frac{S|\textbf{p}|}{8\pi m_1^2} |\mathcal{M}|^2
 \eea 
-The next step is to determine the Feynman Amplitude which can be done in a few steps 
-In the charged weak lepton decays, we have different notation for the vertices and propagators. 
+The next step is to determine the  $\mathcal{M}$. In the charged current decay, we have different notation for the vertices and propagators.
 \begin{enumerate}
     \item For each vertex add a factor of $\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5))$ where $g_w= \sqrt{4\pi\al_w}$
     \item For each propagator we add a factor of $\frac{-ig_{\mu\nu}-\frac{q_\mu q_\nu}{m^2}}{q^2-m^2}$ where m is the mass of the boson. In our case, $m_w \gg\ q$ so the expression simplifies to $\frac{ig_{\mu\nu}}{m_w^2}$
 \end{enumerate}
 From these rules and Figure 1 we are able to calculate the value of $\mathcal{M}$ 
 \bea
--i\mathcal{M}&=&\bigg[\ou(3)\bigg(\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5)\bigg)v(2)\bigg] \bigg[\frac{ig_{\mu\nu}}{m_w^2} \bigg]\bigg[\frac{-ig_w}{2\sqrt{2}}F^\mu\bigg]
+-i\mathcal{M}&=&\[\ou(3)\(\frac{-ig_w}{2\sqrt{2}}(\ga^\nu(1-\ga^5)\)v(2)\] \[\frac{ig_{\mu\nu}}{m_w^2} \]\[\frac{-ig_w}{2\sqrt{2}}F^\mu\]
 \eea
-We have a factor of -i with the $\mathcal{M}$ so that we obtain the real part of the expression and $F^\mu$ is the form factor of the coupling of the pion to the $W$ boson. $F^\mu$ has the form of $f_\pi p^\mu$ 
+Where $F^\mu$ is the form factor of the coupling of the pion to the $W$ boson. $F^\mu$ has the form of $f_\pi p^\mu$. 
 \bea
-\mathcal{M}&=&\frac{g_w^2}{8 m_w^2}[\ou(3)(\ga^\mu(1-\ga^5))v(2)]F^\mu
+\mathcal{M}&=&\frac{g_w^2}{8 m_w^2}\[\ou(3)(\ga^\mu(1-\ga^5))v(2)\]F^\mu
 \eea
 In order to square the amplitude we do the following: 
 \bea
-\langle|\mathcal{M}^2|\rangle&=&\bigg(\frac{g_w^2}{8 m_w^2}f_\pi\bigg)^2Tr[(\ou(3)(\ga^\mu(1-\ga^5))v(2)p_\mu(\ov(2)(\ga^\nu(1-\ga^5)u(3))]p_\nu\\
-\langle|\mathcal{M}^2|\rangle&=&\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2p_\mu p_\nu (8[p_3^\mu p_2^\nu + p_2^\mu p_3^\nu -(p_3 \cdot p_2)g^{\mu\nu}]+8i\epsilon^{\mu\la\nu\si}p_{3\la}p_{2\si}
+\langle|\mathcal{M}^2|\rangle&=&\(\frac{g_w^2}{8 m_w^2}f_\pi\)^2Tr[(\ou(3)(\ga^\mu(1-\ga^5))v(2)p_\mu(\ov(2)(\ga^\nu(1-\ga^5)u(3))]p_\nu\\
+\langle|\mathcal{M}^2|\rangle&=&\(\frac{g_w^2}{8m_w^2}f_\pi\)^2p_\mu p_\nu (8[p_3^\mu p_2^\nu + p_2^\mu p_3^\nu -(p_3 \cdot p_2)g^{\mu\nu}]+8i\epsilon^{\mu\la\nu\si}p_{3\la}p_{2\si}
 \eea
 Summing over the spins gives us: 
 \bea 
-\langle|\mathcal{M}^2|\rangle&=&8\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2 [2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)] 
+\langle|\mathcal{M}^2|\rangle&=&8\(\frac{g_w^2}{8m_w^2}f_\pi\)^2 \[2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)\] 
 \eea 
-Since $p = p_2 + p_3$, we can simplify the equation further\\
-For simplicity and consistency we will use the following notation: $p_1 = p_\pi , p_2=p_l, p_3=p_{\nu_l}$\\ 
-We begin with showing the value of the 4-momentum squared: 
+Since $p = p_2 + p_3$, we can simplify the equation further. For simplicity and consistency we will use the following notation: $p_1 = p_\pi , p_2=p_l, p_3=p_{\nu_l}$. We begin with showing the value of the 4-momentum squared: 
 \bea 
 p_1 &=& (E, \vec{p}_1) \\
 (p_1)^2 &=& p_\mu p_\nu g_{\mu\nu}\nl
@@ -329,25 +311,23 @@ p_1 &=& (E, \vec{p}_1) \\
 (p_1)^2 &=& E^2 - (\vec{p}_1)^2\nl 
 (p_1)^2 &=& m_1^2
 \eea 
-This can be also shown to be true for the other 4-Momenta thus:\\
-$(p_1)^2 =(p_\pi)^2 = m_\pi^2 , (p_2)^2 = (p_l)^2 = m_l^2 , (p_3)^2= (p_{\nu_l})^2 = (m_{\nu_l})^2 = 0$\\
-Using this we can further simplify Equation 7:
+Similarly:
+$(p_\pi)^2 = m_\pi^2 ,(p_l)^2 = m_l^2 , (p_{\nu_l})^2 = (m_{\nu_l})^2 = 0$. Using this we can further simplify Equation 8:
 \bea 
 \frac{1}{2}[(m_\pi)^2 -(m_l)^2] &=& (p_2 \cdot p_3)\\
 \frac{1}{2}[(m_\pi)^2 -(m_l)^2] &=& (p_1 \cdot p_3)\\
 \frac{1}{2}[(m_\pi)^2 +(m_l)^2] &=& (p_1 \cdot p_2)
 \eea 
-Returning to Equation 7 we now have
+Returning to Equation 8 we now have
 \bea 
-\langle|\mathcal{M}^2|\rangle&=&8\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2[\frac{1}{2}(m_l)^2((m_\pi)^2- (m_l)^2)]
+\langle|\mathcal{M}^2|\rangle&=&8\(\frac{g_w^2}{8m_w^2}f_\pi\)^2\[\frac{1}{2}(m_l)^2((m_\pi)^2- (m_l)^2)\]
 \eea 
-In this way we are able to calculate the branching ratio of a pion, since we know have the Feyneman Amplitude we simply return to equation (112)
+With the Feynman amplitude, we are able to complete the expression for the branching ratio of a pion. Returning to equation (3)
 \bea 
 \Ga &=& \frac{S|\textbf{p}|}{8\pi m_1^2} |\mathcal{M}|^2\\
-\Ga &=& \frac{S|\textbf{p}|}{\pi m_\pi^2}\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2\bigg[\frac{1}{2}(m_l)^2((m_\pi)^2 -(m_l)^2)\bigg]
+\Ga &=& \frac{S|\textbf{p}|}{\pi m_\pi^2}\(\frac{g_w^2}{8m_w^2}f_\pi\)^2\[\frac{1}{2}(m_l)^2((m_\pi)^2 -(m_l)^2)\]
 \eea 
-We can remove S because in this case S=1\\
-We then need to find the value of $|\textbf{p}|$\\
+We can simplify S because in this case S=1. We then need to find the value of $|\textbf{p}|$ which is simply the outgoing momentum of the two particles. 
 \bea
 |\textbf{p}| &=& \frac{\sqrt{(m_1+m_2+m_3)(m_1-m_2-m_3)(m_1+m_2-m_3)(m_1-m_2+m_3)}}{2m_1}\\
 |\textbf{p}| &=& \frac{\sqrt{m_1^4+m_2^4-m_1^2m_2^2}}{2m_1}
@@ -362,43 +342,43 @@ For our case $m_1=m_\pi$ and $m_2=m_l$
 \eea
 Combining with Equation 14: 
 \bea 
-\Ga &=& \frac{|\textbf{p}|}{2\pi m_1^2}\bigg(\frac{g_w^2}{8m_w^2}f_\pi\bigg)^2\bigg[(m_l)^2((m_\pi)^2 -(m_l)^2)\bigg]\\
-\Ga &=& \frac{1}{4\pi}\bigg(\frac{g_w^2f_\pi}{8m_w^2}\bigg)^2\frac{1}{m_\pi^3}m_l^2(m_\pi^2-m_l^2)^2
+\Ga &=& \frac{|\textbf{p}|}{2\pi m_1^2}\(\frac{g_w^2}{8m_w^2}f_\pi\)^2\[(m_l)^2((m_\pi)^2 -(m_l)^2)\]\\
+\Ga &=& \frac{1}{4\pi}\(\frac{g_w^2f_\pi}{8m_w^2}\)^2\(\frac{1}{m_\pi^3}\)m_l^2(m_\pi^2-m_l^2)^2
 \eea
 Because $\frac{g_w^2}{8m_w^2}= \frac{G_f}{\sqrt{2}}$ we are able to say:
 \bea
-\Ga &=& \frac{1}{8\pi}(G_f f_\pi)^2\frac{1}{m_\pi^3}m_l^2(m_\pi^2-m_l^2)^2
+\Ga &=& \frac{1}{8\pi}\(G_f f_\pi\)^2\(\frac{1}{m_\pi^3}\)m_l^2(m_\pi^2-m_l^2)^2
 \eea 
 Expanding on this idea, we are able to graph $\frac{\Ga_l}{\Ga_\pi}$ by: 
 \bea
-\Ga &=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg(1-\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg)^2
+\Ga &=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\(\frac{m_l}{m_\pi}\)^2\(1-\(\frac{m_l}{m_\pi}\)^2\)^2
 \eea
 In order to find $\frac{\Ga_{l}}{\Ga_\pi}$ we need to divide the above expression by $\frac{1}{\tau_\pi}$ but normalize it with $\hbar$ so our final expression is: 
 \bea
-\frac{\Ga_l}{\Ga_\pi}&=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\bigg(\frac{\tau_\pi}{\hbar}\bigg)\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg(1-\bigg(\frac{m_l}{m_\pi}\bigg)^2\bigg)^2
+\frac{\Ga_l}{\Ga_\pi}&=& \frac{1}{8\pi}(G_f f_\pi)^2m_\pi^3\(\frac{\tau_\pi}{\hbar}\)\(\frac{m_l}{m_\pi}\)^2\(1-\(\frac{m_l}{m_\pi}\)^2\)^2
 \eea 
-The graph of the equation (with $m_l = m_e$) is:
-\\
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.65]{brpion1}
+\includegraphics[scale=.73]{brpion1}
 \caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the plots of $\frac{m_e}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow e^{-} + \nu_e)$}
+\label{fig:BRofme}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.75]{brpionmu1}
+\includegraphics[scale=.70]{brpionmu1}
 \caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the plots of $\frac{m_\mu}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
+\label{fig:BRofmpi}
 \end{figure}
-\\
-Using the values from PDG \cite{Agashe:2014kda} we can do calculations with the branching ratios. \\
+The graph of the Equation 25 (with $m_l = m_e$) is found in Figure \ref{fig:BRofme}. and the graph of Equation 25 (with $m_l = m_\pi$) is found in Figure \ref{fig:BRofmpi}.
+Using the values from PDG \cite{Agashe:2014kda} we may compute different ratios with the branching ratios.
 \begin{center}
  \begin{tabular}{||c c c c||} 
  \hline
- Observables & $e$ & $\mu$ & $\pi$  \\ [0.5ex] 
+ Observables & $e$ & $\mu$ & $\pi$  \\ [1.5ex] 
  \hline\hline
- $\tau$ & $6.6 \times 10^{28}$ yr &$2.1969811(22) \times 10^-6$ s  & $2.6033(5) \times 10^-8$ s \\ 
+ $\tau$ (Lifetime) & $6.6 \times 10^{28}$ yr &$2.1969811(22) \times 10^-6$ s  & $2.6033(5) \times 10^-8$ s \\[1.5ex]
  \hline
- Mass(MeV) & $0.5109989461(31)$ & $105.6583745(24)$  & $139.57061(24)$ \\[1ex] 
+ Mass(MeV) & $0.5109989461(31)$ & $105.6583745(24)$  & $139.57061(24)$ \\[1.5ex] 
  \hline
 \end{tabular}
 \end{center}
@@ -409,8 +389,7 @@ If we would like to calculate the ratio of the $\pi^{-} \rightarrow e^{-} + \nu_
 \eea 
 This is an interesting observation because the value of $ \frac{\Ga_e}{\Ga_\mu}$ suggests that the probability of $\pi^{-} \rightarrow \mu^{-} + \nu_\mu$ is higher than $\pi^{-} \rightarrow e^{-} + \nu_e$. This is somewhat striking because the mass of a muon is greater than the mass of an electron, indicating that the pion does not decay into the lightest particle most frequently. 
 \section{The Branching Ratio of the $B_s \rightarrow \mu^+\mu^-$ decay}
-Following the procedure outlined above and comparing to \cite{Dighe:2012df} we are able to find an expression for the decay rate of the $B_s \rightarrow \mu^+\mu^-$ with some coefficients of new physics included.\\
-The decay rate is as follows:
+Following the procedure outlined above and using the branching ratio found in \cite{Dighe:2012df} we are able to find an expression for the decay rate of the $B_s \rightarrow \mu^+\mu^-$ with some coefficients of new physics included. The decay rate is as follows:
 \begin{center}
 \bea
 \mathcal{B}(B_s\rightarrow \mu^+\mu^-) &=& \frac{G_F^2 \al_{em}^2 m_{B_s}^5 f_{B_s}^2 \tau_{B_s}}{64\pi^3}\sqrt{1-\frac{4m_\mu^2}{m_{B_s}^2}} \lb\(1-\frac{4m_\mu^2}{m_{B_s}^2}\) \right. \nl 
@@ -441,48 +420,44 @@ C_A&=& 2.0348\times 10^{-3}~ {\rm or}~ 1.31095\times 10^{-2}~~{\rm For~ the~ low
 &=& 1.48237\times 10^{-4} ~ {\rm or}~ 1.5287\times 10^{-2}~~{\rm For~ the~upper~ BR~ value}\nn
 \eea
 \textbf{Notes about the Wilson Coefficients:}\\
-The $C_S$ coefficient is equal to $\pm (0.811i + 0.232)\times 10^{-4}$ (We are able to calculate the mean by a simply average)\\
+The $C_S$ coefficient is equal to $\pm (0.811i + 0.232)\times 10^{-4}$ (We are able to calculate the mean by a simply average).The $C_P$ has two values the first value is equal to $2.967\times 10^{-5}$ and the second value is equal to $4.454 \times 10^{-4}$. The last coefficient $C_{A}$ also has two values, the first one is equal to $1.089 \times 10^{-3}$ and the second value is equal to $1.420 \times 10^{-2}$
+
+After finding the Wilson Coefficients, we use the Python package Flavio \cite{flavio} to compute the NP values of $B(B_s\rightarrow \mu^+\mu^-)$. We again only apply one Wilson Coefficient at a time to find the NP branching ratio:\\
 \\
-The $C_P$ has two values the first value is equal to $2.967\times 10^{-5}$ and the second value is equal to $4.454 \times 10^{-4}$ \\
-\\
-The last coefficient $C_{A}$ also has two values, the first one is equal to $1.089 \times 10^{-3}$ and the second value is equal to $1.420 \times 10^{-2}$\\
-\\
-After finding the Wilson Coefficients, I was able to use the Python package Flavio \cite{flavio} to compute the NP values of $B(B_s\rightarrow \mu^+\mu^-)$\\
-\\
-We again only apply one Wilson Coefficient at a time to find the NP branching ratio:\\ 
-For the $C_S$:
+$C_S$:
 \begin{center}
  $C_S = \pm (0.811i + 0.232)\times 10^{-4}$\\
  Flavio Prediction: BR = $3.610 \times 10^{-9}$\\
 \end{center}
-For $C_P$:
+$C_P$:
 \begin{center}
 $C_{P} = 2.967\times 10^{-5}$ \\
 Flavio Prediction: $Br = 3.603 \times 10^{-9}$\\
 $C_{P} = 4.454\times 10^{-4}$ \\
 Flavio Prediction: $Br = 3.508 \times 10^{-9}$\\
 \end{center}
-For $C_A$:
+$C_A$:
 \begin{center}
 $C_{A} = 1.089\times 10^{-3}$ \\
 Flavio Prediction: $Br = 3.608 \times 10^{-9}$\\
 $C_{A} = 1.420\times 10^{-2}$ \\
 Flavio Prediction: $Br = 3.584 \times 10^{-9}$\\
 \end{center}
-\newpage
 \section{Plots of $Br(WC)$}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=.65]{B(WC)forB_smumu}
 \caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_P$ and $C_S$ Wilson Coefficients}
+\label{fig:Bsmumu1}
 \end{figure}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=.65]{B(WC)forB_smumu2}
 \caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_A$ Wilson Coefficient}
+\label{fig:Bsmumu2}
 \end{figure}
-The above graphs gives an indication of how drastically the variation of a Wilson Coefficient could change the value of the Branching ratio.\\
-For each of the plots I have conducted a fit to the lines in order to find the coefficient values to the lines. \\
+Figures \ref{fig:Bsmumu1} and \ref{fig:Bsmumu2} give an indication of how drastically the variation of a Wilson Coefficient could change the value of the Branching ratio.\\
+For each of the plots we have conducted a fit to the lines in order to find the coefficient values to the graphs. \\
 $Br(C_S)=3.22046\times10^{-6} x^2$\\
 $Br(C_P)=3.57491\times10^{-6} x^2$\\
 $Br(C_A)=2.79479\times10^{-10} x^2$\\
@@ -490,11 +465,9 @@ $Br(C_A)=2.79479\times10^{-10} x^2$\\
 \centering
 \includegraphics[scale=.65]{BrofB-Kmumu}
 \caption{Graph of $Br(B\rightarrow K\mu^+\mu^-)$ as functions of the Wilson Coefficients}
-\end{figure}\\
-\\
-\\
-Here, in this decay I was also able to compute fits to the plots.\\
-\\
+\label{fig:Bkmumu}
+\end{figure}
+Here, in Figure \ref{fig:Bkmumu} the fits to the plots are as follows:\\
 $Br(C_S)=5.73539\times10^{-9} x^2$\\
 $Br(C_P)=5.81325\times10^{-9} x^2$\\
 $Br(C_A)=1.7963\times10^{-9} x^2$\\
@@ -503,14 +476,15 @@ $Br(C_9)=1.75406\times10^{-9} x^2$\\
 \centering
 \includegraphics[scale=.65]{BrofB-Kstarmumu}
 \caption{Graph of $Br(B\rightarrow K^*\mu^+\mu^-)$ as functions of the Wilson Coefficients}
+\label{fig:bKstarmumu}
 \end{figure}\\
-The fits for the plots are as follows:\\
+In Figure \ref{fig:bKstarmumu} the fits for the plots are as follows:\\
 $Br(C_S)=5.97644\times10^{-9}x^2$\\
 $Br(C_P)=6.056\times10^{-9}x^2$\\
 $Br(C_A)=2.45199\times10^{-9} x^2$\\
 $Br(C_9)=2.40283\times10^{-9} x^2$\\
 \section{Conclusion}
-As one can see, the work done with the Wilson Coefficients gives new suggestions to the possibility of new physics. In the future, I would like to continue to explore these possibilities. Some work that was not included in this paper is working to use a chi squared minimization technique to help limit and constrain the coefficients. The chi squared technique would use the observables that have been calculated experimentally. Although I was not able to accomplish this during the summer, I hope to continue working on this is the future and produce significant results.
+The work done with the Wilson Coefficients gives new suggestions to the possibility of NP. In the future, the expectation is that work will bo done using a chi squared minimization technique to help limit and constrain the WC. The chi squared technique would use the observables that have been calculated experimentally from different collaborations. Although there have been several suggested solutions to the WC such as the ones found in \cite{Descotes-Genon:2015uva} the solutions still raise questions. We hope in the future to provide a rigorous explanation that shows the existance of NP.  
 \section{Acknowledgements}
 I would like to thank the Department of Physics and Astronomy at Wayne State University for this opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853 I would also like to thank Dr.Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
 \newpage
@@ -591,8 +565,15 @@ Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH 
   [arXiv:1506.08614 [hep-ex]].
   %%CITATION = doi:10.1103/PhysRevLett.115.159901, 10.1103/PhysRevLett.115.111803;%%
   %255 citations counted in INSPIRE as of 02 Aug 2017
-  \bibitem{quarks}
-  MissMJ on Wikipedia Commons. Standard model of elementary particles, 2006. [Online;   accessed August 2, 2017].
+  %\cite{Descotes-Genon:2015uva}
+\bibitem{Descotes-Genon:2015uva} 
+  S.~Descotes-Genon, L.~Hofer, J.~Matias and J.~Virto,
+  %``Global analysis of $b\to s\ell\ell$ anomalies,''
+  JHEP {\bf 1606}, 092 (2016)
+  doi:10.1007/JHEP06(2016)092
+  [arXiv:1510.04239 [hep-ph]].
+  %%CITATION = doi:10.1007/JHEP06(2016)092;%%
+  %190 citations counted in INSPIRE as of 04 Aug 2017
 \end{thebibliography}
 \newpage
 \section{Appendix}
