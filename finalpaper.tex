@@ -206,13 +206,13 @@ The Standard Model (SM) of particle physics works extremely well when calculatin
 In addition to the gauge bosons, the SM contains other particles known as fermions. Fermions have half-integer spin and are comprised of quarks and leptons. There are 3 types of leptons (electron, muon and tau), each with its corresponding neutrino. Each fermion ($f$) has an antiparticle ($\bar f$), which has the same mass but opposite charge. These leptons can be seen in Table \ref{table:2}.
 \begin{table}[htbp!]
 \centering
-\begin{tabular}{ |p{1cm}||p{4cm}|p{1.5cm}| }
+\begin{tabular}{ |p{1cm}||p{4.5cm}|p{1.5cm}| }
  \hline
  \multicolumn{3}{|c|}{Leptons} \\
  \hline
  Type & Mass & Charge\\
  \hline
- $e$ & $0.51099$ MeV & $-1$ \\ [1ex]
+ $e$ & $0.5109989461(31)$ MeV & $-1$ \\ [1ex]
  $\mu$ &  $105.6583745(24)$ MeV & $-1$ \\ [1ex]
  $\tau$ &$1776.86\pm 0.12$ MeV & $-1$ \\[1ex]
  \hline 
@@ -344,13 +344,13 @@ In order to find $\frac{\Ga_{l}}{\Ga_\pi}$ we need to divide the above expressio
 \eea 
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.73]{brpion1}
+\includegraphics[scale=.9]{brpionmumu.png}
 \caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the plots of $\frac{m_e}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow e^{-} + \nu_e)$}
 \label{fig:BRofme}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.70]{brpionmu1}
+\includegraphics[scale=.75]{brpionmu1}
 \caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the plots of $\frac{m_\mu}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
 \label{fig:BRofmpi}
 \end{figure}
@@ -361,7 +361,7 @@ Using the lifetime and mass values from PDG \cite{Agashe:2014kda} we may compute
  \hline
  Observables & $e$ & $\mu$ & $\pi$  \\ [1.5ex] 
  \hline\hline
- $\tau$ (Lifetime) & $6.6 \times 10^{28}$ yr &$2.1969811(22) \times 10^-6$ s  & $2.6033(5) \times 10^-8$ s \\[1.5ex]
+ $\tau$ (Lifetime) & $6.6 \times 10^{28}$ yr &$2.1969811(22) \times 10^{-6}$ s  & $2.6033(5) \times 10^{-8}$ s \\[1.5ex]
  \hline
  Mass(MeV) & $0.5109989461(31)$ & $105.6583745(24)$  & $139.57061(24)$ \\[1.5ex] 
  \hline
@@ -374,7 +374,7 @@ To calculate the ratio of the $\pi^{-} \rightarrow e^{-} + \nu_e$ and  $\pi^{-} 
 \eea 
 This is an interesting observation because the value of $ \frac{\Ga_e}{\Ga_\mu}$ suggests that the probability of $\pi^{-} \rightarrow \mu^{-} + \nu_\mu$ is higher than $\pi^{-} \rightarrow e^{-} + \nu_e$. This is somewhat striking because the mass of a muon is greater than the mass of an electron, indicating that the pion does not decay into the lightest particle most frequently. 
 \section{The Branching Ratio of the $B_s \rightarrow \mu^+\mu^-$ decay}
-An expression for the branching ratio for  $B_s \rightarrow \mu^+\mu^-$ can be found in \cite{Dighe:2012df} including NP WC's. The branching ratio is as follows:
+From \cite{CMS:2014xfa} the SM branching ratio value is $(3.66 \pm 0.23) \times 10 ^ {-9}$. An expression for the branching ratio for $B_s \rightarrow \mu^+\mu^-$ can be found in \cite{Dighe:2012df} including NP WC's. The expression for the branching ratio is seen below:
 \begin{center}
 \bea
 \mathcal{B}(B_s\rightarrow \mu^+\mu^-) &=& \frac{G_F^2 \al_{em}^2 m_{B_s}^5 f_{B_s}^2 \tau_{B_s}}{64\pi^3}\sqrt{1-\frac{4m_\mu^2}{m_{B_s}^2}} \lb\(1-\frac{4m_\mu^2}{m_{B_s}^2}\) \right. \nl 
@@ -383,13 +383,13 @@ An expression for the branching ratio for  $B_s \rightarrow \mu^+\mu^-$ can be f
 \end{center}
 Where $\zeta \equiv (\frac{g_{NP}^2}{\Lambda^2})(\frac{\sqrt{2}}{4G_F})(\frac{4\pi}{\alpha_{em}})$\\
 \\
-The Feynman Diagram of the decay can be seen below: 
+The four-fermi operator diagram of the decay can be seen below: 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=.9]{B_sdecay}
-\caption{Graph of $B_s \rightarrow \mu^+ \mu^-$}
+\caption{Diagram of $B_s \rightarrow \mu^+ \mu^-$ from four-fermi operators}
 \end{figure}
-Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio} and using the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df} thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simply our calculations.We will solve each coefficient by the upper and lower limits of the branching ratio then take the average by setting the expression with the unknown coefficient equal to the branching ratio, the upper limit of the branching ratio, and its lower limit. 
+Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio} and using the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df} thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simply our calculations. 
 The values for the Branching ratio of $B_s\rightarrow \mu^+\mu^- $ decay is equal to $2.4_{-0.7}^{+0.9} \times 10^{-9}$ \cite{Agashe:2014kda}
 \bea
 C_S&=& \pm 1.6215i \times 10^{-4} \nl
@@ -401,71 +401,56 @@ C_P&=& 6.3832 \times 10^{-5}~ {\rm or}~ 4.1125\times 10^{-4}\nl
 \eea
 \bea
 C_A&=& 2.0348\times 10^{-3}~ {\rm or}~ 1.31095\times 10^{-2}\nl
-&=& 1.48237\times 10^{-4} ~ {\rm or}~ 1.5287\times 10^{-2}\nn
+&=& -1.48237\times 10^{-4} ~ {\rm or}~ 1.5287\times 10^{-2}\nn
 \eea
 \textbf{Notes about the Wilson Coefficients:}\\
-The $C_S$ coefficient is equal to $\pm (0.811i + 0.232)\times 10^{-4}$ (We are able to calculate the mean by a simple average due to the small distribution).The $C_P$ has two values the first value is equal to $2.967\times 10^{-5}$ and the second value is equal to $4.454 \times 10^{-4}$. The last coefficient $C_{A}$ also has two values, the first one is equal to $1.089 \times 10^{-3}$ and the second value is equal to $1.420 \times 10^{-2}$. These coefficients have 2 possible values because we take the square of the absolute values of the WC. After finding the Wilson Coefficients, we use the Python package Flavio \cite{flavio} to compute the NP values of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$. We again only apply one Wilson Coefficient at a time to find the NP branching ratio:\\
-\\
+The first $C_S$ coefficient is equal to $\pm 1.6215i \times 10^{-4}$ which indicates that the branching ratio will receive a negative contribution from this coefficient when the branching ration is below the SM prediction. The $C_P$ has two values the first value is equal to $2.375\times 10^{-4}$ and the second value is equal to $2.375 \times 10^{-4}$ as well (We are able to calculate a simple average due to the small number of measurements).The last coefficient $C_{A}$ also has two values, the first one is equal to $7.572 \times 10^{-3}$ and the second value is equal to $7.569 \times 10^{-3}$. Both of these coefficients have two possible values because we take the  absolute values of the WC added to another factor. After finding the Wilson Coefficients, we use the Python package Flavio \cite{flavio} to compute the NP values of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$. We again only apply one Wilson Coefficient at a time to find the NP branching ratio:
 \begin{center}
- $C_S = \pm (0.811i + 0.232)\times 10^{-4}$\\
+ $C_S = \pm 1.6215i \times 10^{-4}$\\
+ Flavio Prediction: BR = $3.610 \times 10^{-9}$\\
+ $C_S = \pm 4.63981 \times 10^{-4}$\\
  Flavio Prediction: BR = $3.610 \times 10^{-9}$\\
 \end{center}
 \begin{center}
-$C_{P} = 2.967\times 10^{-5}$ \\
-Flavio Prediction: $Br = 3.603 \times 10^{-9}$\\
-$C_{P} = 4.454\times 10^{-4}$ \\
-Flavio Prediction: $Br = 3.508 \times 10^{-9}$\\
+$C_{P} = 2.375 \times 10^{-4}$ \\
+Flavio Prediction: $Br = 3.555 \times 10^{-9}$\\
 \end{center}
 \begin{center}
-$C_{A} = 1.089\times 10^{-3}$ \\
-Flavio Prediction: $Br = 3.608 \times 10^{-9}$\\
-$C_{A} = 1.420\times 10^{-2}$ \\
-Flavio Prediction: $Br = 3.584 \times 10^{-9}$\\
+$C_{A} = 7.572 \times 10^{-3}$ \\
+Flavio Prediction: $Br = 3.542 \times 10^{-9}$\\
+$C_{A} = 7.569\times 10^{-3}$ \\
+Flavio Prediction: $Br = 3.542 \times 10^{-9}$\\
 \end{center}
+\newpage
 \section{Plots of $Br(WC)$}
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.65]{B(WC)forB_smumu}
+\includegraphics[scale=.75]{B(WC)forB_smumu}
 \caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_P$ and $C_S$ Wilson Coefficients}
 \label{fig:Bsmumu1}
-\end{figure}
-\begin{figure}[h]
 \centering
-\includegraphics[scale=.65]{B(WC)forB_smumu2}
+\includegraphics[scale=.75]{B(WC)forB_smumu2}
 \caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_A$ Wilson Coefficient}
 \label{fig:Bsmumu2}
 \end{figure}
-Figures \ref{fig:Bsmumu1} and \ref{fig:Bsmumu2} give an indication of how the variation of a Wilson Coefficient could change the value of the Branching ratio.
-For each of the plots we have conducted a fit to the lines in order to find the coefficient values to the graphs. \\
-$Br(C_S)=3.22046\times10^{-6} (WC)^2$\\
-$Br(C_P)=3.57491\times10^{-6} (WC)^2$\\
-$Br(C_A)=2.79479\times10^{-10} (WC)^2$\\
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.65]{BrofB-Kmumu}
+\includegraphics[scale=.75]{BrofB-Kmumu}
 \caption{Graph of $Br(B\rightarrow K\mu^+\mu^-)$ as functions of the Wilson Coefficients}
 \label{fig:Bkmumu}
 \end{figure}
-Here, in Figure \ref{fig:Bkmumu} the fits to the plots are as follows:\\
-$Br(C_S)=5.73539\times10^{-9} (WC)^2$\\
-$Br(C_P)=5.81325\times10^{-9} (WC)^2$\\
-$Br(C_A)=1.7963\times10^{-9} (WC)^2$\\
-$Br(C_9)=1.75406\times10^{-9} (WC)^2$\\
-\begin{figure}[h]
+\begin{figure}
 \centering
-\includegraphics[scale=.65]{BrofB-Kstarmumu}
+\includegraphics[scale=.75]{BrofB-Kstarmumu}
 \caption{Graph of $Br(B\rightarrow K^*\mu^+\mu^-)$ as functions of the Wilson Coefficients}
 \label{fig:bKstarmumu}
-\end{figure}\\
-In Figure \ref{fig:bKstarmumu} the fits for the plots are as follows:\\
-$Br(C_S)=5.97644\times10^{-9}(WC)^2$\\
-$Br(C_P)=6.056\times10^{-9}(WC)^2$\\
-$Br(C_A)=2.45199\times10^{-9} (WC)^2$\\
-$Br(C_9)=2.40283\times10^{-9} (WC)^2$\\
+\end{figure}
+Figures \ref{fig:Bsmumu1}, \ref{fig:Bsmumu2}, \ref{fig:Bkmumu}, and \ref{fig:bKstarmumu} give an indication of how the variation of a Wilson Coefficient could change the value of the Branching ratio. The variations follow a parabolic shape due to the branching ratio being dependent on the square of the WC.
+\newpage
 \section{Conclusion}
 The work done with the Wilson Coefficients gives suggestions to the possibility of NP. In the future, the expectation is that work will be done using a chi squared minimization technique to help limit and constrain the WC. The chi squared technique would use the observables that have been measured experimentally from different experiments. In the future, we hope to provide a rigorous explanation that shows the existance of NP.  
 \section{Acknowledgements}
-I would like to thank the Department of Physics and Astronomy at Wayne State University for the opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853 I would also like to thank Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
+I would like to thank the Department of Physics and Astronomy at Wayne State University for the opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853. I would also like to thank Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
 \newpage
 \begin{thebibliography}{9}
 \bibitem{Griffiths} 
@@ -553,6 +538,15 @@ Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH 
   [arXiv:1510.04239 [hep-ph]].
   %%CITATION = doi:10.1007/JHEP06(2016)092;%%
   %190 citations counted in INSPIRE as of 04 Aug 2017
+  %\cite{CMS:2014xfa}
+\bibitem{CMS:2014xfa} 
+  V.~Khachatryan {\it et al.} [CMS and LHCb Collaborations],
+  %``Observation of the rare $B^0_s\to\mu^+\mu^-$ decay from the combined analysis of CMS and LHCb data,''
+  Nature {\bf 522}, 68 (2015)
+  doi:10.1038/nature14474
+  [arXiv:1411.4413 [hep-ex]].
+  %%CITATION = doi:10.1038/nature14474;%%
+  %312 citations counted in INSPIRE as of 07 Aug 2017
 \end{thebibliography}
 \newpage
 \section{Appendix}
