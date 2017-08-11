@@ -169,7 +169,7 @@
         
         \vskip 20pt
         
-        \large{Francis Walz}\footnote{frankwalz10@gmail.com; REU blah}\\ Department of Physics, Astronomy, and Geosciences, \\ Towson University, Towson, MD 21252, USA \\
+        \large{Francis Walz}\footnote{frankwalz10@gmail.com; 2017 Wanye State University REU}\\ Department of Physics, Astronomy, and Geosciences, \\ Towson University, Towson, MD 21252, USA \\
           and \\
         Department of Physics and Astronomy, \\ Wayne State University, Detroit, MI 48201, USA
         
@@ -254,7 +254,7 @@ This differs from the SM prediction of $R^{expt}_{K} = 1 \pm 0.01$ by $2.6\si$. 
 H = -\frac{\alpha G_f}{\sqrt{2}\pi} V_{tb}V^*_{ts}\sum_{a= 9,10}^{}(C_aO_a + C'_aO'_a)
 \eea
 \end{center}
-This article will take the Hamiltonian and use the WC found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay to constrain the effects of NP parameters. The article begins by first exploring and computing different observables of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expressions for branching ratios and decays. It will also serve as a guide to the format for the rest of the paper. In section 3 we will constrain the WC from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different WC for varying observable. Finally in section 4 plots of the Branching ratio based upon the WC will be shown and fits to the data will be provided. We conclude the article in section 5.
+This article will take the Hamiltonian and use the WC found in the branching ratio of the $B_s \rightarrow \mu^+ \mu^- $ decay to constrain the effects of NP parameters. The article begins by first exploring and computing different observables of the $\pi^+ \rightarrow l^+ \nu_l $ decay. (Where $l= \mu$ or $e$) This will provide us with a background in manipulating and understanding the theoretical expressions for branching ratios and decays. It will also serve as a guide to the format for the rest of the paper. In section 3 we will constrain the WC from the branching ratio of the $B_s \rightarrow \mu^+\mu^-$ decay. We will use the Python package Flavio\cite{flavio} to generate our data and construct our plots. Flavio's packages focus on flavor physics and allows the user to find the contributions of different WC for varying observable. Finally in Section 4 plots of the Branching ratio based upon the WC will be shown and fits to the data will be provided. We conclude the article in Section 5.
 \section{The branching Ratio of a Charged Pion decay}
 In order to calculate the Branching ratio of a charged pion, we will use the Feynman Rules of calculating amplitudes and the trace identities. We start by recognizing that the pion decay is a charged current interaction since pion is made of quarks, and the decay is mediated by a massive W boson. A Feynman diagram for the decay may be seen in Figure \ref{fig:piondecay}: 
 \begin{figure}[h]
@@ -295,7 +295,7 @@ Summing over the spins gives us:
 \bea 
 |\mathcal{M}^2|&=&8\(\frac{g_w^2}{8m_w^2}f_\pi\)^2 \[2(p_1\cdot p_2)(p_1 \cdot p_3) -p^2(p_2 \cdot p_3)\] 
 \eea 
-Since $p_1 = p_2 + p_3$, we can simplify the equation further. For simplicity and consistency we will use the following notation: $p_1 = p_\pi , p_2=p_l, p_3=p_{\nu_l}$. The value of the 4-momentum squared is: 
+Since $p_1 = p_2 + p_3$, we can simplify the equation further. For simplicity and consistency we will use the following notation: $p_1 = p_\pi$,  $p_2=p_l$,  $p_3=p_{\nu_l}$. The value of the 4-momentum squared is: 
 \bea 
 p_1 &=& (E, \vec{p}_1) \\
 (p_1)^2 &=& E^2 - (\vec{p}_1)^2\nl 
@@ -344,18 +344,17 @@ In order to find $\frac{\Ga_{l}}{\Ga_\pi}$ we need to divide the above expressio
 \eea 
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.9]{brpionmumu.png}
-\caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the plots of $\frac{m_e}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow e^{-} + \nu_e)$}
+\includegraphics[scale=.95]{brpionmumu.png}
+\caption{Graph of $\frac{\Ga_{m_e}}{\Ga_\pi}$ and the value of $\frac{m_e}{m_\pi}$ and the value of $\mathcal{B}(\pi^{-} \rightarrow e^{-} + \nu_e)$}
 \label{fig:BRofme}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.75]{brpionmu1}
-\caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the plots of $\frac{m_\mu}{m_\pi}$ and the value of $Br(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
+\includegraphics[scale=.85]{brpionmu1}
+\caption{Graph of $\frac{\Ga_{m_\mu}}{\Ga_\pi}$ and the value of $\frac{m_\mu}{m_\pi}$ and the value of $\mathcal{B}(\pi^{-} \rightarrow \mu^{-} + \nu_\mu)$}
 \label{fig:BRofmpi}
 \end{figure}
-The graph of the Equation 25 (with $m_l = m_e$) is found in Figure \ref{fig:BRofme}. and the graph of Equation 25 (with $m_l = m_\pi$) is found in Figure \ref{fig:BRofmpi}.
-Using the lifetime and mass values from PDG \cite{Agashe:2014kda} we may compute ratios.
+The graph of the Equation 25 (with $m_l = m_e$) is found in Figure \ref{fig:BRofme}. and the graph of Equation 25 (with $m_l = m_\pi$) is found in Figure \ref{fig:BRofmpi}. These figures show the value of the branching ratio for certain values of $m_l$ as well as the plot of $\frac{\Ga_{m_l}}{\Ga_\pi}$. Using the lifetime and mass values from PDG \cite{Agashe:2014kda} we may compute ratios.
 \begin{center}
  \begin{tabular}{||c c c c||} 
  \hline
@@ -389,8 +388,8 @@ The four-fermi operator diagram of the decay can be seen below:
 \includegraphics[scale=.9]{B_sdecay}
 \caption{Diagram of $B_s \rightarrow \mu^+ \mu^-$ from four-fermi operators}
 \end{figure}
-Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio} and using the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df} thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simply our calculations. 
-The values for the Branching ratio of $B_s\rightarrow \mu^+\mu^- $ decay is equal to $2.4_{-0.7}^{+0.9} \times 10^{-9}$ \cite{Agashe:2014kda}
+Since we seek to find the constraints on the parameters $C_S, C_S^{'},C_P, C_P^{'},C_A,$ and $C_A^{'}$ we set the equation equal to the branching ratio given in \cite{flavio}. We also use the values for $C_{10},|V_{tb} V_{ts}^*|, g_{NP},$ and $\Lambda$ given in \cite{Dighe:2012df}. Thus we are able to find the constraints on the parameters. In order to solve for one parameter, we allow the other two to be equal to 0, this will simplify our calculations. 
+The experimental value for the branching ratio of $B_s\rightarrow \mu^+\mu^- $ decay is equal to $2.4_{-0.7}^{+0.9} \times 10^{-9}$ \cite{Agashe:2014kda}. We are able to find:
 \bea
 C_S&=& \pm 1.6215i \times 10^{-4} \nl
 &=& \pm 4.63981\times 10^{-5}\nn
@@ -404,54 +403,182 @@ C_A&=& 2.0348\times 10^{-3}~ {\rm or}~ 1.31095\times 10^{-2}\nl
 &=& -1.48237\times 10^{-4} ~ {\rm or}~ 1.5287\times 10^{-2}\nn
 \eea
 \textbf{Notes about the Wilson Coefficients:}\\
-The first $C_S$ coefficient is equal to $\pm 1.6215i \times 10^{-4}$ which indicates that the branching ratio will receive a negative contribution from this coefficient when the branching ration is below the SM prediction. The $C_P$ has two values the first value is equal to $2.375\times 10^{-4}$ and the second value is equal to $2.375 \times 10^{-4}$ as well (We are able to calculate a simple average due to the small number of measurements).The last coefficient $C_{A}$ also has two values, the first one is equal to $7.572 \times 10^{-3}$ and the second value is equal to $7.569 \times 10^{-3}$. Both of these coefficients have two possible values because we take the  absolute values of the WC added to another factor. After finding the Wilson Coefficients, we use the Python package Flavio \cite{flavio} to compute the NP values of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$. We again only apply one Wilson Coefficient at a time to find the NP branching ratio:
+The first $C_S$ coefficient is equal to $\pm 1.6215i \times 10^{-4}$ which indicates that the branching ratio will receive a negative contribution from this coefficient when the branching ratio is below the SM prediction. The $C_P$ has two values, the first value is equal to $2.375\times 10^{-4}$ and the second value is equal to $2.375 \times 10^{-4}$ as well (We are able to calculate a simple average due to the small number of measurements). The last coefficient $C_{A}$ also has two values, the first value is equal to $7.572 \times 10^{-3}$ and the second value is equal to $7.569 \times 10^{-3}$. Both $C_P$ and $C_A$ have two possible values because in the theoretical expression for the branching ratio, we take the absolute value of the WC added to another factor. After finding the Wilson Coefficients, we use the Python package Flavio \cite{flavio} to compute the NP values of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$:
 \begin{center}
  $C_S = \pm 1.6215i \times 10^{-4}$\\
- Flavio Prediction: BR = $3.610 \times 10^{-9}$\\
+ Flavio Prediction: $\mathcal{B} = 3.610 \times 10^{-9}$\\
  $C_S = \pm 4.63981 \times 10^{-4}$\\
- Flavio Prediction: BR = $3.610 \times 10^{-9}$\\
+ Flavio Prediction: $\mathcal{B} = 3.610 \times 10^{-9}$\\
 \end{center}
 \begin{center}
 $C_{P} = 2.375 \times 10^{-4}$ \\
-Flavio Prediction: $Br = 3.555 \times 10^{-9}$\\
+Flavio Prediction: $\mathcal{B} = 3.555 \times 10^{-9}$\\
 \end{center}
 \begin{center}
 $C_{A} = 7.572 \times 10^{-3}$ \\
-Flavio Prediction: $Br = 3.542 \times 10^{-9}$\\
+Flavio Prediction: $\mathcal{B} = 3.542 \times 10^{-9}$\\
 $C_{A} = 7.569\times 10^{-3}$ \\
-Flavio Prediction: $Br = 3.542 \times 10^{-9}$\\
+Flavio Prediction: $\mathcal{B} = 3.542 \times 10^{-9}$\\
 \end{center}
-\newpage
-\section{Plots of $Br(WC)$}
+\section{Plots of $\mathcal{B}(WC)$}
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.75]{B(WC)forB_smumu}
-\caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_P$ and $C_S$ Wilson Coefficients}
+\includegraphics[scale=.85]{new}
+\caption{Graph of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_P$ and $C_S$ Wilson Coefficients}
 \label{fig:Bsmumu1}
 \centering
-\includegraphics[scale=.75]{B(WC)forB_smumu2}
-\caption{Graph of $Br(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_A$ Wilson Coefficient}
+\includegraphics[scale=.85]{B(WC)forB_smumu2}
+\caption{Graph of $\mathcal{B}(B_s\rightarrow \mu^+\mu^-)$ as functions of the $C_A$ Wilson Coefficient}
 \label{fig:Bsmumu2}
 \end{figure}
 \begin{figure}[htbp!]
 \centering
-\includegraphics[scale=.75]{BrofB-Kmumu}
-\caption{Graph of $Br(B\rightarrow K\mu^+\mu^-)$ as functions of the Wilson Coefficients}
+\includegraphics[scale=.85]{BrofB-Kmumu}
+\caption{Graph of $\mathcal{B}(B\rightarrow K\mu^+\mu^-)$ as functions of the Wilson Coefficients}
 \label{fig:Bkmumu}
 \end{figure}
 \begin{figure}
 \centering
-\includegraphics[scale=.75]{BrofB-Kstarmumu}
-\caption{Graph of $Br(B\rightarrow K^*\mu^+\mu^-)$ as functions of the Wilson Coefficients}
+\includegraphics[scale=.85]{BrofB-Kstarmumu}
+\caption{Graph of $\mathcal{B}(B\rightarrow K^*\mu^+\mu^-)$ as functions of the Wilson Coefficients}
 \label{fig:bKstarmumu}
 \end{figure}
-Figures \ref{fig:Bsmumu1}, \ref{fig:Bsmumu2}, \ref{fig:Bkmumu}, and \ref{fig:bKstarmumu} give an indication of how the variation of a Wilson Coefficient could change the value of the Branching ratio. The variations follow a parabolic shape due to the branching ratio being dependent on the square of the WC.
+Figures \ref{fig:Bsmumu1}, \ref{fig:Bsmumu2}, \ref{fig:Bkmumu}, and \ref{fig:bKstarmumu} give an indication of how the variation of a Wilson Coefficient could change the value of the branching ratio. In figure \ref{fig:Bsmumu1} the value of $\mathcal{B}(B_s \rightarrow \mu^+ \mu^-)$ approaches 0 but has a minimum at the SM prediction which is on the order of $10^{-9}$. The plot in Figure \ref{fig:Bsmumu2} also approaches 0 because the WC $C_A$ could allow $\mathcal{B}(B_s \rightarrow \mu^+ \mu ^-)$ to become 0. Figures \ref{fig:Bkmumu} and \ref{fig:bKstarmumu} both share similar properties. Each has a minimum slightly below the SM predicted branching ratio for their respective channels. This is due to the contributions from certain WC's. $C_A$ and $C_9$ allow for a lower branching ratio than the SM prediction, but $C_S$ and $C_P$ have minimums at the SM prediction. All of the plots follow a parabolic shape due to the branching ratio being dependent on the square of each WC.
 \newpage
 \section{Conclusion}
-The work done with the Wilson Coefficients gives suggestions to the possibility of NP. In the future, the expectation is that work will be done using a chi squared minimization technique to help limit and constrain the WC. The chi squared technique would use the observables that have been measured experimentally from different experiments. In the future, we hope to provide a rigorous explanation that shows the existance of NP.  
+The work done with the Wilson Coefficients indicates the sensitivity of potential NP contributions to B meson decay channels. These NP contributions are non-zero but are very modest. The WC have values of $10^{-4} - 10^{-5}$. As seen in Section 4, changing the WC by and order of magnitude will increase certain branching ratios by 3 orders of magnitude. The NP contributions from certain WC could also lower the branching ration from the SM prediction. However, these are preliminary measurements and a more rigorous approach for this process will be taken at a later time.    
+
+The NP contributions also have large errors bars. The expectation is that future work will be done using a chi squared minimization technique to help limit and constrain the WC. The chi squared technique would use the observables that have been measured experimentally from different experiments. In the future, we hope to provide a rigorous explanation that shows the existence of NP.  
 \section{Acknowledgements}
-I would like to thank the Department of Physics and Astronomy at Wayne State University for the opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853. I would also like to thank Bhubanjyoti Bhattacharya for his guidance and suggestions and doctoral student Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
-\newpage
+I would like to thank the Department of Physics and Astronomy at Wayne State University for the opportunity to conduct this research.This project was supported through the Wayne State University REU program, under NSF grant phy-1460853. I would also like to thank Bhubanjyoti Bhattacharya for his guidance and suggestions and Cody Grant who's advice and discussions were invaluable. Finally I would like to thank my parents Andrew and Liz Walz for giving me the love and support to pursue my interests and begin my career as a physicist.  
+\section{Appendix}
+It was necessary to practice with spinor notation and different mathematical techniques before starting this project. This appendix summarizes what I was able to do in that regard.\\
+\\
+Notation:
+\begin{enumerate} \itemsep=-15pt
+\item $S= \ou u$\\
+\item $P=\ou \ga^5 u$ \\
+\item $V^\mu = \ou \ga^\mu u$ \\
+\item $A^\mu = \ou \ga^\mu \ga^5 u $ 
+\end{enumerate}
+\bigskip
+\begin{enumerate}
+
+\item$(\ou_1\ga^\mu u_2)^*$ ~=~?
+
+Note: $(\ga^0)^\dag~=~\ga^0$ and $(\ga^\mu)^\dag~=~ \ga^0\ga^\mu\ga^0$
+
+$(\ou_1\ga^\mu u_2)$ is a $1\times1$ matrix. Therefore, its complex conjugate is the same as its Hermitian conjugate, i.e. if we call
+$V^\mu = (\ou_1\ga^\mu u_2)$, then $(V^\mu)^* = (V^\mu)^\dag$. We can then express this quantity as follows:
+% This is the first equation/set of equations
+\bea
+V^\mu &=& \ou_1\ga^\mu u_2  \\
+\Rightarrow (V^\mu)^* &=& (V^\mu)^\dag  \nl
+&=& (\ou_1\ga^\mu u_2)^\dag ~,~~ \nl
+&=& ((u_1)^\dag\ga^0\ga^\mu u_2)^\dag ~~~{\rm using}~(A\ldots Z)^\dag = Z^\dag\ldots A^\dag ~,~~ \nl
+&=& (u_2^\dag)(\ga^\mu)^\dag(\ga^0)^\dag(u_1)\nl
+&=& (u_2^\dag)\ga^0\ga^\mu\ga^0\ga^0(u_1)\nl
+&=& (u_2^\dag)\ga^0\ga^\mu(u_1)\nl
+&=& \ou_2\ga^\mu(u_1)
+\eea
+Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $|V^\mu|^2$ we simply use $|V^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$.
+
+Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\si]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$, The trace over the product of an odd number of gamma matrices is zero.
+
+\bea
+|V^{\mu}|^2 &=& \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\
+&=& \Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\nl
+&=& \Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl
+&=& \Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl
+&=& \Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m[\Tr(\ga^\mu \slashed{p}_1\ga^\nu) + \Tr(\ga^\mu \ga^\nu \slashed{p}_2)] + m^2\Tr[\ga^\mu \ga^\nu]\nl
+&=& \Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m^2\Tr[\ga^\mu \ga^\nu]\nl
+&=& \Tr[(p_1)_\la\ga^\la \ga^\mu (p_2)_\si\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl
+&=& (p_1)_\la (p_2)_\si \Tr[\ga^\la \ga^\mu\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl
+&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) + 4m^2g^{\mu\nu}\nl
+&=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] + 4m^2g^{\mu\nu} 
+\eea
+
+\item $(\ou_1\ga^\mu \ga^5 u_2)^*$ is also a $1\times1$ Matrix so the same reasoning applies as above in 1. Note: $(\ga^5)^\dag = \ga^5$
+We define: $A^\mu$ as $\ou_1\ga^\mu\ga^5 u_2$ thus:
+% This is the second equation/set of equations
+\bea
+(A^\mu)^* &=& (A^\mu)^\dag \\
+&=&(\ou_1\ga^\mu\ga^5 u_2)^\dag \nl
+&=& ((u_1)^\dag\ga^0\ga^\mu\ga^5 u_2)^\dag \nl
+&=& (u_2^\dag)(\ga^5)^\dag(\ga^\mu)^\dag(\ga^0)^\dag(u_1) \nl
+&=& (u_2^\dag)\ga^5\ga^0\ga^\mu\ga^0\ga^0 u_1 \nl
+&=& (u_2^\dag)\ga^5\ga^0\ga^\mu(1) u_1 \nl
+&=& -(u_2^\dag)\ga^0\ga^5\ga^\mu u_1 \nl
+&=& -\ou_2\ga^5\ga^\mu u_1 \nl
+&=& \ou_2\ga^\mu\ga^5 u_1
+\eea
+%
+Therefore $(\ou_1\ga^\mu \ga^5 u_2)^*~=~\ou_2 \ga^\mu \ga^5 u_1$
+
+We also are able to calculate $|A^\mu|^2$
+\bea
+|A^{\mu}|^2 &=& \Tr[(\ou_1\ga^\mu \ga^5 u_2)(\ou_2 \ga^\nu \ga^5 u_1)] \\
+&=& \Tr[\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 u_1]  \nl
+&=&\Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl
+&=&\Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl
+&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
+&=& \Tr[(p_1)_\la\ga^\la\ga^\mu\ga^5 (p_2)_\si\ga^\si\ga^\nu \ga^5] + m^2\Tr[\ga^\mu\ga^5\ga^\nu \ga^5]\nl
+&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^5 \ga^\si\ga^\nu \ga^5] - m^2\Tr[\ga^\mu\ga^5\ga^5 \ga^\nu]\nl
+&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^5\ga^5 \ga^\si\ga^\nu] - m^2\Tr[\ga^\mu\ga^\nu]\nl
+&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^\si\ga^\nu] - m^2(g^{\mu\nu})\nl
+&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - 4m^2g^{\mu\nu}\nl
+&=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] - 4m^2g^{\mu\nu} 
+\eea
+
+\item $ (\ou_1 u_2)^* ~=~ ?$
+We let $S ~=~ \ou_1 u_2$
+\bea
+(S)^* &=& (S)^\dag \\
+&=& (\ou_1 u_2)^\dag ~,~~ \nl
+&=& ((u_1)^\dag\ga^0 u_2)^\dag \nl
+&=& (u_2)^\dag(\ga^0)^\dag(u_1)\nl
+&=& (u_2)^\dag\ga^0(u_1)\nl
+&=& \ou_2(u_1)
+\eea
+Therefore$(\ou_1 u_2)^* ~=~ \ou_2 u_1$.
+In order to find $|S|^2$ we simply do the following:
+\bea
+|S|^2&=& \Tr[\ou_1 u_2 \ou_2 u_1]  \\
+&=& \Tr[(\slashed{p}_1+m)(\slashed{p}_2+m)] \nl
+&=& \Tr[\slashed{p}_1\slashed{p}_2+m(\slashed{p}_1+\slashed{p}_2)+m^2]\nl
+&=& \Tr[\slashed{p}_1\slashed{p}_2]+\Tr[m(\slashed{p}_1+\slashed{p}_2)]+\Tr[m^2] \nl
+&=& \Tr[\slashed{p}_1\slashed{p}_2]+m(\Tr[\slashed{p}_1]+\Tr[\slashed{p}_2])+m^2\Tr[1] \nl
+&=& \Tr[\slashed{p}_1\slashed{p}_2]+4m^2 \nl
+&=& 4(p_1 \cdot p_2)+4m^2
+\eea
+
+\item  By the same reasoning as shown above it can be shown that $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$ \\
+If we let $P ~=~ \ou_1\ga^5 u_2$ then:
+\bea
+(P)^* &=& (P)^\dag \\
+&=& (\ou_1\ga^5 u_2)^\dag ~,~~ \nl
+&=& ((u_1)^\dag\ga^0\ga^5 u_2)^\dag \nl
+&=& (u_2)^\dag(\ga^5)^\dag (\ga^0)^\dag(u_1)\nl
+&=& (u_2)^\dag(\ga^5) \ga^0(u_1)\nl
+&=& -(u_2)^\dag \ga^0\ga^5(u_1)\nl
+&=& -\ou_2\ga^5(u_1)
+\eea
+Therefore  $(\ou_1 \ga^5 u_2)^* ~=~ -\ou_2 \ga^5 u_1$
+
+In order to square $P$ we do the following:
+\bea
+|P|^2&=& \Tr[\ou_1 \ga^5 u_2(-\ou_2 \ga^5 u_1)] \\
+&=& \Tr[u_1 \ou_1 \ga^5(-\slashed{p}_2 - m) \ga^5] \nl
+&=& \Tr[(\slashed{p}_1+m) \ga^5 (-\slashed{p}_2-m) \ga^5] \nl
+&=& \Tr[((p_1)_\mu \ga^\mu+m) \ga^5 ((-p_2)_\nu\ga^\nu-m)  \ga^5] \nl
+&=& \Tr[((p_1)_\mu \ga^\mu\ga^5+m\ga^5) ((-p_2)_\nu\ga^\nu\ga^5-m\ga^5)] \nl
+&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] - 4m^2 \nl
+&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5\ga^\nu\ga^5]- 4m^2 \nl
+&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5(-\ga^5\ga^\nu)]- 4m^2\nl
+&=& (p_1)_\mu(-p_2)_\nu (-\Tr[\ga^\mu\ga^\nu])- 4m^2\nl
+&=& (p_1)_\mu(-p_2)_\nu (-4g^{\mu\nu})- 4m^2\nl
+&=& 4(p_1)(p_2)- 4m^2
+\eea
 \begin{thebibliography}{9}
 \bibitem{Griffiths} 
 Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH Verlag
@@ -548,144 +675,5 @@ Griffiths, D. (2014). Introduction to elementary particles. Weinheim: Wiley-VCH 
   %%CITATION = doi:10.1038/nature14474;%%
   %312 citations counted in INSPIRE as of 07 Aug 2017
 \end{thebibliography}
-\newpage
-\section{Appendix}
-\begin{center}
-\underline{\textbf{\Large Practice with Spinors}}
-\end{center}
-Notation:
-\begin{enumerate} \itemsep=-15pt
-\item $S= \ou u$\\
-\item $P=\ou \ga^5 u$ \\
-\item $V^\mu = \ou \ga^\mu u$ \\
-\item $A^\mu = \ou \ga^\mu \ga^5 u $ \\
-\item $T^{\mu\nu} = \ou \si^{\mu\nu} u$
-\end{enumerate}
-\bigskip
-It was necessary to practice with spinor notation and the different mathematical techniques before starting this project. This appendix summarizes what I was able to do in that regard. 
-\begin{enumerate}
-
-\item$(\ou_1\ga^\mu u_2)^*$ ~=~?
-
-Note: $(\ga^0)^\dag~=~\ga^0$ and $(\ga^\mu)^\dag~=~ \ga^0\ga^\mu\ga^0$
-
-$(\ou_1\ga^\mu u_2)$ is a $1\times1$ matrix. Therefore, its complex conjugate is the same as its Hermitian conjugate, i.e. if we call
-$V^\mu = (\ou_1\ga^\mu u_2)$, then $(V^\mu)^* = (V^\mu)^\dag$. We can then express this quantity as follows:
-% This is the first equation/set of equations
-\bea
-V^\mu &=& \ou_1\ga^\mu u_2 ~,~~ \\
-\Rightarrow (V^\mu)^* &=& (V^\mu)^\dag ~,~~ \nl
-&=& (\ou_1\ga^\mu u_2)^\dag ~,~~ \nl
-&=& ((u_1)^\dag\ga^0\ga^\mu u_2)^\dag ~~~{\rm using}~(A\ldots Z)^\dag = Z^\dag\ldots A^\dag ~,~~ \nl
-&=& (u_2^\dag)(\ga^\mu)^\dag(\ga^0)^\dag(u_1)\nl
-&=& (u_2^\dag)\ga^0\ga^\mu\ga^0\ga^0(u_1)\nl
-&=& (u_2^\dag)\ga^0\ga^\mu(u_1)\nl
-&=& \ou_2\ga^\mu(u_1)
-\eea
-Therefore $(\ou_1\ga^\mu u_2)^*~=~\ou_2\ga^\mu u_1 $. To solve for $|V^\mu|^2$ we simply use $|V^\mu|^2 ~=~ \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1]$.
-
-Note: ~$\Tr[\ga^\mu\ga^\nu]~=~4 g^{\mu\nu}$, $\Tr[\ga^\mu \ga^\nu \ga^\la \ga^\si]= 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la})$, The trace over the product of an odd number of gamma matrices is zero.
-
-\bea
-|V^{\mu}|^2 &=& \Tr[\ou_1 \ga^\mu u_2 \ou_2 \ga^\nu u_1] \\
-&=& \Tr[\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu u_1]\nl
-&=& \Tr[u_1\ou_1 \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl
-&=& \Tr[(\slashed{p}_1+m) \ga^\mu (\slashed{p}_2+m) \ga^\nu]\nl
-&=& \Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m[\Tr(\ga^\mu \slashed{p}_1\ga^\nu) + \Tr(\ga^\mu \ga^\nu \slashed{p}_2)] + m^2\Tr[\ga^\mu \ga^\nu]\nl
-&=& \Tr[\slashed{p}_1\ga^\mu \slashed{p}_2 \ga^\nu] + m^2\Tr[\ga^\mu \ga^\nu]\nl
-&=& \Tr[(p_1)_\la\ga^\la \ga^\mu (p_2)_\si\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl
-&=& (p_1)_\la (p_2)_\si \Tr[\ga^\la \ga^\mu\ga^\si \ga^\nu  ] + 4m^2g^{\mu\nu}\nl
-&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) + 4m^2g^{\mu\nu}\nl
-&=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] + 4m^2g^{\mu\nu} 
-\eea
-
-\item $(\ou_1\ga^\mu \ga^5 u_2)^*$ is also a $1\times1$ Matrix so the same reasoning applies as above in 1. Note: $(\ga^5)^\dag = \ga^5$
-We define: $A^\mu$ as $\ou_1\ga^\mu\ga^5 u_2$ thus:
-% This is the second equation/set of equations
-\bea
-(A^\mu)^* &=& (A^\mu)^\dag \\
-&=&(\ou_1\ga^\mu\ga^5 u_2)^\dag \nl
-&=& ((u_1)^\dag\ga^0\ga^\mu\ga^5 u_2)^\dag \nl
-&=& (u_2^\dag)(\ga^5)^\dag(\ga^\mu)^\dag(\ga^0)^\dag(u_1) \nl
-&=& (u_2^\dag)\ga^5\ga^0\ga^\mu\ga^0\ga^0 u_1 \nl
-&=& (u_2^\dag)\ga^5\ga^0\ga^\mu(1) u_1 \nl
-&=& -(u_2^\dag)\ga^0\ga^5\ga^\mu u_1 \nl
-&=& -\ou_2\ga^5\ga^\mu u_1 \nl
-&=& \ou_2\ga^\mu\ga^5 u_1
-\eea
-%
-Therefore $(\ou_1\ga^\mu \ga^5 u_2)^*~=~\ou_2 \ga^\mu \ga^5 u_1$
-
-We also are able to calculate $|A^\mu|^2$
-\bea
-|A^{\mu}|^2 &=& \Tr[(\ou_1\ga^\mu \ga^5 u_2)(\ou_2 \ga^\nu \ga^5 u_1)] \\
-&=& \Tr[\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 u_1]  \nl
-&=&\Tr[u_1\ou_1\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl
-&=&\Tr[(\slashed{p}_1+m)\ga^\mu \ga^5 (\slashed{p}_2+m) \ga^\nu \ga^5 ]\nl
-&=& \Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu\ga^5\ga^\nu \ga^5 +\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
-&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m( \slashed{p}_1\ga^\mu(-\ga^5 \ga^5)\ga^\nu +\slashed{p}_2\ga^\mu(-\ga^5\ga^5) \ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
-&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 - m( \slashed{p}_1\ga^\mu\ga^\nu +\slashed{p}_2\ga^\mu\ga^\nu ) + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
-&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5] -mTr[ \slashed{p}_1\ga^\mu\ga^\nu]-mTr[ \slashed{p}_2\ga^\mu\ga^\nu]+ m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
-&=&\Tr[\slashed{p}_1\ga^\mu\ga^5 \slashed{p}_2\ga^\nu \ga^5 + m^2(\ga^\mu\ga^5\ga^\nu \ga^5)] \nl
-&=& \Tr[(p_1)_\la\ga^\la\ga^\mu\ga^5 (p_2)_\si\ga^\si\ga^\nu \ga^5] + m^2\Tr[\ga^\mu\ga^5\ga^\nu \ga^5]\nl
-&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^5 \ga^\si\ga^\nu \ga^5] - m^2\Tr[\ga^\mu\ga^5\ga^5 \ga^\nu]\nl
-&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^5\ga^5 \ga^\si\ga^\nu] - m^2\Tr[\ga^\mu\ga^\nu]\nl
-&=& (p_1)_\la(p_2)_\si \Tr[\ga^\la\ga^\mu\ga^\si\ga^\nu] - m^2(g^{\mu\nu})\nl
-&=& (p_1)_\la(p_2)_\si 4(g^{\mu\nu}g^{\la\si} - g^{\mu\la} g^{\nu\si} + g^{\mu\si}g^{\nu\la}) - 4m^2g^{\mu\nu}\nl
-&=& 4[p_1^\mu p_2^\nu - g^{\mu\nu}(p_1 \cdot p_2) + p_2^\mu p_1^\nu] - 4m^2g^{\mu\nu} 
-\eea
-
-\item $ (\ou_1 u_2)^* ~=~ ?$
-We let $S ~=~ \ou_1 u_2$
-\bea
-(S)^* &=& (S)^\dag \\
-&=& (\ou_1 u_2)^\dag ~,~~ \nl
-&=& ((u_1)^\dag\ga^0 u_2)^\dag \nl
-&=& (u_2)^\dag(\ga^0)^\dag(u_1)\nl
-&=& (u_2)^\dag\ga^0(u_1)\nl
-&=& \ou_2(u_1)
-\eea
-Therefore$(\ou_1 u_2)^* ~=~ \ou_2 u_1$.
-In order to find $|S|^2$ we simply do the following:
-\bea
-|S|^2&=& \Tr[\ou_1 u_2 \ou_2 u_1]  \\
-&=& \Tr[(\slashed{p}_1+m)(\slashed{p}_2+m)] \nl
-&=& \Tr[\slashed{p}_1\slashed{p}_2+m(\slashed{p}_1+\slashed{p}_2)+m^2]\nl
-&=& \Tr[\slashed{p}_1\slashed{p}_2]+\Tr[m(\slashed{p}_1+\slashed{p}_2)]+\Tr[m^2] \nl
-&=& \Tr[\slashed{p}_1\slashed{p}_2]+m(\Tr[\slashed{p}_1]+\Tr[\slashed{p}_2])+m^2\Tr[1] \nl
-&=& \Tr[\slashed{p}_1\slashed{p}_2]+4m^2 \nl
-&=& 4(p_1 \cdot p_2)+4m^2
-\eea
-
-\item  By the same reasoning as shown above it can be shown that $(\ou_1 \ga^5 u_2)^* ~=~ \ou_2 \ga^5 u_1$ \\
-If we let $P ~=~ \ou_1\ga^5 u_2$ then:
-\bea
-(P)^* &=& (P)^\dag \\
-&=& (\ou_1\ga^5 u_2)^\dag ~,~~ \nl
-&=& ((u_1)^\dag\ga^0\ga^5 u_2)^\dag \nl
-&=& (u_2)^\dag(\ga^5)^\dag (\ga^0)^\dag(u_1)\nl
-&=& (u_2)^\dag(\ga^5) \ga^0(u_1)\nl
-&=& -(u_2)^\dag \ga^0\ga^5(u_1)\nl
-&=& -\ou_2\ga^5(u_1)
-\eea
-Therefore  $(\ou_1 \ga^5 u_2)^* ~=~ -\ou_2 \ga^5 u_1$
-
-In order to square $P$ we do the following:
-\bea
-|P|^2&=& \Tr[\ou_1 \ga^5 u_2(-\ou_2 \ga^5 u_1)] \\
-&=& \Tr[u_1 \ou_1 \ga^5(-\slashed{p}_2 - m) \ga^5] \nl
-&=& \Tr[(\slashed{p}_1+m) \ga^5 (-\slashed{p}_2-m) \ga^5] \nl
-&=& \Tr[((p_1)_\mu \ga^\mu+m) \ga^5 ((-p_2)_\nu\ga^\nu-m)  \ga^5] \nl
-&=& \Tr[((p_1)_\mu \ga^\mu\ga^5+m\ga^5) ((-p_2)_\nu\ga^\nu\ga^5-m\ga^5)] \nl
-&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5+ m\ga^5(-p_2)_\nu\ga^\nu\ga^5 -m\ga^5(p_1)_\mu \ga^\mu\ga^5 - \ga^5\ga^5m^2)] \nl
-&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] + Tr[ m\ga^5(-\ga^5)(-p_2)_\nu\ga^\nu] - Tr[m\ga^5(-\ga^5)(p_1)_\mu \ga^\mu] - Tr[m^2] \nl
-&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] -Tr[ m(-p_2)_\nu\ga^\nu] + Tr[m(p_1)_\mu \ga^\mu] - 4m^2 \nl
-&=& \Tr[(p_1)_\mu \ga^\mu\ga^5(-p_2)_\nu\ga^\nu\ga^5] - 4m^2 \nl
-&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5\ga^\nu\ga^5]- 4m^2 \nl
-&=& (p_1)_\mu(-p_2)_\nu \Tr[\ga^\mu\ga^5(-\ga^5\ga^\nu)]- 4m^2\nl
-&=& (p_1)_\mu(-p_2)_\nu (-\Tr[\ga^\mu\ga^\nu])- 4m^2\nl
-&=& (p_1)_\mu(-p_2)_\nu (-4g^{\mu\nu})- 4m^2\nl
-&=& 4(p_1)(p_2)- 4m^2
-\eea
 \end{enumerate}
 \end{document}
